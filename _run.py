@@ -22,28 +22,31 @@ from diffusers import (
 )
 from PIL import Image
 
-PROMPT = "an oil painting in an expressionist style depicting a rich canary who sits in front of a desk with a computer, on a large monitor you can see the active connections of the neural network, in his vault filled to the brim with gold coins"
-NEGATIVE_PROMPT = "blurry, low res, low quality"
+PROMPT = "two anime characters walk towards each other to punch each other in the face because they are weebs"
+NEGATIVE_PROMPT = "blurry, low res, low quality, realistic"
 STEPS = 40
 DEFAULT_SEED = 420
-DEFAULT_GUIDANCE_SCALE = 7.0
+DEFAULT_GUIDANCE_SCALE = 5.0
 REFINER_KICK_IN = 0.8
 IMG_NAME = ""  # leave empty to auto generate
 BASE_ID = "/mnt/disks/persist/repos/stable-diffusion-xl-base-1.0"
-OUTPUT_DIR = "output/"
+OUTPUT_DIR = "/mnt/disks/persist/repos/pawai/output/"
 NUM_DEVICES = jax.device_count()
 
 
-def getSavePath() -> str:
+def getSavePath(index: int, id: str) -> str:
     name = IMG_NAME
     if not name:
         name = PROMPT
 
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
-    name = name.replace(" ", "_")[:200]
-    unique_id = str(uuid.uuid4())
-    file_name = f"{name}_{unique_id}.png"
-    file_path = os.path.join(OUTPUT_DIR, file_name)
+    name = name.replace(" ", "_")
+    file_path = os.path.join(OUTPUT_DIR, name)
+    dir, name = os.path.split(file_path)
+    name = name[:200]
+    name = f"{name}_{id}_{index}.png"
+    file_path = os.path.join(dir, name)
+
     print(f"saving to {file_path}")
     return file_path
 
@@ -59,6 +62,11 @@ def replicate_all(prompt_ids, neg_prompt_ids, seed):
     p_neg_prompt_ids = replicate(neg_prompt_ids)
     rng = jax.random.PRNGKey(seed)
     rng = jax.random.split(rng, NUM_DEVICES)
+
+    for i in range(rng.shape[0]):
+        for j in range(rng.shape[1]):
+            rng = rng.at[i, j].set(seed + i + j)
+
     return p_prompt_ids, p_neg_prompt_ids, rng
 
 
@@ -71,6 +79,7 @@ def generate(
 ):
     prompt_ids, neg_prompt_ids = tokenize_prompt(prompt, negative_prompt)
     prompt_ids, neg_prompt_ids, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
+    print(rng)
     images = pipeline(
         prompt_ids,
         p_params,
@@ -102,12 +111,19 @@ if __name__ == "__main__":
     # so we only need to replicate them once.
     p_params = replicate(params)
 
+    # compile jax
     print(f"Compiling ...")
-    generate("none", "none")
+    generate("compiling", "compiling")
     print(f"Compiled in time: {time.time() - start_time}")
 
-    start_time = time.time()
-    images = generate(PROMPT, NEGATIVE_PROMPT)
-    for i in images:
-        i.save(getSavePath())
-    print(f"Execution time: {time.time() - start_time}")
+    id = str(uuid.uuid4())
+    seed = 0
+    for i in range(10):
+        step_time = time.time()
+        images = generate(PROMPT, NEGATIVE_PROMPT, seed)
+        for i in images:
+            seed += 1
+            i.save(getSavePath(seed, id))
+        print(f"Execution time: {time.time() - step_time}")
+
+    print(f"total time: {time.time() - start_time}")

@@ -22,11 +22,11 @@ from diffusers import (
 )
 from PIL import Image
 
-PROMPT = "An expressionist style oil painting with vivid colors of exploding nebula of Sad Pepe the Frog meme in afro hair, with mustaches on width of nose"
-NEGATIVE_PROMPT = "blurry, ugly, low-quality, deformed"
+PROMPT = "an oil painting in an expressionist style depicting a rich canary who sits in front of a desk with a computer, on a large monitor you can see the active connections of the neural network, in his vault filled to the brim with gold coins"
+NEGATIVE_PROMPT = "blurry, low res, low quality"
 STEPS = 40
-DEFAULT_SEED = 33
-DEFAULT_GUIDANCE_SCALE = 5.0
+DEFAULT_SEED = 420
+DEFAULT_GUIDANCE_SCALE = 7.0
 REFINER_KICK_IN = 0.8
 IMG_NAME = ""  # leave empty to auto generate
 BASE_ID = "/mnt/disks/persist/repos/stable-diffusion-xl-base-1.0"
@@ -88,10 +88,11 @@ def generate(
 
 if __name__ == "__main__":
     start_time = time.time()
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
 
     pipeline, params = FlaxStableDiffusionXLPipeline.from_pretrained(
-        BASE_ID,
-        split_head_dim=True,
+        "stabilityai/stable-diffusion-xl-base-1.0", split_head_dim=True
     )
     scheduler_state = params.pop("scheduler")
     params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
@@ -102,11 +103,11 @@ if __name__ == "__main__":
     p_params = replicate(params)
 
     print(f"Compiling ...")
+    generate("none", "none")
+    print(f"Compiled in time: {time.time() - start_time}")
 
+    start_time = time.time()
     images = generate(PROMPT, NEGATIVE_PROMPT)
     for i in images:
         i.save(getSavePath())
-
-    end_time = time.time()
-    execution_time = end_time - start_time
-    print(f"Compiled in time: {execution_time}")
+    print(f"Execution time: {time.time() - start_time}")

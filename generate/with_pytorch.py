@@ -10,10 +10,6 @@ from diffusers import (
 
 from generate import common
 
-print(f"torch version: {torch.__version__}")
-device = xm.xla_device()
-print(f"{device=}")
-
 
 def getRefinerPipeline(base) -> StableDiffusionXLPipeline:
     refiner = StableDiffusionXLImg2ImgPipeline.from_pretrained(
@@ -22,7 +18,6 @@ def getRefinerPipeline(base) -> StableDiffusionXLPipeline:
         use_safetensors=True,
         torch_dtype=torch.bfloat16,
     )
-    refiner.to(device)
     refiner.scheduler = DPMSolverMultistepScheduler.from_config(base.scheduler.config)
     return refiner
 
@@ -33,7 +28,6 @@ def getBasePipeline() -> StableDiffusionXLPipeline:
         use_safetensors=True,
         torch_dtype=torch.bfloat16,
     )
-    base.to(device)
     base.scheduler = DPMSolverMultistepScheduler.from_config(base.scheduler.config)
     return base
 
@@ -47,7 +41,11 @@ def run(
     refiner_kick_in: float = common.REFINER_KICK_IN,
 ):
     print("loading sdxl base...")
+    device = xm.xla_device()  # this trhorws error
+    print(f"{device=}")
+
     base = getBasePipeline()
+    base.to(device)
     images = base(
         prompt=prompt,
         negative_prompt=negative_prompt,
@@ -60,7 +58,7 @@ def run(
 
     print("loading sdxl refiner...")
     refiner = getRefinerPipeline(base)
-
+    refiner.to(device)
     images = refiner(
         prompt=prompt,
         negative_prompt=negative_prompt,

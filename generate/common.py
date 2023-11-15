@@ -2,9 +2,7 @@ import os
 import re
 import uuid
 
-PROMPT = (
-    "cook dinosaur walking down the forest to school with backpack to teach about proper eating"
-)
+PROMPT = "clown walking down the forest with AK-47"
 NEGATIVE_PROMPT = "blurry, low res, low quality"
 STEPS = 40
 SEED = 420

@@ -26,22 +26,40 @@ def replicate_all(prompt_ids, neg_prompt_ids, seed):
 
 def generate_jax(
     pipeline,
+    pipeline_r,
     p_params,
-    prompt,
-    negative_prompt,
-    seed,
-    guidance_scale,
-    steps,
+    p_params_r,
+    prompt: str = common.PROMPT,
+    negative_prompt: str = common.NEGATIVE_PROMPT,
+    seed: int = common.SEED,
+    guidance_scale: float = common.GUIDANCE_SCALE,
+    steps: int = common.STEPS,
 ):
     prompt_ids, neg_prompt_ids = tokenize_prompt(pipeline, prompt, negative_prompt)
+    prompt_ids_r, neg_prompt_ids_r = tokenize_prompt(pipeline_r, prompt, negative_prompt)
     prompt_ids, neg_prompt_ids, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
-    images = pipeline(
+    prompt_ids_r, neg_prompt_ids_r, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
+    base_latents = pipeline(
         prompt_ids,
         p_params,
         rng,
         num_inference_steps=steps,
         neg_prompt_ids=neg_prompt_ids,
         guidance_scale=guidance_scale,
+        denoising_end=common.REFINER_KICK_IN,
+        output_type="latent",
+        jit=True,
+    ).images
+
+    images = pipeline_r(
+        prompt_ids_r,
+        p_params_r,
+        rng,
+        num_inference_steps=steps,
+        neg_prompt_ids=neg_prompt_ids_r,
+        guidance_scale=guidance_scale,
+        denoising_end=common.REFINER_KICK_IN,
+        image=base_latents,
         jit=True,
     ).images
 
@@ -50,13 +68,7 @@ def generate_jax(
     return pipeline.numpy_to_pil(np.array(images))
 
 
-def run(
-    prompt: str = common.PROMPT,
-    negative_prompt: str = common.NEGATIVE_PROMPT,
-    seed: int = common.SEED,
-    guidance_scale: float = common.GUIDANCE_SCALE,
-    steps: int = common.STEPS,
-):
+def run():
     print(f"loading sdxl base...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionXLPipeline.from_pretrained(
@@ -66,27 +78,32 @@ def run(
     params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
     params["scheduler"] = scheduler_state
 
+    print("loading refiner...")
+    pipeline_r, params_r = FlaxStableDiffusionXLImg2ImgPipeline.from_pretrained(
+        "pcuenq/stable-diffusion-xl-refiner-1.0-flax", split_head_dim=True
+    )
+    scheduler_state_r = params_r.pop("scheduler")
+    del params_r["vae"]
+    del params_r["text_encoder_2"]
+    params_r = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params_r)
+    params_r["vae"] = params["vae"]
+    params_r["text_encoder_2"] = params["text_encoder_2"]
+    params_r["scheduler"] = scheduler_state_r
+
     # Model parameters don't change during inference,
     # so we only need to replicate them once.
     p_params = replicate(params)
+    p_params_r = replicate(params_r)
 
     # compile jax
     print(f"Compiling ...")
-    generate_jax(pipeline, p_params, "compiling", "compiling")
+    generate_jax(pipeline, pipeline_r, p_params, p_params_r)
     print(f"Compiled in time: {time.time() - startup_time}")
 
     index = 0
     for i in range(1):
         step_time = time.time()
-        images = generate_jax(
-            pipeline,
-            p_params,
-            prompt,
-            negative_prompt,
-            seed,
-            guidance_scale,
-            steps,
-        )
+        images = generate_jax(pipeline, p_params)
         for i in images:
             index += 1
             i.save(common.getSavePath(index))

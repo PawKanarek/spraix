@@ -3,16 +3,13 @@ import time
 import jax
 import jax.numpy as jnp
 import numpy as np
-from diffusers import FlaxStableDiffusionXLPipeline
+from diffusers import (
+    FlaxStableDiffusionXLImg2ImgPipeline,
+    FlaxStableDiffusionXLPipeline,
+)
 from flax.jax_utils import replicate
 
 from generate import common
-
-
-def tokenize_prompt(pipeline, prompt, neg_prompt):
-    prompt_ids = pipeline.prepare_inputs(prompt)
-    neg_prompt_ids = pipeline.prepare_inputs(neg_prompt)
-    return prompt_ids, neg_prompt_ids
 
 
 def replicate_all(prompt_ids, neg_prompt_ids, seed):
@@ -35,10 +32,10 @@ def generate_jax(
     guidance_scale: float = common.GUIDANCE_SCALE,
     steps: int = common.STEPS,
 ):
-    prompt_ids, neg_prompt_ids = tokenize_prompt(pipeline, prompt, negative_prompt)
-    prompt_ids_r, neg_prompt_ids_r = tokenize_prompt(pipeline_r, prompt, negative_prompt)
+    prompt_ids = pipeline.prepare_inputs(prompt)
+    neg_prompt_ids = pipeline.prepare_inputs(negative_prompt)
     prompt_ids, neg_prompt_ids, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
-    prompt_ids_r, neg_prompt_ids_r, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
+
     base_latents = pipeline(
         prompt_ids,
         p_params,
@@ -46,19 +43,19 @@ def generate_jax(
         num_inference_steps=steps,
         neg_prompt_ids=neg_prompt_ids,
         guidance_scale=guidance_scale,
-        denoising_end=common.REFINER_KICK_IN,
+        # denoising_end=common.REFINER_KICK_IN,
         output_type="latent",
         jit=True,
     ).images
 
     images = pipeline_r(
-        prompt_ids_r,
-        p_params_r,
-        rng,
+        prompt_ids=prompt_ids,
+        params=p_params_r,
+        prng_seed=rng,
         num_inference_steps=steps,
-        neg_prompt_ids=neg_prompt_ids_r,
+        neg_prompt_ids=neg_prompt_ids,
         guidance_scale=guidance_scale,
-        denoising_end=common.REFINER_KICK_IN,
+        # denoising_start=common.REFINER_KICK_IN,
         image=base_latents,
         jit=True,
     ).images
@@ -103,7 +100,7 @@ def run():
     index = 0
     for i in range(1):
         step_time = time.time()
-        images = generate_jax(pipeline, p_params)
+        images = generate_jax(pipeline, pipeline_r, p_params, p_params_r)
         for i in images:
             index += 1
             i.save(common.getSavePath(index))

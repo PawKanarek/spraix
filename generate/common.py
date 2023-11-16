@@ -2,7 +2,7 @@ import os
 import re
 import uuid
 
-PROMPT = "clown walking down the forest with AK-47"
+PROMPT = "A dinosaur in the forest with a backpack blows the candles on a birthday cake"
 NEGATIVE_PROMPT = "blurry, low res, low quality"
 STEPS = 40
 SEED = 420

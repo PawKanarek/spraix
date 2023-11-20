@@ -55,7 +55,7 @@ def run():
     print(f"loading sd v1-4 finetuned model...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionPipeline.from_pretrained(
-        "/mnt/disks/persist/repos/diffusers/examples/text_to_image/spraix_sd_1_4_try3",
+        "/mnt/disks/persist/repos/diffusers/examples/text_to_image/spraix_sd_1_4_try4",
         # split_head_dim=True,
         dtype=jnp.bfloat16,
         safety_checker = None,
@@ -73,11 +73,15 @@ def run():
     generate_jax(pipeline, p_params, "compiling", "compiling")
     print(f"Compiled in time: {time.time() - startup_time}")
 
+    prompts = ["12-frame sprite animation of: cute small dinosaur with backpack, that: is running, facing: East",
+               "4-frame sprite animation of: girl with big sword, that: is idle, facing: West",
+               "8-frame sprite animation of: a horned devil with big lasers, that: is jumping, facing: West",
+               "6-frame sprite animation of: a slime, that: is fainting, facing: East"]
     index = 0
-    for i in range(1):
+    for i, p in enumerate(prompts):
         step_time = time.time()
-        images = generate_jax(pipeline, p_params)
+        images = generate_jax(pipeline, p_params, p)
         for i in images:
             index += 1
-            i.save(common.getSavePath(index, "v1-4-try3_1500_steps"))
+            i.save(common.getSavePath(index, "v1-4-try4_3000_steps"))
         print(f"Batch execution time: {time.time() - step_time}")

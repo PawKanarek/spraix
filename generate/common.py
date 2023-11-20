@@ -2,7 +2,7 @@ import os
 import re
 import uuid
 
-PROMPT = "A dinosaur in the forest with a backpack blows the candles on a birthday cake"
+PROMPT = "12-frame sprite animation of: cute small dinosaur with backpack, that: is running, facing: East"
 NEGATIVE_PROMPT = "blurry, low res, low quality"
 STEPS = 40
 SEED = 420
@@ -14,14 +14,16 @@ OUTPUT_DIR = "/mnt/disks/persist/repos/pawai/output/"
 RUN_ID = str(uuid.uuid4())
 
 
-def getSavePath(index: int = 0) -> str:
+def getSavePath(index: int = 0, sub_dir: str = "") -> str:
+    dir = create_ouptut_dirs(sub_dir)
+    
     name = IMG_NAME
     if not name:
         name = PROMPT
 
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     name = name.replace(" ", "_")
-    file_path = os.path.join(OUTPUT_DIR, name)
+    file_path = os.path.join(dir, name)
     dir, name = os.path.split(file_path)
     name = name[:200]
     name = f"{name}_{RUN_ID}_{index}.png"
@@ -31,6 +33,8 @@ def getSavePath(index: int = 0) -> str:
     return file_path
 
 
-def create_ouptut_dirs():
-    if not os.path.exists(OUTPUT_DIR):
-        os.makedirs(OUTPUT_DIR)
+def create_ouptut_dirs(sub_dir: str = "") -> str:
+    dir = os.path.join(OUTPUT_DIR, sub_dir) if sub_dir else OUTPUT_DIR
+    if not os.path.exists(dir):
+        os.makedirs(dir)
+    return dir 

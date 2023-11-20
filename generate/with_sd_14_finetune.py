@@ -35,6 +35,7 @@ def generate_jax(
 ):
     prompt_ids, neg_prompt_ids = tokenize_prompt(pipeline, prompt, negative_prompt)
     prompt_ids, neg_prompt_ids, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
+    
     images = pipeline(
         prompt_ids,
         p_params,
@@ -51,12 +52,13 @@ def generate_jax(
 
 
 def run():
-    print(f"loading sdxl base...")
+    print(f"loading sd v1-4 finetuned model...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionPipeline.from_pretrained(
-        "duongna/stable-diffusion-v1-4-flax",
+        "/mnt/disks/persist/repos/diffusers/examples/text_to_image/spraix_sd_1_4_try3",
         # split_head_dim=True,
         dtype=jnp.bfloat16,
+        safety_checker = None,
     )
     # scheduler_state = params.pop("scheduler")
     # params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
@@ -77,5 +79,5 @@ def run():
         images = generate_jax(pipeline, p_params)
         for i in images:
             index += 1
-            i.save(common.getSavePath(index, "v1-4-flax"))
+            i.save(common.getSavePath(index, "v1-4-try3_1500_steps"))
         print(f"Batch execution time: {time.time() - step_time}")

@@ -14,12 +14,10 @@ OUTPUT_DIR = "/mnt/disks/persist/repos/pawai/output/"
 RUN_ID = str(uuid.uuid4())
 
 
-def getSavePath(index: int = 0, sub_dir: str = "") -> str:
+def getSavePath(prompt:str = PROMPT, index: int = 0, sub_dir: str = "") -> str:
     dir = create_ouptut_dirs(sub_dir)
     
-    name = IMG_NAME
-    if not name:
-        name = PROMPT
+    name = IMG_NAME or prompt or PROMPT 
 
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     name = name.replace(" ", "_")

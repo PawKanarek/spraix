@@ -83,5 +83,5 @@ def run():
         images = generate_jax(pipeline, p_params, prompt)
         for i in images:
             index += 1
-            i.save(common.getSavePath(prompt, index, "spraix_sd_1_4_try5_6000"))
+            i.save(common.getSavePath(prompt, index, "spraix_sd_1_4_try6_12000"))
         print(f"Batch execution time: {time.time() - step_time}")

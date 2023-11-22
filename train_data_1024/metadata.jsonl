@@ -1,0 +1,560 @@
+{"file_name": "images/0.png", "text": "17-frame sprite animation of: red-haired hobbit in green cape, that: shoots with slingshot, facing: East"}
+{"file_name": "images/1.png", "text": "13-frame sprite animation of: red-haired hobbit in green cape, that: blocks an attack with staff, facing: East"}
+{"file_name": "images/2.png", "text": "12-frame sprite animation of: red-haired hobbit in green cape, that: is taking damage then is struck and dies, facing: East"}
+{"file_name": "images/3.png", "text": "4-frame sprite animation of: red-haired hobbit in green cape, that: is taking damage after hit then is struck, facing: East"}
+{"file_name": "images/4.png", "text": "4-frame sprite animation of: red-haired hobbit in green cape, that: is idle, facing: East"}
+{"file_name": "images/5.png", "text": "10-frame sprite animation of: red-haired hobbit in green cape, that: jumps, facing: East"}
+{"file_name": "images/6.png", "text": "8-frame sprite animation of: red-haired hobbit in green cape, that: is slowing down after run, facing: East"}
+{"file_name": "images/7.png", "text": "7-frame sprite animation of: knight in silver armor with red pants, that: is making jumping sword attack, facing: East"}
+{"file_name": "images/8.png", "text": "19-frame sprite animation of: knight in silver armor with red pants, that: is attacking with sword, facing: East"}
+{"file_name": "images/9.png", "text": "6-frame sprite animation of: knight in silver armor with red pants, that: climbs, facing: North"}
+{"file_name": "images/10.png", "text": "7-frame sprite animation of: knight in silver armor with red pants, that: is attacking with sword while crouching, facing: East"}
+{"file_name": "images/11.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: is idle while crouching, facing: East"}
+{"file_name": "images/12.png", "text": "4-frame sprite animation of: knight in silver armor with red pants, that: faints, facing: East"}
+{"file_name": "images/13.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: is hanging with single hand in air, facing: East"}
+{"file_name": "images/14.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: is restoring a health using red crystal, facing: East"}
+{"file_name": "images/15.png", "text": "3-frame sprite animation of: knight in silver armor with red pants, that: is getting struck, facing: East"}
+{"file_name": "images/16.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: is idle, facing: East"}
+{"file_name": "images/17.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: jumps, facing: East"}
+{"file_name": "images/18.png", "text": "12-frame sprite animation of: knight in silver armor with red pants, that: is falling to his knees and begins to pray and then gets up, facing: East"}
+{"file_name": "images/19.png", "text": "4-frame sprite animation of: knight in silver armor with red pants, that: is rolling, facing: East"}
+{"file_name": "images/20.png", "text": "8-frame sprite animation of: knight in silver armor with red pants, that: is running, facing: East"}
+{"file_name": "images/21.png", "text": "10-frame sprite animation of: knight in silver armor with red pants, that: is sliding, facing: East"}
+{"file_name": "images/22.png", "text": "5-frame sprite animation of: brown treasure chest, that: is idle, facing: West"}
+{"file_name": "images/23.png", "text": "5-frame sprite animation of: brown treasure chest, that: is opening, facing: West"}
+{"file_name": "images/24.png", "text": "5-frame sprite animation of: black treasure chest, that: is idle, facing: West"}
+{"file_name": "images/25.png", "text": "5-frame sprite animation of: black treasure chest, that: is opening, facing: West"}
+{"file_name": "images/26.png", "text": "5-frame sprite animation of: red treasure chest, that: is idle, facing: West"}
+{"file_name": "images/27.png", "text": "5-frame sprite animation of: red treasure chest, that: is opening, facing: West"}
+{"file_name": "images/28.png", "text": "5-frame sprite animation of: white treasure chest, that: is idle, facing: West"}
+{"file_name": "images/29.png", "text": "5-frame sprite animation of: white treasure chest, that: is opening, facing: West"}
+{"file_name": "images/30.png", "text": "8-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is running, facing: East"}
+{"file_name": "images/31.png", "text": "8-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is fainting, facing: East"}
+{"file_name": "images/32.png", "text": "7-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is rolling, facing: East"}
+{"file_name": "images/33.png", "text": "7-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is shooting a bow, facing: East"}
+{"file_name": "images/34.png", "text": "6-frame sprite animation of: arcane archer in pink hood with a magic bow, that: does wall slide, facing: West"}
+{"file_name": "images/35.png", "text": "4-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is crouching idle, facing: East"}
+{"file_name": "images/36.png", "text": "4-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is jumping with a stomp, facing: East"}
+{"file_name": "images/37.png", "text": "2-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is slowing down after run, facing: East"}
+{"file_name": "images/38.png", "text": "7-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: is swinging a ball to attack, facing: East"}
+{"file_name": "images/39.png", "text": "4-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: is charging, facing: East"}
+{"file_name": "images/40.png", "text": "5-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: faints, facing: East"}
+{"file_name": "images/41.png", "text": "2-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: is getting struck, facing: East"}
+{"file_name": "images/42.png", "text": "5-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: is idle, facing: East"}
+{"file_name": "images/43.png", "text": "8-frame sprite animation of: ghost in brown sheet with steel ball on a chain, that: is running, facing: East"}
+{"file_name": "images/44.png", "text": "11-frame sprite animation of: dark tower of red crystal moon, that: is idle with moon levitating up and down, facing: South"}
+{"file_name": "images/45.png", "text": "10-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: swings his weapon to attack, facing: West"}
+{"file_name": "images/46.png", "text": "9-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: is casting a portal spell, facing: West"}
+{"file_name": "images/47.png", "text": "10-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: is transforming into fog, facing: West"}
+{"file_name": "images/48.png", "text": "3-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: is getting struck, facing: West"}
+{"file_name": "images/49.png", "text": "8-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: is idle, facing: West"}
+{"file_name": "images/50.png", "text": "16-frame sprite animation of: pink portal, that: strikes a lighting in shape of a hand, facing: West"}
+{"file_name": "images/51.png", "text": "8-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: walks, facing: West"}
+{"file_name": "images/52.png", "text": "7-frame sprite animation of: a black canine, that: is biting, facing: West"}
+{"file_name": "images/53.png", "text": "8-frame sprite animation of: a black canine, that: is laying down, facing: West"}
+{"file_name": "images/54.png", "text": "4-frame sprite animation of: a black canine, that: is getting struck, facing: West"}
+{"file_name": "images/55.png", "text": "4-frame sprite animation of: a black canine, that: is idle, facing: West"}
+{"file_name": "images/56.png", "text": "6-frame sprite animation of: a black canine, that: is running, facing: West"}
+{"file_name": "images/57.png", "text": "7-frame sprite animation of: a brown canine, that: is biting, facing: West"}
+{"file_name": "images/58.png", "text": "8-frame sprite animation of: a brown canine, that: is laying down, facing: West"}
+{"file_name": "images/59.png", "text": "4-frame sprite animation of: a brown canine, that: is getting struck, facing: West"}
+{"file_name": "images/60.png", "text": "4-frame sprite animation of: a brown canine, that: is idle, facing: West"}
+{"file_name": "images/61.png", "text": "6-frame sprite animation of: a brown canine, that: is running, facing: West"}
+{"file_name": "images/62.png", "text": "7-frame sprite animation of: a gray canine, that: is biting, facing: West"}
+{"file_name": "images/63.png", "text": "8-frame sprite animation of: a gray canine, that: is laying down, facing: West"}
+{"file_name": "images/64.png", "text": "4-frame sprite animation of: a gray canine, that: is getting struck, facing: West"}
+{"file_name": "images/65.png", "text": "4-frame sprite animation of: a gray canine, that: is idle, facing: West"}
+{"file_name": "images/66.png", "text": "6-frame sprite animation of: a gray canine, that: is running, facing: West"}
+{"file_name": "images/67.png", "text": "7-frame sprite animation of: a white canine, that: is biting, facing: West"}
+{"file_name": "images/68.png", "text": "8-frame sprite animation of: a white canine, that: is laying down, facing: West"}
+{"file_name": "images/69.png", "text": "4-frame sprite animation of: a white canine, that: is getting struck, facing: West"}
+{"file_name": "images/70.png", "text": "4-frame sprite animation of: a white canine, that: is idle, facing: West"}
+{"file_name": "images/71.png", "text": "6-frame sprite animation of: a white canine, that: is running, facing: West"}
+{"file_name": "images/72.png", "text": "6-frame sprite animation of: blue haired muscular fighter, that: is flexing, facing: East"}
+{"file_name": "images/73.png", "text": "2-frame sprite animation of: blue haired muscular fighter, that: is levitating, facing: East"}
+{"file_name": "images/74.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is idle, facing: East"}
+{"file_name": "images/75.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: is standing, facing: East"}
+{"file_name": "images/76.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: is sliding, facing: East"}
+{"file_name": "images/77.png", "text": "2-frame sprite animation of: blue haired muscular fighter, that: is sitting down cross-legged, facing: East"}
+{"file_name": "images/78.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is flying horizontally, facing: East"}
+{"file_name": "images/79.png", "text": "6-frame sprite animation of: bald fighter, that: is walking, facing: East"}
+{"file_name": "images/80.png", "text": "8-frame sprite animation of: blue haired muscular fighter, that: is making punch combo attack with both hands, facing: East"}
+{"file_name": "images/81.png", "text": "6-frame sprite animation of: blue haired muscular fighter, that: is making multiple fast kicks in air, facing: East"}
+{"file_name": "images/82.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is punching down from the air, facing: East"}
+{"file_name": "images/83.png", "text": "2-frame sprite animation of: blue haired muscular fighter, that: is blocking incoming attack, facing: East"}
+{"file_name": "images/84.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is getting struck, facing: East"}
+{"file_name": "images/85.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: taking damage, facing: East"}
+{"file_name": "images/86.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: is getting hit, facing: East"}
+{"file_name": "images/87.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: is getting hit, facing: East"}
+{"file_name": "images/88.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: is laying down, facing: East"}
+{"file_name": "images/89.png", "text": "2-frame sprite animation of: blue haired muscular fighter, that: is screaming on his knees, facing: East"}
+{"file_name": "images/90.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: is punching fast with both hands, facing: East"}
+{"file_name": "images/91.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is casting a magic beam from both hands, facing: East"}
+{"file_name": "images/92.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: casting a magic beam from right hand, facing: East"}
+{"file_name": "images/93.png", "text": "1-frame sprite animation of: blue haired muscular fighter, that: is screaming with left hand in air, facing: East"}
+{"file_name": "images/94.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: is holding hands in air, facing: East"}
+{"file_name": "images/95.png", "text": "2-frame sprite animation of: blue haired muscular fighter, that: is getting knock out after hit, facing: East"}
+{"file_name": "images/96.png", "text": "3-frame sprite animation of: blue haired muscular fighter, that: is casting a magic beam from both hands while running, facing: East"}
+{"file_name": "images/97.png", "text": "4-frame sprite animation of: energy shield, that: is idle, facing: East"}
+{"file_name": "images/98.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is balancing on her feet to the dance rhythm, facing: West"}
+{"file_name": "images/99.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is moving her hips in a dance rhythm, facing: South"}
+{"file_name": "images/100.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is jumping in a dance rhythm, facing: West"}
+{"file_name": "images/101.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is dancing from left to right, facing: South"}
+{"file_name": "images/102.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is dancing in place, facing: South"}
+{"file_name": "images/103.png", "text": "10-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: thrusts his arrow like a sword to melee attack, facing: East"}
+{"file_name": "images/104.png", "text": "15-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: shots magic arrow, facing: East"}
+{"file_name": "images/105.png", "text": "12-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: shoots multiple arrows at once, facing: East"}
+{"file_name": "images/106.png", "text": "10-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: shots magic arrow while in air, facing: East"}
+{"file_name": "images/107.png", "text": "19-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: falls to his knees and faints on the floor, facing: East"}
+{"file_name": "images/108.png", "text": "19-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: defends himself by transforming his bow into shield made of roots, facing: East"}
+{"file_name": "images/109.png", "text": "12-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: is idle, facing: East"}
+{"file_name": "images/110.png", "text": "3-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: falls down, facing: East"}
+{"file_name": "images/111.png", "text": "22-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: jumps up then falls down, facing: East"}
+{"file_name": "images/112.png", "text": "3-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: jumps up, facing: East"}
+{"file_name": "images/113.png", "text": "8-frame sprite animation of: magic arrow, that: grows roots from the arrowhead, facing: East"}
+{"file_name": "images/114.png", "text": "8-frame sprite animation of: magic arrow, that: releases poison from the tip, facing: East"}
+{"file_name": "images/115.png", "text": "6-frame sprite animation of: arrow, that: hits the target and wiggles, facing: East"}
+{"file_name": "images/116.png", "text": "18-frame sprite animation of: arrows, that: hits the ground creating entangling roots, facing: East"}
+{"file_name": "images/117.png", "text": "5-frame sprite animation of: arrow, that: makes the laser beam, facing: East"}
+{"file_name": "images/118.png", "text": "8-frame sprite animation of: diagonal arrow, that: hits the target and sprouts thorns, facing: East"}
+{"file_name": "images/119.png", "text": "6-frame sprite animation of: diagonal arrow, that: hits the target and wiggles, facing: East"}
+{"file_name": "images/120.png", "text": "8-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: rolls, facing: East"}
+{"file_name": "images/121.png", "text": "10-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: runs, facing: East"}
+{"file_name": "images/122.png", "text": "4-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: slides, facing: East"}
+{"file_name": "images/123.png", "text": "13-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: slides and then gets up, facing: East"}
+{"file_name": "images/124.png", "text": "17-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: fires laser beam from his bow to make a special attack, facing: East"}
+{"file_name": "images/125.png", "text": "6-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: is getting struck, facing: East"}
+{"file_name": "images/126.png", "text": "1-frame sprite animation of: a face of long-haired elf archer the leaf ranger , that: is idle, facing: South"}
+{"file_name": "images/127.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: is idle, facing: East"}
+{"file_name": "images/128.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: is running, facing: East"}
+{"file_name": "images/129.png", "text": "20-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: jumps up then falls down, facing: East"}
+{"file_name": "images/130.png", "text": "3-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: falls down, facing: East"}
+{"file_name": "images/131.png", "text": "3-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: jumps up, facing: East"}
+{"file_name": "images/132.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: rolls on the ground, facing: East"}
+{"file_name": "images/133.png", "text": "11-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword overhead to attack, facing: East"}
+{"file_name": "images/134.png", "text": "19-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword overhead then spins around to make combo attack, facing: East"}
+{"file_name": "images/135.png", "text": "28-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword overhead then spins around and shoots a fire ball from edge of his sword, facing: East"}
+{"file_name": "images/136.png", "text": "18-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: ignites his magic sword to make flame attack, facing: East"}
+{"file_name": "images/137.png", "text": "10-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: defends himself with a sword, facing: East"}
+{"file_name": "images/138.png", "text": "3-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: is getting struck, facing: East"}
+{"file_name": "images/139.png", "text": "3-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: falls to his knees and faints on the floor, facing: East"}
+{"file_name": "images/140.png", "text": "3-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword to attack while in air, facing: East"}
+{"file_name": "images/141.png", "text": "1-frame sprite animation of: a face of fire knight with short spiky hair and beard, that: is idle, facing: South"}
+{"file_name": "images/142.png", "text": "8-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is idle, facing: East"}
+{"file_name": "images/143.png", "text": "10-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: walks, facing: East"}
+{"file_name": "images/144.png", "text": "8-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: surfs on wave, facing: East"}
+{"file_name": "images/145.png", "text": "3-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: jumps up, facing: East"}
+{"file_name": "images/146.png", "text": "3-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: falls down, facing: East"}
+{"file_name": "images/147.png", "text": "6-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: tumbles around, facing: East"}
+{"file_name": "images/148.png", "text": "7-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is thrusting her sword to attack, facing: East"}
+{"file_name": "images/149.png", "text": "21-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is thrusting her sword double to make combo attack, facing: East"}
+{"file_name": "images/150.png", "text": "27-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is thrusting her sword double and shoots a water splash from it, facing: East"}
+{"file_name": "images/151.png", "text": "32-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: creates water blob that shortly after splashes on ground and creates icy spikes, facing: East"}
+{"file_name": "images/152.png", "text": "12-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: heals herself, facing: East"}
+{"file_name": "images/153.png", "text": "12-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: defends herself by creating ice wall, facing: East"}
+{"file_name": "images/154.png", "text": "7-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: getting struck, facing: East"}
+{"file_name": "images/155.png", "text": "16-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: stays still, facing: East"}
+{"file_name": "images/156.png", "text": "8-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is thrusting her sword in air, facing: East"}
+{"file_name": "images/157.png", "text": "1-frame sprite animation of: a face of water priestess with long, dark-blue hair and a light-blue dress, that: has crown  q, facing: South"}
+{"file_name": "images/158.png", "text": "8-frame sprite animation of: a bald fire wizzard with long staff in red robe, that: creates pillar of flames from his hands, facing: East"}
+{"file_name": "images/159.png", "text": "5-frame sprite animation of: a bald fire wizzard with long staff in red robe, that: falls on his knees, facing: East"}
+{"file_name": "images/160.png", "text": "8-frame sprite animation of: a bald fire wizzard with long staff in red robe, that: is idle, facing: East"}
+{"file_name": "images/161.png", "text": "8-frame sprite animation of: a bald fire wizzard with long staff in red robe, that: is walking, facing: East"}
+{"file_name": "images/162.png", "text": "4-frame sprite animation of: a bald fire wizzard with long staff in red robe, that: is getting struck, facing: East"}
+{"file_name": "images/163.png", "text": "9-frame sprite animation of: eye-ball monster, that: is idle, facing: East"}
+{"file_name": "images/164.png", "text": "4-frame sprite animation of: eye-ball monster, that: walks, facing: East"}
+{"file_name": "images/165.png", "text": "12-frame sprite animation of: eye-ball monster, that: is making beam from his eye, facing: East"}
+{"file_name": "images/166.png", "text": "9-frame sprite animation of: eye-ball monster, that: rolls, facing: East"}
+{"file_name": "images/167.png", "text": "12-frame sprite animation of: eye-ball monster, that: faints and disappears, facing: East"}
+{"file_name": "images/168.png", "text": "8-frame sprite animation of: brown meteorite, that: explodes into small pieces"}
+{"file_name": "images/169.png", "text": "77-frame sprite animation of: planet earth, that: is rotating"}
+{"file_name": "images/170.png", "text": "60-frame sprite animation of: two yellow fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/171.png", "text": "60-frame sprite animation of: two blue fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/172.png", "text": "60-frame sprite animation of: two green fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/173.png", "text": "60-frame sprite animation of: two pink fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/174.png", "text": "60-frame sprite animation of: two red fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/175.png", "text": "60-frame sprite animation of: two white fireballs with tails, that: intersect with each other to create a ribbon-like pattern"}
+{"file_name": "images/176.png", "text": "6-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: swings his sword to make an attack, facing: East"}
+{"file_name": "images/177.png", "text": "4-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: dashes forward, facing: East"}
+{"file_name": "images/178.png", "text": "9-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: faints and lays on the floor, facing: East"}
+{"file_name": "images/179.png", "text": "4-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: falls down, facing: East"}
+{"file_name": "images/180.png", "text": "11-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: is idle, facing: East"}
+{"file_name": "images/181.png", "text": "4-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: jumps up, facing: East"}
+{"file_name": "images/182.png", "text": "8-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: runs, facing: East"}
+{"file_name": "images/183.png", "text": "4-frame sprite animation of: knight with a sword in helmet and silver armor under red tabard, that: is getting struck, facing: East"}
+{"file_name": "images/184.png", "text": "7-frame sprite animation of: knight with sword in full armor with helmet, that: swings his sword to make an attack, facing: East"}
+{"file_name": "images/185.png", "text": "7-frame sprite animation of: knight with sword in full armor with helmet, that: swings his sword after jump to make an attack, facing: East"}
+{"file_name": "images/186.png", "text": "11-frame sprite animation of: knight with sword in full armor with helmet, that: faints and lays on the floor, facing: East"}
+{"file_name": "images/187.png", "text": "3-frame sprite animation of: knight with sword in full armor with helmet, that: falls down, facing: East"}
+{"file_name": "images/188.png", "text": "11-frame sprite animation of: knight with sword in full armor with helmet, that: is idle, facing: East"}
+{"file_name": "images/189.png", "text": "3-frame sprite animation of: knight with sword in full armor with helmet, that: jumps up, facing: East"}
+{"file_name": "images/190.png", "text": "8-frame sprite animation of: knight with sword in full armor with helmet, that: runs, facing: East"}
+{"file_name": "images/191.png", "text": "4-frame sprite animation of: knight with sword in full armor with helmet, that: is getting struck, facing: East"}
+{"file_name": "images/192.png", "text": "6-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: shots arrow from bow, facing: East"}
+{"file_name": "images/193.png", "text": "10-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: faints and lays on the floor, facing: East"}
+{"file_name": "images/194.png", "text": "2-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: falls down, facing: East"}
+{"file_name": "images/195.png", "text": "10-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: is idle, facing: East"}
+{"file_name": "images/196.png", "text": "2-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: jumps up, facing: East"}
+{"file_name": "images/197.png", "text": "8-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: runs, facing: East"}
+{"file_name": "images/198.png", "text": "3-frame sprite animation of: white haired huntress with a wooden bow in green armor, that: is getting struck, facing: East"}
+{"file_name": "images/199.png", "text": "5-frame sprite animation of: huntress with a spear in green leather armor with hood, that: swings her spear above head to make an attack, facing: East"}
+{"file_name": "images/200.png", "text": "5-frame sprite animation of: huntress with a spear in green leather armor with hood, that: swings her spear from the head to make an attack, facing: East"}
+{"file_name": "images/201.png", "text": "7-frame sprite animation of: huntress with a spear in green leather armor with hood, that: throws her spear, facing: East"}
+{"file_name": "images/202.png", "text": "8-frame sprite animation of: huntress with a spear in green leather armor with hood, that: faints and lays on the floor, facing: East"}
+{"file_name": "images/203.png", "text": "2-frame sprite animation of: huntress with a spear in green leather armor with hood, that: falls down, facing: East"}
+{"file_name": "images/204.png", "text": "8-frame sprite animation of: huntress with a spear in green leather armor with hood, that: is idle, facing: East"}
+{"file_name": "images/205.png", "text": "2-frame sprite animation of: huntress with a spear in green leather armor with hood, that: jumps up, facing: East"}
+{"file_name": "images/206.png", "text": "8-frame sprite animation of: huntress with a spear in green leather armor with hood, that: runs, facing: East"}
+{"file_name": "images/207.png", "text": "3-frame sprite animation of: huntress with a spear in green leather armor with hood, that: is getting struck, facing: East"}
+{"file_name": "images/208.png", "text": "4-frame sprite animation of: spear, that: rotates, facing: East"}
+{"file_name": "images/209.png", "text": "4-frame sprite animation of: a ninja in blue armor and red scarf, that: swing his katana to attack, facing: East"}
+{"file_name": "images/210.png", "text": "4-frame sprite animation of: a ninja in blue armor and red scarf, that: perform an overhead katana attack, facing: East"}
+{"file_name": "images/211.png", "text": "7-frame sprite animation of: a ninja in blue armor and red scarf, that: is falling to his knees then faints on the floor, facing: East"}
+{"file_name": "images/212.png", "text": "2-frame sprite animation of: a ninja in blue armor and red scarf, that: falls down, facing: East"}
+{"file_name": "images/213.png", "text": "4-frame sprite animation of: a ninja in blue armor and red scarf, that: is idle, facing: East"}
+{"file_name": "images/214.png", "text": "2-frame sprite animation of: a ninja in blue armor and red scarf, that: jumps up, facing: East"}
+{"file_name": "images/215.png", "text": "8-frame sprite animation of: a ninja in blue armor and red scarf, that: runs, facing: East"}
+{"file_name": "images/216.png", "text": "3-frame sprite animation of: a ninja in blue armor and red scarf, that: is getting struck, facing: East"}
+{"file_name": "images/217.png", "text": "7-frame sprite animation of: a native american warrior with machete in naked torso, that: perform an overhead machete attack, facing: East"}
+{"file_name": "images/218.png", "text": "6-frame sprite animation of: a native american warrior with machete in naked torso, that: swings machete from below to make an attack, facing: East"}
+{"file_name": "images/219.png", "text": "9-frame sprite animation of: a native american warrior with machete in naked torso, that: swings machete to make an attack, facing: East"}
+{"file_name": "images/220.png", "text": "11-frame sprite animation of: a native american warrior with machete in naked torso, that: is falling to his knees then faints on the floor, facing: East"}
+{"file_name": "images/221.png", "text": "3-frame sprite animation of: a native american warrior with machete in naked torso, that: falls down, facing: East"}
+{"file_name": "images/222.png", "text": "3-frame sprite animation of: a native american warrior with machete in naked torso, that: jumps up, facing: East"}
+{"file_name": "images/223.png", "text": "10-frame sprite animation of: a native american warrior with machete in naked torso, that: is idle, facing: East"}
+{"file_name": "images/224.png", "text": "8-frame sprite animation of: a native american warrior with machete in naked torso, that: runs, facing: East"}
+{"file_name": "images/225.png", "text": "3-frame sprite animation of: a native american warrior with machete in naked torso, that: is getting struck, facing: East"}
+{"file_name": "images/226.png", "text": "6-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: swing his sword to attack, facing: East"}
+{"file_name": "images/227.png", "text": "6-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: attack with his sword, facing: East"}
+{"file_name": "images/228.png", "text": "6-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: is falling to his knees, facing: East"}
+{"file_name": "images/229.png", "text": "2-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: falls down, facing: East"}
+{"file_name": "images/230.png", "text": "8-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: is idle, facing: East"}
+{"file_name": "images/231.png", "text": "2-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: jumps up, facing: East"}
+{"file_name": "images/232.png", "text": "8-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: runs, facing: East"}
+{"file_name": "images/233.png", "text": "4-frame sprite animation of: martial hero samurai with the katana in big traditional hat and red scarf, that: is getting struck, facing: East"}
+{"file_name": "images/234.png", "text": "4-frame sprite animation of: a king in crown with a sword and blue cape, that: perform an sword attack, facing: East"}
+{"file_name": "images/235.png", "text": "4-frame sprite animation of: a king in crown with a sword and blue cape, that: swings his sword to make an attack, facing: East"}
+{"file_name": "images/236.png", "text": "4-frame sprite animation of: a king in crown with a sword and blue cape, that: perform an overhead sword attack, facing: East"}
+{"file_name": "images/237.png", "text": "6-frame sprite animation of: a king in crown with a sword and blue cape, that: faints on the floor, facing: East"}
+{"file_name": "images/238.png", "text": "2-frame sprite animation of: a king in crown with a sword and blue cape, that: falls down, facing: East"}
+{"file_name": "images/239.png", "text": "8-frame sprite animation of: a king in crown with a sword and blue cape, that: is idle, facing: East"}
+{"file_name": "images/240.png", "text": "2-frame sprite animation of: a king in crown with a sword and blue cape, that: jumps up, facing: East"}
+{"file_name": "images/241.png", "text": "8-frame sprite animation of: a king in crown with a sword and blue cape, that: runs, facing: East"}
+{"file_name": "images/242.png", "text": "4-frame sprite animation of: a king in crown with a sword and blue cape, that: is getting struck, facing: East"}
+{"file_name": "images/243.png", "text": "4-frame sprite animation of: a medieval peasant in red armor, that: perform an sword attack, facing: East"}
+{"file_name": "images/244.png", "text": "4-frame sprite animation of: a medieval peasant in red armor, that: perform an overhead sword attack, facing: East"}
+{"file_name": "images/245.png", "text": "4-frame sprite animation of: a medieval peasant in red armor, that: perform an overhead pike attack, facing: East"}
+{"file_name": "images/246.png", "text": "4-frame sprite animation of: a medieval peasant in red armor, that: perform an overhead mace attack, facing: East"}
+{"file_name": "images/247.png", "text": "6-frame sprite animation of: a medieval peasant in red armor, that: faints on the floor, facing: East"}
+{"file_name": "images/248.png", "text": "2-frame sprite animation of: a medieval peasant in red armor, that: falls down, facing: East"}
+{"file_name": "images/249.png", "text": "8-frame sprite animation of: a medieval peasant in red armor, that: is idle, facing: East"}
+{"file_name": "images/250.png", "text": "2-frame sprite animation of: a medieval peasant in red armor, that: jumps up, facing: East"}
+{"file_name": "images/251.png", "text": "8-frame sprite animation of: a medieval peasant in red armor, that: runs, facing: East"}
+{"file_name": "images/252.png", "text": "4-frame sprite animation of: a medieval peasant in red armor, that: is getting struck, facing: East"}
+{"file_name": "images/253.png", "text": "4-frame sprite animation of: a medieval warrior in blue armor, that: swing sword to make an attack, facing: East"}
+{"file_name": "images/254.png", "text": "4-frame sprite animation of: a medieval warrior in blue armor, that: attacks with his sword , facing: East"}
+{"file_name": "images/255.png", "text": "4-frame sprite animation of: a medieval warrior in blue armor, that: perform an overhead pike attack, facing: East"}
+{"file_name": "images/256.png", "text": "9-frame sprite animation of: a medieval warrior in blue armor, that: faints on the floor, facing: East"}
+{"file_name": "images/257.png", "text": "2-frame sprite animation of: a medieval warrior in blue armor, that: falls down, facing: East"}
+{"file_name": "images/258.png", "text": "10-frame sprite animation of: a medieval warrior in blue armor, that: is idle, facing: East"}
+{"file_name": "images/259.png", "text": "2-frame sprite animation of: a medieval warrior in blue armor, that: jumps up, facing: East"}
+{"file_name": "images/260.png", "text": "6-frame sprite animation of: a medieval warrior in blue armor, that: runs, facing: East"}
+{"file_name": "images/261.png", "text": "3-frame sprite animation of: a medieval warrior in blue armor, that: is getting struck, facing: East"}
+{"file_name": "images/262.png", "text": "5-frame sprite animation of: a black horse with brown armor, that: is idle, facing: East"}
+{"file_name": "images/263.png", "text": "6-frame sprite animation of: a black horse with brown armor, that: stays still, facing: East"}
+{"file_name": "images/264.png", "text": "6-frame sprite animation of: a black horse with brown armor, that: waits, facing: East"}
+{"file_name": "images/265.png", "text": "10-frame sprite animation of: a black horse with brown armor, that: is rearing, facing: East"}
+{"file_name": "images/266.png", "text": "6-frame sprite animation of: a black horse with brown armor, that: runs, facing: East"}
+{"file_name": "images/267.png", "text": "6-frame sprite animation of: a black horse with brown armor, that: stops, facing: East"}
+{"file_name": "images/268.png", "text": "5-frame sprite animation of: horse rider, that: is idle, facing: East"}
+{"file_name": "images/269.png", "text": "6-frame sprite animation of: horse rider, that: mounts off, facing: East"}
+{"file_name": "images/270.png", "text": "5-frame sprite animation of: horse leash, that: is idle, facing: East"}
+{"file_name": "images/271.png", "text": "6-frame sprite animation of: horse rider, that: mounts on, facing: East"}
+{"file_name": "images/272.png", "text": "10-frame sprite animation of: horse rider, that: holds on, facing: East"}
+{"file_name": "images/273.png", "text": "6-frame sprite animation of: a rider on black horse with brown armor, that: Mounts on horse, facing: East"}
+{"file_name": "images/274.png", "text": "5-frame sprite animation of: a rider on black horse with brown armor, that: is idle, facing: East"}
+{"file_name": "images/275.png", "text": "6-frame sprite animation of: a rider on black horse with brown armor, that: runs, facing: East"}
+{"file_name": "images/276.png", "text": "6-frame sprite animation of: a rider on black horse with brown armor, that: stops, facing: East"}
+{"file_name": "images/277.png", "text": "10-frame sprite animation of: a rider on black horse with brown armor, that: is rearing, facing: East"}
+{"file_name": "images/278.png", "text": "6-frame sprite animation of: a rider on black horse with brown armor, that: mounts off, facing: East"}
+{"file_name": "images/279.png", "text": "11-frame sprite animation of: fireball, that: explodes"}
+{"file_name": "images/280.png", "text": "5-frame sprite animation of: pink ball, that: explodes"}
+{"file_name": "images/281.png", "text": "5-frame sprite animation of: red haired tiny elf, that: swings pink dagger in air, facing: East"}
+{"file_name": "images/282.png", "text": "27-frame sprite animation of: red haired tiny elf, that: makes multiple special attacks with pink dagger, facing: East"}
+{"file_name": "images/283.png", "text": "5-frame sprite animation of: red haired tiny elf, that: faints, facing: East"}
+{"file_name": "images/284.png", "text": "3-frame sprite animation of: red haired tiny elf, that: is getting struck, facing: East"}
+{"file_name": "images/285.png", "text": "9-frame sprite animation of: red haired tiny elf with pink dagger, that: is idle, facing: East"}
+{"file_name": "images/286.png", "text": "6-frame sprite animation of: red haired tiny elf with pink dagger, that: jumps, facing: East"}
+{"file_name": "images/287.png", "text": "8-frame sprite animation of: red haired tiny elf with pink dagger, that: runs, facing: East"}
+{"file_name": "images/288.png", "text": "5-frame sprite animation of: red haired tiny elf with pink dagger, that: slides, facing: East"}
+{"file_name": "images/289.png", "text": "5-frame sprite animation of: red haired tiny elf, that: throws a pink dagger, facing: East"}
+{"file_name": "images/290.png", "text": "5-frame sprite animation of: red haired tiny elf, that: holds on a ledge, facing: East"}
+{"file_name": "images/291.png", "text": "8-frame sprite animation of: plant monster with big teeth, that: is idle, facing: South"}
+{"file_name": "images/292.png", "text": "3-frame sprite animation of: plant monster with big teeth, that: is getting struck, facing: South"}
+{"file_name": "images/293.png", "text": "8-frame sprite animation of: plant monster with big teeth, that: bites from right side, facing: South"}
+{"file_name": "images/294.png", "text": "8-frame sprite animation of: plant monster with big teeth, that: bites from left side, facing: South"}
+{"file_name": "images/295.png", "text": "29-frame sprite animation of: masked warrior aka Spirit Boxer in winged helmet and gray cape, that: makes various attacks, facing: East"}
+{"file_name": "images/296.png", "text": "12-frame sprite animation of: masked warrior aka Spirit Boxer in winged helmet and gray cape, that: is getting struct and disintegrates, facing: East"}
+{"file_name": "images/297.png", "text": "4-frame sprite animation of: masked warrior aka Spirit Boxer in winged helmet and gray cape, that: is idle, facing: East"}
+{"file_name": "images/298.png", "text": "6-frame sprite animation of: masked warrior aka Spirit Boxer in winged helmet and gray cape, that: runs, facing: East"}
+{"file_name": "images/299.png", "text": "6-frame sprite animation of: Monster made of trash and dirt, that: jumps, facing: West"}
+{"file_name": "images/300.png", "text": "6-frame sprite animation of: Monster made of trash and dirt, that: is idle in form trash pile, facing: West"}
+{"file_name": "images/301.png", "text": "11-frame sprite animation of: Monster made of trash and dirt, that: is idle in form trash pile, facing: West"}
+{"file_name": "images/302.png", "text": "10-frame sprite animation of: Monster made of trash and dirt, that: dashes, facing: West"}
+{"file_name": "images/303.png", "text": "13-frame sprite animation of: black ghost looking like death with a scythe, that: swings a scythe to perform an attack, facing: East"}
+{"file_name": "images/304.png", "text": "18-frame sprite animation of: black ghost looking like death with a scythe, that: destroys his weapon and transforms into ball, facing: East"}
+{"file_name": "images/305.png", "text": "4-frame sprite animation of: black ghost looking like death with a scythe, that: is idle, facing: East"}
+{"file_name": "images/306.png", "text": "8-frame sprite animation of: black ghost looking like death with a scythe, that: waits, facing: East"}
+{"file_name": "images/307.png", "text": "12-frame sprite animation of: black ghost looking like death with a scythe, that: transforms his body to look like a music wave, facing: East"}
+{"file_name": "images/308.png", "text": "5-frame sprite animation of: black ghost looking like death with a scythe, that: swings his scythe, facing: East"}
+{"file_name": "images/309.png", "text": "6-frame sprite animation of: small black ghost, that: appears, facing: East"}
+{"file_name": "images/310.png", "text": "5-frame sprite animation of: small black ghost, that: disappears, facing: East"}
+{"file_name": "images/311.png", "text": "4-frame sprite animation of: small black ghost, that: is idle, facing: East"}
+{"file_name": "images/312.png", "text": "8-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: cast a spell that creates magic orb, facing: East"}
+{"file_name": "images/313.png", "text": "8-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: makes arcane spell from his staff, facing: East"}
+{"file_name": "images/314.png", "text": "7-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: falls on knees and his staff breaks, facing: East"}
+{"file_name": "images/315.png", "text": "2-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: falls down, facing: East"}
+{"file_name": "images/316.png", "text": "6-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: is idle, facing: East"}
+{"file_name": "images/317.png", "text": "2-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: jumps up, facing: East"}
+{"file_name": "images/318.png", "text": "8-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: runs, facing: East"}
+{"file_name": "images/319.png", "text": "4-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: is getting struck, facing: East"}
+{"file_name": "images/320.png", "text": "6-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is idle"}
+{"file_name": "images/321.png", "text": "12-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is walking"}
+{"file_name": "images/322.png", "text": "15-frame sprite animation of: a horned fire demon with large bloody cleaver, that: swings his cleaver to attack"}
+{"file_name": "images/323.png", "text": "5-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is taking damage after hit"}
+{"file_name": "images/324.png", "text": "22-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is disintegrating to ash in flames"}
+{"file_name": "images/325.png", "text": "25-frame sprite animation of: badger, that: digs a hole and burrows himself into ground tunnel, facing: North-East"}
+{"file_name": "images/326.png", "text": "22-frame sprite animation of: badger, that: is idle, facing: North-East"}
+{"file_name": "images/327.png", "text": "5-frame sprite animation of: pile of dirt, that: is moving, facing: North-East"}
+{"file_name": "images/328.png", "text": "13-frame sprite animation of: badger, that: unborrows himself out the underground tunnel, facing: North-East"}
+{"file_name": "images/329.png", "text": "9-frame sprite animation of: badger, that: is walking, facing: North-East"}
+{"file_name": "images/330.png", "text": "25-frame sprite animation of: badger, that: digs a hole and burrows himself into ground tunnel, facing: North-West"}
+{"file_name": "images/331.png", "text": "22-frame sprite animation of: badger, that: is idle, facing: North-West"}
+{"file_name": "images/332.png", "text": "5-frame sprite animation of: pile of dirt, that: is moving, facing: North-West"}
+{"file_name": "images/333.png", "text": "13-frame sprite animation of: badger, that: unburrows himself out the underground tunnel, facing: North-West"}
+{"file_name": "images/334.png", "text": "9-frame sprite animation of: badger, that: is walking, facing: North-West"}
+{"file_name": "images/335.png", "text": "25-frame sprite animation of: badger, that: digs a hole and burrows himself into ground tunnel, facing: South-East"}
+{"file_name": "images/336.png", "text": "22-frame sprite animation of: badger, that: is idle, facing: South-East"}
+{"file_name": "images/337.png", "text": "5-frame sprite animation of: pile of dirt, that: is moving, facing: South-East"}
+{"file_name": "images/338.png", "text": "13-frame sprite animation of: badger, that: unburrows himself out the underground tunnel, facing: South-East"}
+{"file_name": "images/339.png", "text": "9-frame sprite animation of: badger, that: is walking, facing: South-East"}
+{"file_name": "images/340.png", "text": "25-frame sprite animation of: badger, that: digs a hole and burrows himself into ground tunnel, facing: South-West"}
+{"file_name": "images/341.png", "text": "22-frame sprite animation of: badger, that: is idle, facing: South-West"}
+{"file_name": "images/342.png", "text": "5-frame sprite animation of: pile of dirt, that: is moving, facing: South-West"}
+{"file_name": "images/343.png", "text": "13-frame sprite animation of: badger, that: unburrows himself out the underground tunnel, facing: South-West"}
+{"file_name": "images/344.png", "text": "9-frame sprite animation of: badger, that: is walking, facing: South-West"}
+{"file_name": "images/345.png", "text": "7-frame sprite animation of: a boar, that: is idle, facing: North-East"}
+{"file_name": "images/346.png", "text": "4-frame sprite animation of: a boar, that: is running, facing: North-East"}
+{"file_name": "images/347.png", "text": "7-frame sprite animation of: a boar, that: is idle, facing: North-West"}
+{"file_name": "images/348.png", "text": "4-frame sprite animation of: a boar, that: is running, facing: North-West"}
+{"file_name": "images/349.png", "text": "7-frame sprite animation of: a boar, that: is idle, facing: South-East"}
+{"file_name": "images/350.png", "text": "4-frame sprite animation of: a boar, that: is running, facing: South-East"}
+{"file_name": "images/351.png", "text": "7-frame sprite animation of: a boar, that: is idle, facing: South-West"}
+{"file_name": "images/352.png", "text": "4-frame sprite animation of: a boar, that: is running, facing: South-West"}
+{"file_name": "images/353.png", "text": "24-frame sprite animation of: a stag, that: is idle, facing: North-East"}
+{"file_name": "images/354.png", "text": "10-frame sprite animation of: a stag, that: runs, facing: North-East"}
+{"file_name": "images/355.png", "text": "11-frame sprite animation of: a stag, that: walks, facing: North-East"}
+{"file_name": "images/356.png", "text": "24-frame sprite animation of: a stag, that: is idle, facing: North-West"}
+{"file_name": "images/357.png", "text": "10-frame sprite animation of: a stag, that: runs, facing: North-West"}
+{"file_name": "images/358.png", "text": "11-frame sprite animation of: a stag, that: walks, facing: North-West"}
+{"file_name": "images/359.png", "text": "24-frame sprite animation of: a stag, that: is idle, facing: South-East"}
+{"file_name": "images/360.png", "text": "10-frame sprite animation of: a stag, that: runs, facing: South-East"}
+{"file_name": "images/361.png", "text": "11-frame sprite animation of: a stag, that: walks, facing: South-East"}
+{"file_name": "images/362.png", "text": "24-frame sprite animation of: a stag, that: is idle, facing: South-West"}
+{"file_name": "images/363.png", "text": "10-frame sprite animation of: a stag, that: runs, facing: South-West"}
+{"file_name": "images/364.png", "text": "11-frame sprite animation of: a stag, that: walks, facing: South-West"}
+{"file_name": "images/365.png", "text": "15-frame sprite animation of: wolf, that: is biting, facing: South-West"}
+{"file_name": "images/366.png", "text": "15-frame sprite animation of: wolf, that: is biting, facing: South-East"}
+{"file_name": "images/367.png", "text": "15-frame sprite animation of: wolf, that: is biting, facing: North-West"}
+{"file_name": "images/368.png", "text": "15-frame sprite animation of: wolf, that: is biting, facing: North-East"}
+{"file_name": "images/369.png", "text": "12-frame sprite animation of: wolf, that: is getting struck and dies, facing: South-West"}
+{"file_name": "images/370.png", "text": "12-frame sprite animation of: wolf, that: is getting struck and dies, facing: South-East"}
+{"file_name": "images/371.png", "text": "12-frame sprite animation of: wolf, that: is getting struck and dies, facing: North-West"}
+{"file_name": "images/372.png", "text": "12-frame sprite animation of: wolf, that: is getting struck and dies, facing: North-East"}
+{"file_name": "images/373.png", "text": "9-frame sprite animation of: wolf, that: is howling, facing: South-West"}
+{"file_name": "images/374.png", "text": "9-frame sprite animation of: wolf, that: is howling, facing: South-East"}
+{"file_name": "images/375.png", "text": "9-frame sprite animation of: wolf, that: is howling, facing: North-West"}
+{"file_name": "images/376.png", "text": "9-frame sprite animation of: wolf, that: is howling, facing: North-East"}
+{"file_name": "images/377.png", "text": "4-frame sprite animation of: wolf, that: is idle, facing: South-West"}
+{"file_name": "images/378.png", "text": "4-frame sprite animation of: wolf, that: is idle, facing: South-East"}
+{"file_name": "images/379.png", "text": "4-frame sprite animation of: wolf, that: is idle, facing: North-West"}
+{"file_name": "images/380.png", "text": "4-frame sprite animation of: wolf, that: is idle, facing: North-East"}
+{"file_name": "images/381.png", "text": "8-frame sprite animation of: wolf, that: is running, facing: South-West"}
+{"file_name": "images/382.png", "text": "8-frame sprite animation of: wolf, that: is running, facing: South-East"}
+{"file_name": "images/383.png", "text": "8-frame sprite animation of: wolf, that: is running, facing: North-West"}
+{"file_name": "images/384.png", "text": "8-frame sprite animation of: wolf, that: is running, facing: North-East"}
+{"file_name": "images/385.png", "text": "5-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: swings his both gauntlets over head to make an attack, facing: East"}
+{"file_name": "images/386.png", "text": "6-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: falls on the ground and dies, facing: East"}
+{"file_name": "images/387.png", "text": "5-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: is idle, facing: East"}
+{"file_name": "images/388.png", "text": "4-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: is getting struck, facing: East"}
+{"file_name": "images/389.png", "text": "6-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: is walking, facing: East"}
+{"file_name": "images/390.png", "text": "4-frame sprite animation of: tiny baby blue dino with big head, that: is idle, facing: East"}
+{"file_name": "images/391.png", "text": "10-frame sprite animation of: tiny baby blue dino with big head, that: is walking, facing: East"}
+{"file_name": "images/392.png", "text": "3-frame sprite animation of: tiny baby blue dino with big head, that: is getting struck, facing: East"}
+{"file_name": "images/393.png", "text": "7-frame sprite animation of: tiny baby blue dino with big head, that: is running, facing: East"}
+{"file_name": "images/394.png", "text": "4-frame sprite animation of: tiny baby red dino with big head, that: is idle, facing: East"}
+{"file_name": "images/395.png", "text": "10-frame sprite animation of: tiny baby red dino with big head, that: is walking, facing: East"}
+{"file_name": "images/396.png", "text": "3-frame sprite animation of: tiny baby red dino with big head, that: is getting struck, facing: East"}
+{"file_name": "images/397.png", "text": "7-frame sprite animation of: tiny baby red dino with big head, that: is running, facing: East"}
+{"file_name": "images/398.png", "text": "4-frame sprite animation of: tiny baby yellow dino with big head, that: is idle, facing: East"}
+{"file_name": "images/399.png", "text": "10-frame sprite animation of: tiny baby yellow dino with big head, that: is walking, facing: East"}
+{"file_name": "images/400.png", "text": "3-frame sprite animation of: tiny baby yellow dino with big head, that: is getting struck, facing: East"}
+{"file_name": "images/401.png", "text": "7-frame sprite animation of: tiny baby yellow dino with big head, that: is running, facing: East"}
+{"file_name": "images/402.png", "text": "4-frame sprite animation of: tiny baby green dino with big head, that: is idle, facing: East"}
+{"file_name": "images/403.png", "text": "10-frame sprite animation of: tiny baby green dino with big head, that: is walking, facing: East"}
+{"file_name": "images/404.png", "text": "3-frame sprite animation of: tiny baby green dino with big head, that: is getting struck, facing: East"}
+{"file_name": "images/405.png", "text": "7-frame sprite animation of: tiny baby green dino with big head, that: is running, facing: East"}
+{"file_name": "images/406.png", "text": "8-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is idle, facing: East"}
+{"file_name": "images/407.png", "text": "8-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: runs, facing: East"}
+{"file_name": "images/408.png", "text": "6-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: rolls, facing: East"}
+{"file_name": "images/409.png", "text": "3-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: jumps up, facing: East"}
+{"file_name": "images/410.png", "text": "3-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: falls down, facing: East"}
+{"file_name": "images/411.png", "text": "8-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: defends himself by crossing his swords, facing: East"}
+{"file_name": "images/412.png", "text": "8-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is swinging his sword to attack, facing: East"}
+{"file_name": "images/413.png", "text": "18-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is fast swinging his swords in combo attack, facing: East"}
+{"file_name": "images/414.png", "text": "26-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is fast swinging his swords then makes whirlwind, facing: East"}
+{"file_name": "images/415.png", "text": "26-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: teleports to different locations to deal damage with his swords in large area, facing: East"}
+{"file_name": "images/416.png", "text": "6-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: getting struck, facing: East"}
+{"file_name": "images/417.png", "text": "19-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: disappears in whirlwind, facing: East"}
+{"file_name": "images/418.png", "text": "7-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is thrusting his swords in air, facing: East"}
+{"file_name": "images/419.png", "text": "1-frame sprite animation of: a face of wind hashashin in white scarf with a sword on his back, that: is idle, facing: South"}
+{"file_name": "images/420.png", "text": "9-frame sprite animation of: a gray devil with three horns on head, that: walks, facing: North"}
+{"file_name": "images/421.png", "text": "9-frame sprite animation of: a gray devil with three horns on head, that: walks, facing: West"}
+{"file_name": "images/422.png", "text": "9-frame sprite animation of: a gray devil with three horns on head, that: walks, facing: South"}
+{"file_name": "images/423.png", "text": "9-frame sprite animation of: a gray devil with three horns on head, that: walks, facing: East"}
+{"file_name": "images/424.png", "text": "6-frame sprite animation of: tooth walker monster without hands with big tongue, that: walks"}
+{"file_name": "images/425.png", "text": "4-frame sprite animation of: tooth walker monster without hands with big tongue, that: is idle"}
+{"file_name": "images/426.png", "text": "4-frame sprite animation of: tooth walker monster without hands with big tongue, that: is getting struct"}
+{"file_name": "images/427.png", "text": "7-frame sprite animation of: tooth walker monster without hands with big tongue, that: explodes with blood"}
+{"file_name": "images/428.png", "text": "6-frame sprite animation of: tooth walker monster without hands with big tongue, that: bites with splashing effect"}
+{"file_name": "images/429.png", "text": "8-frame sprite animation of: shuriken, that: rolls"}
+{"file_name": "images/430.png", "text": "8-frame sprite animation of: brick, that: is shattered"}
+{"file_name": "images/431.png", "text": "8-frame sprite animation of: rock, that: is shattered and falls down"}
+{"file_name": "images/432.png", "text": "13-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/433.png", "text": "13-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/434.png", "text": "13-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/435.png", "text": "13-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/436.png", "text": "9-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: walks, facing: North"}
+{"file_name": "images/437.png", "text": "9-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: walks, facing: West"}
+{"file_name": "images/438.png", "text": "9-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: walks, facing: South"}
+{"file_name": "images/439.png", "text": "9-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: walks, facing: East"}
+{"file_name": "images/440.png", "text": "13-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/441.png", "text": "13-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/442.png", "text": "13-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/443.png", "text": "13-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/444.png", "text": "9-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: walks, facing: North"}
+{"file_name": "images/445.png", "text": "9-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: walks, facing: West"}
+{"file_name": "images/446.png", "text": "9-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: walks, facing: South"}
+{"file_name": "images/447.png", "text": "9-frame sprite animation of: a man with purple man bun hair in red shorts with half-shaven gray hair, that: walks, facing: East"}
+{"file_name": "images/448.png", "text": "13-frame sprite animation of: a man with short gray hair in white pants without hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/449.png", "text": "13-frame sprite animation of: a man with short gray hair in white pants without hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/450.png", "text": "13-frame sprite animation of: a man with short gray hair in white pants without hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/451.png", "text": "13-frame sprite animation of: a man with short gray hair in white pants without hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/452.png", "text": "9-frame sprite animation of: a man with short gray hair in white pants without hair, that: walks, facing: North"}
+{"file_name": "images/453.png", "text": "9-frame sprite animation of: a man with short gray hair in white pants without hair, that: walks, facing: West"}
+{"file_name": "images/454.png", "text": "9-frame sprite animation of: a man with short gray hair in white pants without hair, that: walks, facing: South"}
+{"file_name": "images/455.png", "text": "9-frame sprite animation of: a man with short gray hair in white pants without hair, that: walks, facing: East"}
+{"file_name": "images/456.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/457.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/458.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/459.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/460.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: walks, facing: North"}
+{"file_name": "images/461.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: walks, facing: West"}
+{"file_name": "images/462.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: walks, facing: South"}
+{"file_name": "images/463.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with curly pinkish-purple hair in red shorts with short green hair, that: walks, facing: East"}
+{"file_name": "images/464.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/465.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/466.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/467.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/468.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: walks, facing: North"}
+{"file_name": "images/469.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: walks, facing: West"}
+{"file_name": "images/470.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: walks, facing: South"}
+{"file_name": "images/471.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with half-shaven gray hair in white pants with purple man bun hair, that: walks, facing: East"}
+{"file_name": "images/472.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/473.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/474.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/475.png", "text": "13-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/476.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: walks, facing: North"}
+{"file_name": "images/477.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: walks, facing: West"}
+{"file_name": "images/478.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: walks, facing: South"}
+{"file_name": "images/479.png", "text": "9-frame sprite animation of: a man with skin of yellowish-orange color with short red hair in green shorts with short yellow hair, that: walks, facing: East"}
+{"file_name": "images/480.png", "text": "13-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/481.png", "text": "13-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/482.png", "text": "13-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/483.png", "text": "13-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/484.png", "text": "9-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: walks, facing: North"}
+{"file_name": "images/485.png", "text": "9-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: walks, facing: West"}
+{"file_name": "images/486.png", "text": "9-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: walks, facing: South"}
+{"file_name": "images/487.png", "text": "9-frame sprite animation of: a man with skin of teal-blue color with curly orange hair in white pants with short gray hair, that: walks, facing: East"}
+{"file_name": "images/488.png", "text": "13-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/489.png", "text": "13-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/490.png", "text": "13-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/491.png", "text": "13-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/492.png", "text": "9-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: walks, facing: North"}
+{"file_name": "images/493.png", "text": "9-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: walks, facing: West"}
+{"file_name": "images/494.png", "text": "9-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: walks, facing: South"}
+{"file_name": "images/495.png", "text": "9-frame sprite animation of: a man with pale white skin without hair in white shorts with short pinkish-red hair, that: walks, facing: East"}
+{"file_name": "images/496.png", "text": "13-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/497.png", "text": "13-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/498.png", "text": "13-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/499.png", "text": "13-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/500.png", "text": "9-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: walks, facing: North"}
+{"file_name": "images/501.png", "text": "9-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: walks, facing: West"}
+{"file_name": "images/502.png", "text": "9-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: walks, facing: South"}
+{"file_name": "images/503.png", "text": "9-frame sprite animation of: a man with pale white skin with short green hair in leather sash with half-shaven gray hair, that: walks, facing: East"}
+{"file_name": "images/504.png", "text": "13-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/505.png", "text": "13-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/506.png", "text": "13-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/507.png", "text": "13-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/508.png", "text": "9-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: walks, facing: North"}
+{"file_name": "images/509.png", "text": "9-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: walks, facing: West"}
+{"file_name": "images/510.png", "text": "9-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: walks, facing: South"}
+{"file_name": "images/511.png", "text": "9-frame sprite animation of: a man with pale white skin with purple man bun hair in green shorts without hair, that: walks, facing: East"}
+{"file_name": "images/512.png", "text": "13-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/513.png", "text": "13-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/514.png", "text": "13-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/515.png", "text": "13-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/516.png", "text": "9-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: walks, facing: North"}
+{"file_name": "images/517.png", "text": "9-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: walks, facing: West"}
+{"file_name": "images/518.png", "text": "9-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: walks, facing: South"}
+{"file_name": "images/519.png", "text": "9-frame sprite animation of: a man with skin of dark-orange color with short gray hair in leather sash with short green hair, that: walks, facing: East"}
+{"file_name": "images/520.png", "text": "13-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/521.png", "text": "13-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/522.png", "text": "13-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/523.png", "text": "13-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/524.png", "text": "9-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: walks, facing: North"}
+{"file_name": "images/525.png", "text": "9-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: walks, facing: West"}
+{"file_name": "images/526.png", "text": "9-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: walks, facing: South"}
+{"file_name": "images/527.png", "text": "9-frame sprite animation of: a man with brown skin with curly pinkish-purple hair in leather pants with purple man bun hair, that: walks, facing: East"}
+{"file_name": "images/528.png", "text": "13-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/529.png", "text": "13-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/530.png", "text": "13-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/531.png", "text": "13-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/532.png", "text": "9-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: walks, facing: North"}
+{"file_name": "images/533.png", "text": "9-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: walks, facing: West"}
+{"file_name": "images/534.png", "text": "9-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: walks, facing: South"}
+{"file_name": "images/535.png", "text": "9-frame sprite animation of: a man with brown skin with half-shaven gray hair in leather sash with short yellow hair, that: walks, facing: East"}
+{"file_name": "images/536.png", "text": "13-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/537.png", "text": "13-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/538.png", "text": "13-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/539.png", "text": "13-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/540.png", "text": "9-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: walks, facing: North"}
+{"file_name": "images/541.png", "text": "9-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: walks, facing: West"}
+{"file_name": "images/542.png", "text": "9-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: walks, facing: South"}
+{"file_name": "images/543.png", "text": "9-frame sprite animation of: a man with brown skin with short red hair in leather pants with short gray hair, that: walks, facing: East"}
+{"file_name": "images/544.png", "text": "13-frame sprite animation of: an orc in white pants, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/545.png", "text": "13-frame sprite animation of: an orc in white pants, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/546.png", "text": "13-frame sprite animation of: an orc in white pants, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/547.png", "text": "13-frame sprite animation of: an orc in white pants, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/548.png", "text": "9-frame sprite animation of: an orc in white pants, that: walks, facing: North"}
+{"file_name": "images/549.png", "text": "9-frame sprite animation of: an orc in white pants, that: walks, facing: West"}
+{"file_name": "images/550.png", "text": "9-frame sprite animation of: an orc in white pants, that: walks, facing: South"}
+{"file_name": "images/551.png", "text": "9-frame sprite animation of: an orc in white pants, that: walks, facing: East"}
+{"file_name": "images/552.png", "text": "13-frame sprite animation of: an orc in red shorts, that: shoots from invisible bow, facing: North"}
+{"file_name": "images/553.png", "text": "13-frame sprite animation of: an orc in red shorts, that: shoots from invisible bow, facing: West"}
+{"file_name": "images/554.png", "text": "13-frame sprite animation of: an orc in red shorts, that: shoots from invisible bow, facing: South"}
+{"file_name": "images/555.png", "text": "13-frame sprite animation of: an orc in red shorts, that: shoots from invisible bow, facing: East"}
+{"file_name": "images/556.png", "text": "9-frame sprite animation of: an orc in red shorts, that: walks, facing: North"}
+{"file_name": "images/557.png", "text": "9-frame sprite animation of: an orc in red shorts, that: walks, facing: West"}
+{"file_name": "images/558.png", "text": "9-frame sprite animation of: an orc in red shorts, that: walks, facing: South"}
+{"file_name": "images/559.png", "text": "9-frame sprite animation of: an orc in red shorts, that: walks, facing: East"}

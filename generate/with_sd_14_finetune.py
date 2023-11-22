@@ -3,10 +3,10 @@ import time
 import jax
 import jax.numpy as jnp
 import numpy as np
-from flax.jax_utils import replicate
-from generate import common
-
 from diffusers import FlaxStableDiffusionPipeline
+from flax.jax_utils import replicate
+
+from generate import common
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):

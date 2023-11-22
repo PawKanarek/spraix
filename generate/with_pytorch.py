@@ -68,4 +68,4 @@ def run(
         denoising_start=refiner_kick_in,
         image=images,
     ).images
-    images[0].save(common.getSavePath())
+    images[0].save(common.getSavePath(sub_dir="sdxl_refiner"))

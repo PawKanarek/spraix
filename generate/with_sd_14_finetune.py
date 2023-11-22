@@ -3,10 +3,10 @@ import time
 import jax
 import jax.numpy as jnp
 import numpy as np
-from diffusers import FlaxStableDiffusionPipeline
 from flax.jax_utils import replicate
-
 from generate import common
+
+from diffusers import FlaxStableDiffusionPipeline
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):
@@ -35,7 +35,7 @@ def generate_jax(
 ):
     prompt_ids, neg_prompt_ids = tokenize_prompt(pipeline, prompt, negative_prompt)
     prompt_ids, neg_prompt_ids, rng = replicate_all(prompt_ids, neg_prompt_ids, seed)
-    
+
     images = pipeline(
         prompt_ids,
         p_params,
@@ -55,10 +55,10 @@ def run():
     print(f"loading sd v1-4 finetuned model...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionPipeline.from_pretrained(
-        "/mnt/disks/persist/repos/diffusers/examples/text_to_image/spraix_sd_1_4_try7_15000",
+        "/mnt/disks/persist/repos/diffusers/examples/text_to_image/spraix_sd_1_4_flax",
         # split_head_dim=True,
         dtype=jnp.bfloat16,
-        safety_checker = None,
+        safety_checker=None,
     )
     # scheduler_state = params.pop("scheduler")
     # params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
@@ -73,15 +73,17 @@ def run():
     generate_jax(pipeline, p_params, "compiling", "compiling")
     print(f"Compiled in time: {time.time() - startup_time}")
 
-    prompts = ["12-frame sprite animation of: cute small dinosaur with backpack, that: is running, facing: East",
-               "4-frame sprite animation of: girl with big sword, that: is idle, facing: West",
-               "8-frame sprite animation of: a horned devil with big lasers, that: is jumping, facing: West",
-               "6-frame sprite animation of: a slime, that: is fainting, facing: East"]
+    prompts = [
+        "12-frame sprite animation of: cute small dinosaur with backpack, that: is running, facing: East",
+        "4-frame sprite animation of: girl with big sword, that: is idle, facing: West",
+        "8-frame sprite animation of: a horned devil with big lasers, that: is jumping, facing: West",
+        "6-frame sprite animation of: a slime, that: is fainting, facing: East",
+    ]
     index = 0
     for i, prompt in enumerate(prompts):
         step_time = time.time()
         images = generate_jax(pipeline, p_params, prompt)
         for i in images:
             index += 1
-            i.save(common.getSavePath(prompt, index, "spraix_sd_1_4_try7_15000"))
+            i.save(common.getSavePath(prompt, index, "spraix_sd_1_4_flax"))
         print(f"Batch execution time: {time.time() - step_time}")

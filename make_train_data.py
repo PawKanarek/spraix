@@ -570,7 +570,7 @@ def generate_dataset():
             assert sprite.license, "missing license info"
             root_dir = path.dirname(file.name)
             global img_index
-            last_index = img_index + len(sprite.seq)
+            last_index = img_index + len(sprite.seq) - 1
 
             credits_content.append(
                 f"Train images {img_link(img_index)} - {img_link(last_index)} thanks to {sprite.url}"

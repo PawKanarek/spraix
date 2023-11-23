@@ -1,10 +1,10 @@
-# pawai
+<div align="center">
+![logo](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg)
+</div>
+
 TPU google research project
 
 Run interference with `text_to_image`
-
-# Training Data
-Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.
 
 # Training Data
 Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.

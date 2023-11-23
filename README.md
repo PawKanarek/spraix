@@ -1,8 +1,4 @@
-<div align="center">
 
-  ![logo](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg)
-
-</div>
 
 TPU google research project
 

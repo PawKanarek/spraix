@@ -1,6 +1,15 @@
+<div align="center">
+  
+![](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg) 
+
+Spraix: making animated sprites with power of [Stable Diffusion](https://stability.ai/stable-diffusion).
+
+Powered by Google TPU Research Cloud. 
+</div>
 
 
-TPU google research project
+
+# Interference
 
 Run interference with `text_to_image`
 

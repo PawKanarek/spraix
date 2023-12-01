@@ -1,0 +1,53 @@
+{
+    "w": 140,
+    "h": 140,
+    "url": "https://luizmelo.itch.io/hero-knight-2",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "knight with a sword in helmet and silver armor under red tabard",
+    "seq": [
+        {
+            "path": "Sprites/Attack.png",
+            "frames": 6,
+            "desc": "swings his sword to make an attack"
+        },
+        {
+            "path": "Sprites/Dash.png",
+            "frames": 4,
+            "desc": "dashes forward"
+        },
+        {
+            "path": "Sprites/Death.png",
+            "frames": 9,
+            "desc": "faints and lays on the floor"
+        },
+        {
+            "path": "Sprites/Fall.png",
+            "frames": 4,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprites/Idle.png",
+            "frames": 11,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprites/Jump.png",
+            "frames": 4,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprites/Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprites/Take Hit.png",
+            "frames": 4,
+            "desc": "is getting struck"
+        }
+    ]
+}

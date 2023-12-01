@@ -1,0 +1,37 @@
+{
+    "w": 64,
+    "h": 64,
+    "url": "https://penusbmic.itch.io/monster-pack-i?download",
+    "license": "credit would be nice",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "W",
+    "character": "Monster made of trash and dirt",
+    "seq": [
+        {
+            "path": "Trash Monster-Sprite V2.png",
+            "frames": 6,
+            "startIndex": 0,
+            "desc": "jumps"
+        },
+        {
+            "path": "Trash Monster-Sprite V2.png",
+            "frames": 6,
+            "startIndex": 6,
+            "desc": "is idle in form trash pile"
+        },
+        {
+            "path": "Trash Monster-Sprite V2.png",
+            "frames": 11,
+            "startIndex": 12,
+            "desc": "is idle in form trash pile"
+        },
+        {
+            "path": "Trash Monster-Sprite V2.png",
+            "frames": 10,
+            "startIndex": 23,
+            "desc": "dashes"
+        }
+    ]
+}

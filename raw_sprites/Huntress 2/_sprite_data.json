@@ -1,0 +1,48 @@
+{
+    "w": 100,
+    "h": 100,
+    "url": "https://luizmelo.itch.io/huntress-2",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "white haired huntress with a wooden bow in green armor",
+    "seq": [
+        {
+            "path": "Sprites/Character/Attack.png",
+            "frames": 6,
+            "desc": "shots arrow from bow"
+        },
+        {
+            "path": "Sprites/Character/Death.png",
+            "frames": 10,
+            "desc": "faints and lays on the floor"
+        },
+        {
+            "path": "Sprites/Character/Fall.png",
+            "frames": 2,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprites/Character/Idle.png",
+            "frames": 10,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprites/Character/Jump.png",
+            "frames": 2,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprites/Character/Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprites/Character/Get Hit.png",
+            "frames": 3,
+            "desc": "is getting struck"
+        }
+    ]
+}

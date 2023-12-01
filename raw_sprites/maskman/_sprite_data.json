@@ -1,0 +1,40 @@
+{
+    "w": 64,
+    "h": 64,
+    "url": "https://opengameart.org/content/lpc-maskman",
+    "license": "CC-BY-SA 3.0, GPL 3.0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "a gray devil with three horns on head",
+    "seq": [
+        {
+            "path": "maskman.png",
+            "frames": 9,
+            "row": 0,
+            "side": "N",
+            "desc": "walks"
+        },
+        {
+            "path": "maskman.png",
+            "frames": 9,
+            "row": 1,
+            "side": "W",
+            "desc": "walks"
+        },
+        {
+            "path": "maskman.png",
+            "frames": 9,
+            "row": 2,
+            "side": "S",
+            "desc": "walks"
+        },
+        {
+            "path": "maskman.png",
+            "frames": 9,
+            "row": 3,
+            "side": "E",
+            "desc": "walks"
+        }
+    ]
+}

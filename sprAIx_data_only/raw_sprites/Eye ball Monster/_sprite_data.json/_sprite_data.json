@@ -1,0 +1,43 @@
+{
+    "w": 128,
+    "h": 48,
+    "url": "https://penusbmic.itch.io/monster-pack-i?download",
+    "license": "credit would be nice",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "character": "eye-ball monster",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "EyeBall Monster-Sheet.png",
+            "frames": 9,
+            "startIndex": 0,
+            "desc": "is idle"
+        },
+        {
+            "path": "EyeBall Monster-Sheet.png",
+            "frames": 4,
+            "startIndex": 9,
+            "desc": "walks"
+        },
+        {
+            "path": "EyeBall Monster-Sheet.png",
+            "frames": 12,
+            "startIndex": 14,
+            "desc": "is making beam from his eye"
+        },
+        {
+            "path": "EyeBall Monster-Sheet.png",
+            "frames": 9,
+            "startIndex": 26,
+            "desc": "rolls"
+        },
+        {
+            "path": "EyeBall Monster-Sheet.png",
+            "frames": 12,
+            "startIndex": 35,
+            "desc": "faints and disappears"
+        }
+    ]
+}

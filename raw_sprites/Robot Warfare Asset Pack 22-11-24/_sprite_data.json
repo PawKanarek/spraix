@@ -1,0 +1,17 @@
+{
+    "w": 32,
+    "h": 32,
+    "url": "https://mattwalkden.itch.io/free-robot-warfare-pack",
+    "license": "CC0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "Effects/big-explosion.png",
+            "frames": 11,
+            "character": "fireball",
+            "desc": "explodes"
+        }
+    ]
+}

@@ -1,0 +1,112 @@
+{
+    "w": 288,
+    "h": 128,
+    "url": "https://chierit.itch.io/elementals-leaf-ranger",
+    "license": "CC-BY 4.0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "character": "a water priestess with crystal long sword in a long blue robe",
+    "seq": [
+        {
+            "path": "png/01_idle/idle_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is idle"
+        },
+        {
+            "path": "png/02_walk/walk_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "walks"
+        },
+        {
+            "path": "png/03_surf/surf_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "surfs on wave"
+        },
+        {
+            "path": "png/04_j_up/j_up_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "jumps up"
+        },
+        {
+            "path": "png/05_j_down/j_down_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "falls down"
+        },
+        {
+            "path": "png/06_tumble/tumble_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "tumbles around"
+        },
+        {
+            "path": "png/07_1_atk/1_atk_{id}.png",
+            "first": 1,
+            "last": 7,
+            "desc": "is thrusting her sword to attack"
+        },
+        {
+            "path": "png/08_2_atk/2_atk_{id}.png",
+            "first": 1,
+            "last": 21,
+            "desc": "is thrusting her sword double to make combo attack"
+        },
+        {
+            "path": "png/09_3_atk/3_atk_{id}.png",
+            "first": 1,
+            "last": 27,
+            "desc": "is thrusting her sword double and shoots a water splash from it"
+        },
+        {
+            "path": "png/10_sp_atk/sp_atk_{id}.png",
+            "first": 1,
+            "last": 32,
+            "desc": "creates water blob that shortly after splashes on ground and creates icy spikes"
+        },
+        {
+            "path": "png/11_heal/heal_{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "heals herself"
+        },
+        {
+            "path": "png/12_defend/defend_{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "defends herself by creating ice wall"
+        },
+        {
+            "path": "png/13_take_hit/take_hit_{id}.png",
+            "first": 1,
+            "last": 7,
+            "desc": "getting struck"
+        },
+        {
+            "path": "png/14_death/death_{id}.png",
+            "first": 1,
+            "last": 16,
+            "desc": "stays still"
+        },
+        {
+            "path": "png/air_atk/air_atk_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is thrusting her sword in air"
+        },
+        {
+            "path": "water_priestess.png",
+            "frames": 1,
+            "w": 64,
+            "h": 64,
+            "side": "S",
+            "character": "a face of water priestess with long, dark-blue hair and a light-blue dress",
+            "desc": "has crown  q"
+        }
+    ]
+}

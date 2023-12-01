@@ -1,0 +1,58 @@
+{
+    "w": 126,
+    "h": 126,
+    "url": "https://luizmelo.itch.io/martial-hero-3",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "a native american warrior with machete in naked torso",
+    "seq": [
+        {
+            "path": "Sprite/Attack1.png",
+            "frames": 7,
+            "desc": "perform an overhead machete attack"
+        },
+        {
+            "path": "Sprite/Attack2.png",
+            "frames": 6,
+            "desc": "swings machete from below to make an attack"
+        },
+        {
+            "path": "Sprite/Attack3.png",
+            "frames": 9,
+            "desc": "swings machete to make an attack"
+        },
+        {
+            "path": "Sprite/Death.png",
+            "frames": 11,
+            "desc": "is falling to his knees then faints on the floor"
+        },
+        {
+            "path": "Sprite/Going Down.png",
+            "frames": 3,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprite/Going Up.png",
+            "frames": 3,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprite/Idle.png",
+            "frames": 10,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprite/Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprite/Take Hit.png",
+            "frames": 3,
+            "desc": "is getting struck"
+        }
+    ]
+}

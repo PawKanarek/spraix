@@ -1,0 +1,569 @@
+{
+    "style": "pixel art style",
+    "url": "https://scrabling.itch.io/pixel-isometric-tiles?download",
+    "license": "CC BY 4.0",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "frames": 25,
+            "w": 42,
+            "h": 32,
+            "side": "NE",
+            "character": "badger",
+            "path": "badger/critter_badger_NE_burrow.png",
+            "desc": "digs a hole and burrows himself into ground tunnel"
+        },
+        {
+            "frames": 22,
+            "w": 42,
+            "h": 32,
+            "side": "NE",
+            "character": "badger",
+            "path": "badger/critter_badger_NE_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "w": 42,
+            "h": 32,
+            "side": "NE",
+            "character": "pile of dirt",
+            "path": "badger/critter_badger_NE_tunnel.png",
+            "desc": "is moving"
+        },
+        {
+            "frames": 13,
+            "w": 42,
+            "h": 32,
+            "side": "NE",
+            "character": "badger",
+            "path": "badger/critter_badger_NE_unburrow.png",
+            "desc": "unborrows himself out the underground tunnel"
+        },
+        {
+            "frames": 9,
+            "w": 42,
+            "h": 32,
+            "side": "NE",
+            "character": "badger",
+            "path": "badger/critter_badger_NE_walk.png",
+            "desc": "is walking"
+        },
+        {
+            "frames": 25,
+            "w": 42,
+            "h": 32,
+            "side": "NW",
+            "character": "badger",
+            "path": "badger/critter_badger_NW_burrow.png",
+            "desc": "digs a hole and burrows himself into ground tunnel"
+        },
+        {
+            "frames": 22,
+            "w": 42,
+            "h": 32,
+            "side": "NW",
+            "character": "badger",
+            "path": "badger/critter_badger_NW_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "w": 42,
+            "h": 32,
+            "side": "NW",
+            "character": "pile of dirt",
+            "path": "badger/critter_badger_NW_tunnel.png",
+            "desc": "is moving"
+        },
+        {
+            "frames": 13,
+            "w": 42,
+            "h": 32,
+            "side": "NW",
+            "character": "badger",
+            "path": "badger/critter_badger_NW_unburrow.png",
+            "desc": "unburrows himself out the underground tunnel"
+        },
+        {
+            "frames": 9,
+            "w": 42,
+            "h": 32,
+            "side": "NW",
+            "character": "badger",
+            "path": "badger/critter_badger_NW_walk.png",
+            "desc": "is walking"
+        },
+        {
+            "frames": 25,
+            "w": 42,
+            "h": 32,
+            "side": "SE",
+            "character": "badger",
+            "path": "badger/critter_badger_SE_burrow.png",
+            "desc": "digs a hole and burrows himself into ground tunnel"
+        },
+        {
+            "frames": 22,
+            "w": 42,
+            "h": 32,
+            "side": "SE",
+            "character": "badger",
+            "path": "badger/critter_badger_SE_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "w": 42,
+            "h": 32,
+            "side": "SE",
+            "character": "pile of dirt",
+            "path": "badger/critter_badger_SE_tunnel.png",
+            "desc": "is moving"
+        },
+        {
+            "frames": 13,
+            "w": 42,
+            "h": 32,
+            "side": "SE",
+            "character": "badger",
+            "path": "badger/critter_badger_SE_unburrow.png",
+            "desc": "unburrows himself out the underground tunnel"
+        },
+        {
+            "frames": 9,
+            "w": 42,
+            "h": 32,
+            "side": "SE",
+            "character": "badger",
+            "path": "badger/critter_badger_SE_walk.png",
+            "desc": "is walking"
+        },
+        {
+            "frames": 25,
+            "w": 42,
+            "h": 32,
+            "side": "SW",
+            "character": "badger",
+            "path": "badger/critter_badger_SW_burrow.png",
+            "desc": "digs a hole and burrows himself into ground tunnel"
+        },
+        {
+            "frames": 22,
+            "w": 42,
+            "h": 32,
+            "side": "SW",
+            "character": "badger",
+            "path": "badger/critter_badger_SW_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "w": 42,
+            "h": 32,
+            "side": "SW",
+            "character": "pile of dirt",
+            "path": "badger/critter_badger_SW_tunnel.png",
+            "desc": "is moving"
+        },
+        {
+            "frames": 13,
+            "w": 42,
+            "h": 32,
+            "side": "SW",
+            "character": "badger",
+            "path": "badger/critter_badger_SW_unburrow.png",
+            "desc": "unburrows himself out the underground tunnel"
+        },
+        {
+            "frames": 9,
+            "w": 42,
+            "h": 32,
+            "side": "SW",
+            "character": "badger",
+            "path": "badger/critter_badger_SW_walk.png",
+            "desc": "is walking"
+        },
+        {
+            "frames": 7,
+            "w": 41,
+            "h": 30,
+            "side": "NE",
+            "character": "a boar",
+            "path": "boar/boar_NE_idle_strip.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 41,
+            "h": 30,
+            "side": "NE",
+            "character": "a boar",
+            "path": "boar/boar_NE_run_strip.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 7,
+            "w": 40,
+            "h": 30,
+            "side": "NW",
+            "character": "a boar",
+            "path": "boar/boar_NW_idle_strip.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 40,
+            "h": 30,
+            "side": "NW",
+            "character": "a boar",
+            "path": "boar/boar_NW_run_strip.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 7,
+            "w": 41,
+            "h": 25,
+            "side": "SE",
+            "character": "a boar",
+            "path": "boar/boar_SE_idle_strip.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 41,
+            "h": 25,
+            "side": "SE",
+            "character": "a boar",
+            "path": "boar/boar_SE_run_strip.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 7,
+            "w": 41,
+            "h": 25,
+            "side": "SW",
+            "character": "a boar",
+            "path": "boar/boar_SW_idle_strip.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 41,
+            "h": 25,
+            "side": "SW",
+            "character": "a boar",
+            "path": "boar/boar_SW_run_strip.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 24,
+            "w": 32,
+            "h": 41,
+            "side": "NE",
+            "character": "a stag",
+            "path": "stag/critter_stag_NE_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 10,
+            "w": 32,
+            "h": 41,
+            "side": "NE",
+            "character": "a stag",
+            "path": "stag/critter_stag_NE_run.png",
+            "desc": "runs"
+        },
+        {
+            "frames": 11,
+            "w": 32,
+            "h": 41,
+            "side": "NE",
+            "character": "a stag",
+            "path": "stag/critter_stag_NE_walk.png",
+            "desc": "walks"
+        },
+        {
+            "frames": 24,
+            "w": 32,
+            "h": 41,
+            "side": "NW",
+            "character": "a stag",
+            "path": "stag/critter_stag_NW_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 10,
+            "w": 32,
+            "h": 41,
+            "side": "NW",
+            "character": "a stag",
+            "path": "stag/critter_stag_NW_run.png",
+            "desc": "runs"
+        },
+        {
+            "frames": 11,
+            "w": 32,
+            "h": 41,
+            "side": "NW",
+            "character": "a stag",
+            "path": "stag/critter_stag_NW_walk.png",
+            "desc": "walks"
+        },
+        {
+            "frames": 24,
+            "w": 32,
+            "h": 41,
+            "side": "SE",
+            "character": "a stag",
+            "path": "stag/critter_stag_SE_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 10,
+            "w": 32,
+            "h": 41,
+            "side": "SE",
+            "character": "a stag",
+            "path": "stag/critter_stag_SE_run.png",
+            "desc": "runs"
+        },
+        {
+            "frames": 11,
+            "w": 32,
+            "h": 41,
+            "side": "SE",
+            "character": "a stag",
+            "path": "stag/critter_stag_SE_walk.png",
+            "desc": "walks"
+        },
+        {
+            "frames": 24,
+            "w": 32,
+            "h": 41,
+            "side": "SW",
+            "character": "a stag",
+            "path": "stag/critter_stag_SW_idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 10,
+            "w": 32,
+            "h": 41,
+            "side": "SW",
+            "character": "a stag",
+            "path": "stag/critter_stag_SW_run.png",
+            "desc": "runs"
+        },
+        {
+            "frames": 11,
+            "w": 32,
+            "h": 41,
+            "side": "SW",
+            "character": "a stag",
+            "path": "stag/critter_stag_SW_walk.png",
+            "desc": "walks"
+        },
+        {
+            "frames": 15,
+            "w": 64,
+            "h": 64,
+            "startIndex": 0,
+            "side": "SW",
+            "character": "wolf",
+            "path": "wolf/wolf-bite.png",
+            "desc": "is biting"
+        },
+        {
+            "frames": 15,
+            "w": 64,
+            "h": 64,
+            "startIndex": 15,
+            "side": "SE",
+            "character": "wolf",
+            "path": "wolf/wolf-bite.png",
+            "desc": "is biting"
+        },
+        {
+            "frames": 15,
+            "w": 64,
+            "h": 64,
+            "startIndex": 30,
+            "side": "NW",
+            "character": "wolf",
+            "path": "wolf/wolf-bite.png",
+            "desc": "is biting"
+        },
+        {
+            "frames": 15,
+            "w": 64,
+            "h": 64,
+            "startIndex": 45,
+            "side": "NE",
+            "character": "wolf",
+            "path": "wolf/wolf-bite.png",
+            "desc": "is biting"
+        },
+        {
+            "frames": 12,
+            "w": 64,
+            "h": 64,
+            "startIndex": 0,
+            "side": "SW",
+            "character": "wolf",
+            "path": "wolf/wolf-death.png",
+            "desc": "is getting struck and dies"
+        },
+        {
+            "frames": 12,
+            "w": 64,
+            "h": 64,
+            "startIndex": 12,
+            "side": "SE",
+            "character": "wolf",
+            "path": "wolf/wolf-death.png",
+            "desc": "is getting struck and dies"
+        },
+        {
+            "frames": 12,
+            "w": 64,
+            "h": 64,
+            "startIndex": 24,
+            "side": "NW",
+            "character": "wolf",
+            "path": "wolf/wolf-death.png",
+            "desc": "is getting struck and dies"
+        },
+        {
+            "frames": 12,
+            "w": 64,
+            "h": 64,
+            "startIndex": 36,
+            "side": "NE",
+            "character": "wolf",
+            "path": "wolf/wolf-death.png",
+            "desc": "is getting struck and dies"
+        },
+        {
+            "frames": 9,
+            "w": 64,
+            "h": 64,
+            "startIndex": 0,
+            "side": "SW",
+            "character": "wolf",
+            "path": "wolf/wolf-howl.png",
+            "desc": "is howling"
+        },
+        {
+            "frames": 9,
+            "w": 64,
+            "h": 64,
+            "startIndex": 9,
+            "side": "SE",
+            "character": "wolf",
+            "path": "wolf/wolf-howl.png",
+            "desc": "is howling"
+        },
+        {
+            "frames": 9,
+            "w": 64,
+            "h": 64,
+            "startIndex": 18,
+            "side": "NW",
+            "character": "wolf",
+            "path": "wolf/wolf-howl.png",
+            "desc": "is howling"
+        },
+        {
+            "frames": 9,
+            "w": 64,
+            "h": 64,
+            "startIndex": 27,
+            "side": "NE",
+            "character": "wolf",
+            "path": "wolf/wolf-howl.png",
+            "desc": "is howling"
+        },
+        {
+            "frames": 4,
+            "w": 64,
+            "h": 64,
+            "startIndex": 0,
+            "side": "SW",
+            "character": "wolf",
+            "path": "wolf/wolf-idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 64,
+            "h": 64,
+            "startIndex": 4,
+            "side": "SE",
+            "character": "wolf",
+            "path": "wolf/wolf-idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 64,
+            "h": 64,
+            "startIndex": 8,
+            "side": "NW",
+            "character": "wolf",
+            "path": "wolf/wolf-idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 4,
+            "w": 64,
+            "h": 64,
+            "startIndex": 12,
+            "side": "NE",
+            "character": "wolf",
+            "path": "wolf/wolf-idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 8,
+            "w": 64,
+            "h": 64,
+            "startIndex": 0,
+            "side": "SW",
+            "character": "wolf",
+            "path": "wolf/wolf-run.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 8,
+            "w": 64,
+            "h": 64,
+            "startIndex": 8,
+            "side": "SE",
+            "character": "wolf",
+            "path": "wolf/wolf-run.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 8,
+            "w": 64,
+            "h": 64,
+            "startIndex": 16,
+            "side": "NW",
+            "character": "wolf",
+            "path": "wolf/wolf-run.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 8,
+            "w": 64,
+            "h": 64,
+            "startIndex": 24,
+            "side": "NE",
+            "character": "wolf",
+            "path": "wolf/wolf-run.png",
+            "desc": "is running"
+        }
+    ]
+}

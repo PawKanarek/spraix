@@ -1,0 +1,56 @@
+{
+    "w": 140,
+    "h": 93,
+    "url": "https://clembod.itch.io/bringer-of-death-free",
+    "license": "You can use this asset for personal and commercial purpose, you can modify this object to your needs. Credit is not required but would be appreciated. You can NOT redistribute or resell it.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "W",
+    "type": "sprite animation",
+    "character": "a cyclop with red eye in pink savage armor with a curved boline",
+    "seq": [
+        {
+            "path": "Individual Sprite/Attack/Bringer-of-Death_Attack_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "swings his weapon to attack"
+        },
+        {
+            "path": "Individual Sprite/Cast/Bringer-of-Death_Cast_{id}.png",
+            "first": 1,
+            "last": 9,
+            "desc": "is casting a portal spell"
+        },
+        {
+            "path": "Individual Sprite/Death/Bringer-of-Death_Death_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "is transforming into fog"
+        },
+        {
+            "path": "Individual Sprite/Hurt/Bringer-of-Death_Hurt_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "is getting struck"
+        },
+        {
+            "path": "Individual Sprite/Idle/Bringer-of-Death_Idle_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is idle"
+        },
+        {
+            "path": "Individual Sprite/Spell/Bringer-of-Death_Spell_{id}.png",
+            "first": 1,
+            "last": 16,
+            "character": "pink portal",
+            "desc": "strikes a lighting in shape of a hand"
+        },
+        {
+            "path": "Individual Sprite/Walk/Bringer-of-Death_Walk_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "walks"
+        }
+    ]
+}

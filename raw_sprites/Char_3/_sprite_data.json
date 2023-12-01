@@ -1,0 +1,194 @@
+{
+    "w": 64,
+    "h": 64,
+    "side": "E",
+    "url": "https://assetbakery.itch.io/2d-fighter-3?download",
+    "license": "This Fighter tileset is a FREE release for anybody to download.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "frames": 6,
+            "startIndex": 0,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is flexing"
+        },
+        {
+            "frames": 2,
+            "startIndex": 6,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is levitating"
+        },
+        {
+            "frames": 3,
+            "startIndex": 8,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 1,
+            "startIndex": 11,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is standing"
+        },
+        {
+            "frames": 4,
+            "startIndex": 12,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is sliding"
+        },
+        {
+            "frames": 2,
+            "startIndex": 16,
+            "path": "Char_3_No_Armor.png",
+            "character": "blue haired muscular fighter",
+            "desc": "is sitting down cross-legged"
+        },
+        {
+            "frames": 3,
+            "startIndex": 18,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is flying horizontally"
+        },
+        {
+            "frames": 6,
+            "startIndex": 29,
+            "character": "bald fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is walking"
+        },
+        {
+            "frames": 8,
+            "startIndex": 36,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is making punch combo attack with both hands"
+        },
+        {
+            "frames": 6,
+            "startIndex": 44,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is making multiple fast kicks in air"
+        },
+        {
+            "frames": 3,
+            "startIndex": 51,
+            "path": "Char_3_No_Armor.png",
+            "character": "blue haired muscular fighter",
+            "desc": "is punching down from the air"
+        },
+        {
+            "frames": 2,
+            "startIndex": 54,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is blocking incoming attack"
+        },
+        {
+            "frames": 3,
+            "startIndex": 57,
+            "path": "Char_3_No_Armor.png",
+            "character": "blue haired muscular fighter",
+            "desc": "is getting struck"
+        },
+        {
+            "frames": 1,
+            "startIndex": 57,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "taking damage"
+        },
+        {
+            "frames": 1,
+            "startIndex": 58,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is getting hit"
+        },
+        {
+            "frames": 1,
+            "startIndex": 59,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is getting hit"
+        },
+        {
+            "frames": 1,
+            "startIndex": 61,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is laying down"
+        },
+        {
+            "frames": 2,
+            "startIndex": 63,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is screaming on his knees"
+        },
+        {
+            "frames": 4,
+            "startIndex": 72,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is punching fast with both hands"
+        },
+        {
+            "frames": 3,
+            "startIndex": 77,
+            "path": "Char_3_No_Armor.png",
+            "character": "blue haired muscular fighter",
+            "desc": "is casting a magic beam from both hands"
+        },
+        {
+            "frames": 4,
+            "startIndex": 81,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "casting a magic beam from right hand"
+        },
+        {
+            "frames": 1,
+            "startIndex": 86,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is screaming with left hand in air"
+        },
+        {
+            "frames": 4,
+            "startIndex": 90,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is holding hands in air"
+        },
+        {
+            "frames": 2,
+            "startIndex": 94,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is getting knock out after hit"
+        },
+        {
+            "frames": 3,
+            "startIndex": 99,
+            "character": "blue haired muscular fighter",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is casting a magic beam from both hands while running"
+        },
+        {
+            "frames": 4,
+            "startIndex": 108,
+            "character": "energy shield",
+            "path": "Char_3_No_Armor.png",
+            "desc": "is idle"
+        }
+    ]
+}

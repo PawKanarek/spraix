@@ -1,0 +1,42 @@
+{
+    "w": 288,
+    "h": 160,
+    "url": "https://chierit.itch.io/boss-demon-slime",
+    "license": "CC-BY 4.0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "a horned fire demon with large bloody cleaver",
+    "seq": [
+        {
+            "path": "individual sprites/01_demon_idle/demon_idle_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "is idle"
+        },
+        {
+            "path": "individual sprites/02_demon_walk/demon_walk_{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "is walking"
+        },
+        {
+            "path": "individual sprites/03_demon_cleave/demon_cleave_{id}.png",
+            "first": 1,
+            "last": 15,
+            "desc": "swings his cleaver to attack"
+        },
+        {
+            "path": "individual sprites/04_demon_take_hit/demon_take_hit_{id}.png",
+            "first": 1,
+            "last": 5,
+            "desc": "is taking damage after hit"
+        },
+        {
+            "path": "individual sprites/05_demon_death/demon_death_{id}.png",
+            "first": 1,
+            "last": 22,
+            "desc": "is disintegrating to ash in flames"
+        }
+    ]
+}

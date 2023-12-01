@@ -1,0 +1,18 @@
+{
+    "w": 100,
+    "h": 140,
+    "side": "S",
+    "url": "https://creativekind.itch.io/gif-bloodmoon-tower-free?download",
+    "license": "1. Whether your project is commercial or non-commercial, feel free to use this asset.2. This asset is customizable, so you can make any necessary modifications.3. It is prohibited to distribute or resell this asset.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "dark tower of red crystal moon",
+    "seq": [
+        {
+            "frames": 11,
+            "path": "RedMoonTower_free_idle_animation.png",
+            "desc": "is idle with moon levitating up and down"
+        }
+    ]
+}

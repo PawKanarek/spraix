@@ -1,0 +1,58 @@
+{
+    "w": 135,
+    "h": 135,
+    "url": "https://luizmelo.itch.io/medieval-warrior-pack-3",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "a medieval warrior in blue armor",
+    "seq": [
+        {
+            "path": "Sprites/Attack1.png",
+            "frames": 4,
+            "desc": "swing sword to make an attack"
+        },
+        {
+            "path": "Sprites/Attack2.png",
+            "frames": 4,
+            "desc": "attacks with his sword "
+        },
+        {
+            "path": "Sprites/Attack3.png",
+            "frames": 4,
+            "desc": "perform an overhead pike attack"
+        },
+        {
+            "path": "Sprites/Death.png",
+            "frames": 9,
+            "desc": "faints on the floor"
+        },
+        {
+            "path": "Sprites/Fall.png",
+            "frames": 2,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprites/Idle.png",
+            "frames": 10,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprites/Jump.png",
+            "frames": 2,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprites/Run.png",
+            "frames": 6,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprites/Get Hit.png",
+            "frames": 3,
+            "desc": "is getting struck"
+        }
+    ]
+}

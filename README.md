@@ -1,10 +1,32 @@
 <div align="center">
-![logo](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg)
+  
+![](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg) 
+
+Spraix: making animated sprites with power of [Stable Diffusion](https://stability.ai/stable-diffusion).
+
+Powered by Google TPU Research Cloud. 
 </div>
 
-TPU google research project
+# Goal 
+To make animated sprites easily with single image of Stable Diffusion.
 
-Run interference with `text_to_image`
+# Done:
+- Gather data
+- Label data
+- Scripts that can transofrm raw data sprites into dataset that Stable Diffusion models can be trained on
+
+# WIP: 
+- training sdxl with flax framework [train_text_to_image_flax_sdxl](https://github.com/PawKanarek/diffusers/blob/ae945411d83d7103fe7edd453d784218a9464b1a/examples/text_to_image/train_text_to_image_flax_sdxl.py)
+
+# TODO: 
+- Fine tune sdxl with my training
+- Fix bugs in trainig data
+- Write the scipt to transform single image into sprite animation
+- Share with world
+
+# Interference
+
+Run interference with `text_to_image.py`
 
 # Training Data
 Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.

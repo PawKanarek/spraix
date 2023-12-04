@@ -29,7 +29,7 @@ To make animated sprites easily with single image of Stable Diffusion.
 Run interference with `text_to_image.py`
 
 # Training Data
-Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.
+Special thanks to the skilled sprite animation creators, contributing to the training dataset for this project.
 
 - Train images [0.png](train_data_1024/images/0.png) - [6.png](train_data_1024/images/6.png) thanks to https://oisougabo.itch.io/gap-i 
 - Train images [7.png](train_data_1024/images/7.png) - [21.png](train_data_1024/images/21.png) thanks to https://szadiart.itch.io/2d-soulslike-character 

@@ -10,14 +10,14 @@ GUIDANCE_SCALE = 5.0
 REFINER_KICK_IN = 0.8
 IMG_NAME = ""  # leave empty to auto generate
 BASE_ID = "/mnt/disks/persist/repos/stable-diffusion-xl-base-1.0"
-OUTPUT_DIR = "/mnt/disks/persist/repos/pawai/output/"
+OUTPUT_DIR = "/mnt/disks/persist/repos/spraix/output/sdxl-base-flax"
 RUN_ID = str(uuid.uuid4())
 
 
-def getSavePath(prompt:str = PROMPT, index: int = 0, sub_dir: str = "") -> str:
+def getSavePath(prompt: str = PROMPT, index: int = 0, sub_dir: str = "") -> str:
     dir = create_ouptut_dirs(sub_dir)
-    
-    name = IMG_NAME or prompt or PROMPT 
+
+    name = IMG_NAME or prompt or PROMPT
 
     name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
     name = name.replace(" ", "_")
@@ -35,4 +35,4 @@ def create_ouptut_dirs(sub_dir: str = "") -> str:
     dir = os.path.join(OUTPUT_DIR, sub_dir) if sub_dir else OUTPUT_DIR
     if not os.path.exists(dir):
         os.makedirs(dir)
-    return dir 
+    return dir

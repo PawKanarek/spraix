@@ -11,7 +11,7 @@ import numpy as np
 from dataclass_wizard import JSONWizard
 from PIL import Image
 
-# to work with this script u need to download manually sprites mentioned in 'credits.md', redistribution is not allowed.
+# to work with this script u need to download manually sprites mentioned in 'credits.md', Authors don't allow raw redistribution of sprites, so i cannot put them into this reposisotry. 
 
 
 @dataclass

@@ -1,0 +1,43 @@
+{
+    "w": 126,
+    "h": 39,
+    "side": "E",
+    "url": "https://penusbmic.itch.io/sci-fi-character-pack-10",
+    "license": "Feel free to use for commercial projects and modify the characters if needed. Please use Penusbmic If you want to offer me credits. Please do not resell the assets individually. Thank you! Check out my page for some free pixel work and other cool characters!",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "ghost in brown sheet with steel ball on a chain",
+    "seq": [
+        {
+            "frames": 7,
+            "path": "attack.png",
+            "desc": "is swinging a ball to attack"
+        },
+        {
+            "frames": 4,
+            "path": "charge.png",
+            "desc": "is charging"
+        },
+        {
+            "frames": 5,
+            "path": "death.png",
+            "desc": "faints"
+        },
+        {
+            "frames": 2,
+            "path": "hit.png",
+            "desc": "is getting struck"
+        },
+        {
+            "frames": 5,
+            "path": "idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 8,
+            "path": "run.png",
+            "desc": "is running"
+        }
+    ]
+}

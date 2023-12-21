@@ -1,0 +1,132 @@
+{
+    "w": 48,
+    "h": 32,
+    "url": "https://admurin.itch.io/mega-admurins-freebies?download",
+    "license": "You can use this asset in any game project, personal or commercial DO NOT resell or redistribute AS A GAME ASSET, it has to be part of a project Credit is not required but it is appreciated Modify to suit your needs You are NOT allowed to turn any of my assets to an NFT.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "W",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "Canine_Black_Attack.png",
+            "frames": 7,
+            "character": "a black canine",
+            "desc": "is biting"
+        },
+        {
+            "path": "Canine_Black_Death.png",
+            "frames": 8,
+            "character": "a black canine",
+            "desc": "is laying down"
+        },
+        {
+            "path": "Canine_Black_Hit.png",
+            "frames": 4,
+            "character": "a black canine",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "Canine_Black_Idle.png",
+            "frames": 4,
+            "character": "a black canine",
+            "desc": "is idle"
+        },
+        {
+            "path": "Canine_Black_Run.png",
+            "frames": 6,
+            "character": "a black canine",
+            "desc": "is running"
+        },
+        {
+            "path": "Canine_Brown_Attack.png",
+            "frames": 7,
+            "character": "a brown canine",
+            "desc": "is biting"
+        },
+        {
+            "path": "Canine_Brown_Death.png",
+            "frames": 8,
+            "character": "a brown canine",
+            "desc": "is laying down"
+        },
+        {
+            "path": "Canine_Brown_Hit.png",
+            "frames": 4,
+            "character": "a brown canine",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "Canine_Brown_Idle.png",
+            "frames": 4,
+            "character": "a brown canine",
+            "desc": "is idle"
+        },
+        {
+            "path": "Canine_Brown_Run.png",
+            "frames": 6,
+            "character": "a brown canine",
+            "desc": "is running"
+        },
+        {
+            "path": "Canine_Gray_Attack.png",
+            "frames": 7,
+            "character": "a gray canine",
+            "desc": "is biting"
+        },
+        {
+            "path": "Canine_Gray_Death.png",
+            "frames": 8,
+            "character": "a gray canine",
+            "desc": "is laying down"
+        },
+        {
+            "path": "Canine_Gray_Hit.png",
+            "frames": 4,
+            "character": "a gray canine",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "Canine_Gray_Idle.png",
+            "frames": 4,
+            "character": "a gray canine",
+            "desc": "is idle"
+        },
+        {
+            "path": "Canine_Gray_Run.png",
+            "frames": 6,
+            "character": "a gray canine",
+            "desc": "is running"
+        },
+        {
+            "path": "Canine_White_Attack.png",
+            "frames": 7,
+            "character": "a white canine",
+            "desc": "is biting"
+        },
+        {
+            "path": "Canine_White_Death.png",
+            "frames": 8,
+            "character": "a white canine",
+            "desc": "is laying down"
+        },
+        {
+            "path": "Canine_White_Hit.png",
+            "frames": 4,
+            "character": "a white canine",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "Canine_White_Idle.png",
+            "frames": 4,
+            "character": "a white canine",
+            "desc": "is idle"
+        },
+        {
+            "path": "Canine_White_Run.png",
+            "frames": 6,
+            "character": "a white canine",
+            "desc": "is running"
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+{
+    "w": 150,
+    "h": 150,
+    "url": "https://luizmelo.itch.io/medieval-warrior-pack-2",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "a medieval peasant in red armor",
+    "seq": [
+        {
+            "path": "Sprites/Attack1.png",
+            "frames": 4,
+            "desc": "perform an sword attack"
+        },
+        {
+            "path": "Sprites/Attack2.png",
+            "frames": 4,
+            "desc": "perform an overhead sword attack"
+        },
+        {
+            "path": "Sprites/Attack3.png",
+            "frames": 4,
+            "desc": "perform an overhead pike attack"
+        },
+        {
+            "path": "Sprites/Attack4.png",
+            "frames": 4,
+            "desc": "perform an overhead mace attack"
+        },
+        {
+            "path": "Sprites/Death.png",
+            "frames": 6,
+            "desc": "faints on the floor"
+        },
+        {
+            "path": "Sprites/Fall.png",
+            "frames": 2,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprites/Idle.png",
+            "frames": 8,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprites/Jump.png",
+            "frames": 2,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprites/Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprites/Take Hit.png",
+            "frames": 4,
+            "desc": "is getting struck"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "w": 32,
+    "h": 32,
+    "url": "https://bdragon1727.itch.io/free-trap-platformer",
+    "license": "License Rights: - Free to use on non-commercial games, please leave comments and reviews that help motivate me.- If you will be using on a commercial game, please contribute (any value).- Modify as desired.You cannot do:- Resell / redistribute this asset.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "Suriken.png",
+            "character": "shuriken",
+            "frames": 8,
+            "desc": "rolls"
+        },
+        {
+            "path": "Brick1.png",
+            "character": "brick",
+            "frames": 8,
+            "desc": "is shattered"
+        },
+        {
+            "path": "FallingRock.png",
+            "character": "rock",
+            "frames": 8,
+            "desc": "is shattered and falls down"
+        }
+    ]
+}

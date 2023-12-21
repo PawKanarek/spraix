@@ -1,13 +1,35 @@
-# pawai
-TPU google research project
+<div align="center">
+  
+![](https://raw.githubusercontent.com/PawKanarek/spraix/main/logo_spraix.jpeg) 
 
-Run interference with `text_to_image`
+Spraix: making animated sprites with power of [Stable Diffusion](https://stability.ai/stable-diffusion).
+
+Powered by Google TPU Research Cloud. 
+</div>
+
+# Goal 
+To make animated sprites easily with single image of Stable Diffusion.
+
+# Done:
+- Gather data
+- Label data
+- Scripts that can transofrm raw data sprites into dataset that Stable Diffusion models can be trained on
+
+# WIP: 
+- training sdxl with flax framework [train_text_to_image_flax_sdxl](https://github.com/PawKanarek/diffusers/blob/ae945411d83d7103fe7edd453d784218a9464b1a/examples/text_to_image/train_text_to_image_flax_sdxl.py)
+
+# TODO: 
+- Fine tune sdxl with my training
+- Fix bugs in trainig data
+- Write the scipt to transform single image into sprite animation
+- Share with world
+
+# Interference
+
+Run interference with `text_to_image.py`
 
 # Training Data
-Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.
-
-# Training Data
-Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.
+Special thanks to the skilled sprite animation creators, contributing to the training dataset for this project.
 
 - Train images [0.png](train_data_1024/images/0.png) - [6.png](train_data_1024/images/6.png) thanks to https://oisougabo.itch.io/gap-i 
 - Train images [7.png](train_data_1024/images/7.png) - [21.png](train_data_1024/images/21.png) thanks to https://szadiart.itch.io/2d-soulslike-character 

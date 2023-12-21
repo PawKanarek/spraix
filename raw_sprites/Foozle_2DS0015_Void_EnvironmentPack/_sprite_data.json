@@ -1,0 +1,23 @@
+{
+    "w": 96,
+    "h": 96,
+    "url": "https://foozlecc.itch.io/void-environment-pack",
+    "license": "CC0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "Asteroids/PNGs/Asteroid 01 - Explode.png",
+            "frames": 8,
+            "character": "brown meteorite",
+            "desc": "explodes into small pieces"
+        },
+        {
+            "path": "Planets/PNGs/Earth-Like planet.png",
+            "frames": 77,
+            "character": "planet earth",
+            "desc": "is rotating"
+        }
+    ]
+}

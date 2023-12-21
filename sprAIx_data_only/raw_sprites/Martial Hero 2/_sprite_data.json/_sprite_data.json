@@ -1,0 +1,53 @@
+{
+    "w": 200,
+    "h": 200,
+    "url": "https://luizmelo.itch.io/martial-hero-2",
+    "license": "CC-0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "a ninja in blue armor and red scarf",
+    "seq": [
+        {
+            "path": "Sprites/Attack1.png",
+            "frames": 4,
+            "desc": "swing his katana to attack"
+        },
+        {
+            "path": "Sprites/Attack2.png",
+            "frames": 4,
+            "desc": "perform an overhead katana attack"
+        },
+        {
+            "path": "Sprites/Death.png",
+            "frames": 7,
+            "desc": "is falling to his knees then faints on the floor"
+        },
+        {
+            "path": "Sprites/Fall.png",
+            "frames": 2,
+            "desc": "falls down"
+        },
+        {
+            "path": "Sprites/Idle.png",
+            "frames": 4,
+            "desc": "is idle"
+        },
+        {
+            "path": "Sprites/Jump.png",
+            "frames": 2,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Sprites/Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Sprites/Take Hit.png",
+            "frames": 3,
+            "desc": "is getting struck"
+        }
+    ]
+}

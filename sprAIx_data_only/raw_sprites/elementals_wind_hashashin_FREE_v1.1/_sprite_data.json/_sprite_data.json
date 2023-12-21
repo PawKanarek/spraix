@@ -1,0 +1,100 @@
+{
+    "w": 288,
+    "h": 128,
+    "url": "https://chierit.itch.io/elementals-leaf-ranger",
+    "license": "CC-BY 4.0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "character": "a wind hashashin with a swords in white shalvar pants and scarf",
+    "seq": [
+        {
+            "path": "PNG/idle/idle_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is idle"
+        },
+        {
+            "path": "PNG/run/run_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "PNG/roll/roll_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "rolls"
+        },
+        {
+            "path": "PNG/j_up/j_up_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "jumps up"
+        },
+        {
+            "path": "PNG/j_down/j_down_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "falls down"
+        },
+        {
+            "path": "PNG/defend/defend_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "defends himself by crossing his swords"
+        },
+        {
+            "path": "PNG/1_atk/1_atk_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is swinging his sword to attack"
+        },
+        {
+            "path": "PNG/2_atk/2_atk_{id}.png",
+            "first": 1,
+            "last": 18,
+            "desc": "is fast swinging his swords in combo attack"
+        },
+        {
+            "path": "PNG/3_atk/3_atk_{id}.png",
+            "first": 1,
+            "last": 26,
+            "desc": "is fast swinging his swords then makes whirlwind"
+        },
+        {
+            "path": "PNG/sp_atk/sp_atk_{id}.png",
+            "first": 1,
+            "last": 26,
+            "desc": "teleports to different locations to deal damage with his swords in large area"
+        },
+        {
+            "path": "PNG/take_hit/take_hit_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "getting struck"
+        },
+        {
+            "path": "PNG/death/death_{id}.png",
+            "first": 1,
+            "last": 19,
+            "desc": "disappears in whirlwind"
+        },
+        {
+            "path": "PNG/air_atk/air_atk_{id}.png",
+            "first": 1,
+            "last": 7,
+            "desc": "is thrusting his swords in air"
+        },
+        {
+            "path": "wind_hashashin.png",
+            "frames": 1,
+            "w": 64,
+            "h": 64,
+            "side": "S",
+            "character": "a face of wind hashashin in white scarf with a sword on his back",
+            "desc": "is idle"
+        }
+    ]
+}

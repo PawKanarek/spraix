@@ -1,0 +1,33 @@
+{
+    "w": 137,
+    "h": 44,
+    "url": "https://penusbmic.itch.io/characterpack1?download",
+    "license": "Feel free to use for commercial projects and modify the characters if needed. Please use Penusbmic If you want to offer me credits. Please do not resell the assets individually. Thank you! Check out my page for some free pixel work and other cool characters",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "masked warrior aka Spirit Boxer in winged helmet and gray cape",
+    "seq": [
+        {
+            "path": "All Attacks.png",
+            "frames": 29,
+            "desc": "makes various attacks"
+        },
+        {
+            "path": "All Attacks.png",
+            "frames": 12,
+            "desc": "is getting struct and disintegrates"
+        },
+        {
+            "path": "Idle.png",
+            "frames": 4,
+            "desc": "is idle"
+        },
+        {
+            "path": "Run.png",
+            "frames": 6,
+            "desc": "runs"
+        }
+    ]
+}

@@ -1,0 +1,181 @@
+{
+    "url": "https://chierit.itch.io/elementals-leaf-ranger",
+    "license": "CC-BY 4.0",
+    "w": 288,
+    "h": 128,
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "character": "long-haired elf archer wearing a green cloak with a white wooden bow",
+    "seq": [
+        {
+            "path": "animations/PNG/1_atk/1_atk_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "thrusts his arrow like a sword to melee attack"
+        },
+        {
+            "path": "animations/PNG/2_atk/2_atk_{id}.png",
+            "first": 1,
+            "last": 15,
+            "desc": "shots magic arrow"
+        },
+        {
+            "path": "animations/PNG/3_atk/3_atk_{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "shoots multiple arrows at once"
+        },
+        {
+            "path": "animations/PNG/air_atk/air_atk_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "shots magic arrow while in air"
+        },
+        {
+            "path": "animations/PNG/death/death_{id}.png",
+            "first": 1,
+            "last": 19,
+            "desc": "falls to his knees and faints on the floor"
+        },
+        {
+            "path": "animations/PNG/defend/defend_{id}.png",
+            "first": 1,
+            "last": 19,
+            "desc": "defends himself by transforming his bow into shield made of roots"
+        },
+        {
+            "path": "animations/PNG/idle/idle_{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "is idle"
+        },
+        {
+            "path": "animations/PNG/jump_down/jump_down_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "falls down"
+        },
+        {
+            "path": "animations/PNG/jump_full/jump_{id}.png",
+            "first": 1,
+            "last": 22,
+            "desc": "jumps up then falls down"
+        },
+        {
+            "path": "animations/PNG/jump_up/jump_up_{id}.png",
+            "first": 1,
+            "last": 3,
+            "desc": "jumps up"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/arrow_hit_entangle/arrow_hit_entangle_{id}.png",
+            "first": 1,
+            "last": 8,
+            "w": 256,
+            "h": 128,
+            "character": "magic arrow",
+            "desc": "grows roots from the arrowhead"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/arrow_hit_poison/arrow_hit_poison_{id}.png",
+            "first": 1,
+            "last": 8,
+            "w": 256,
+            "h": 128,
+            "character": "magic arrow",
+            "desc": "releases poison from the tip"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/arrow_hit/arrow_hit_{id}.png",
+            "first": 1,
+            "last": 6,
+            "w": 256,
+            "h": 128,
+            "character": "arrow",
+            "desc": "hits the target and wiggles"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/arrow_shower_effect/arrow_shower_effect_{id}.png",
+            "first": 1,
+            "last": 18,
+            "w": 256,
+            "h": 128,
+            "character": "arrows",
+            "desc": "hits the ground creating entangling roots"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/beam_extension_effect/beam_extension_effect_{id}.png",
+            "first": 1,
+            "last": 5,
+            "w": 256,
+            "h": 128,
+            "character": "arrow",
+            "desc": "makes the laser beam"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/diagonal_arrow_hit_thorns/diagonal_arrow_hit_thorns_{id}.png",
+            "first": 1,
+            "last": 8,
+            "w": 256,
+            "h": 128,
+            "character": "diagonal arrow",
+            "desc": "hits the target and sprouts thorns"
+        },
+        {
+            "path": "animations/PNG/projectiles_and_effects/diagonal_arrow_hit/diagonal_arrow_hit_{id}.png",
+            "first": 1,
+            "last": 6,
+            "w": 256,
+            "h": 128,
+            "character": "diagonal arrow",
+            "desc": "hits the target and wiggles"
+        },
+        {
+            "path": "animations/PNG/roll/roll_{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "rolls"
+        },
+        {
+            "path": "animations/PNG/run/run_{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "runs"
+        },
+        {
+            "path": "animations/PNG/slide_loop/slide_loop_{id}.png",
+            "first": 1,
+            "last": 4,
+            "desc": "slides"
+        },
+        {
+            "path": "animations/PNG/slide/slide_{id}.png",
+            "first": 1,
+            "last": 13,
+            "desc": "slides and then gets up"
+        },
+        {
+            "path": "animations/PNG/sp_atk/sp_atk_{id}.png",
+            "first": 1,
+            "last": 17,
+            "desc": "fires laser beam from his bow to make a special attack"
+        },
+        {
+            "path": "animations/PNG/take_hit/take_hit_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "is getting struck"
+        },
+        {
+            "path": "leaf_ranger.png",
+            "frames": 1,
+            "w": 64,
+            "h": 64,
+            "side": "S",
+            "character": "a face of long-haired elf archer the leaf ranger ",
+            "desc": "is idle"
+        }
+    ]
+}

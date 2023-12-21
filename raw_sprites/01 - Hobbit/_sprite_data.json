@@ -1,0 +1,55 @@
+{
+    "w": 64,
+    "h": 64,
+    "url": "https://oisougabo.itch.io/gap-i",
+    "license": "This Pack is suitable for either commercial and non-commercial projects/games or for personal use;You are free to reskin or modify the content of this pack;You are not allowed to resell or redistribute, fully or partially, the content inside this pack;No need for credits but please credit. ",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "character": "red-haired hobbit in green cape",
+    "seq": [
+        {
+            "path": "pngs/Hobbit - attack{id}.png",
+            "first": 1,
+            "last": 17,
+            "desc": "shoots with slingshot"
+        },
+        {
+            "path": "pngs/Hobbit - block{id}.png",
+            "first": 1,
+            "last": 13,
+            "desc": "blocks an attack with staff"
+        },
+        {
+            "path": "pngs/Hobbit - death{id}.png",
+            "first": 1,
+            "last": 12,
+            "desc": "is taking damage then is struck and dies"
+        },
+        {
+            "path": "pngs/Hobbit - hit{id}.png",
+            "first": 1,
+            "last": 4,
+            "desc": "is taking damage after hit then is struck"
+        },
+        {
+            "path": "pngs/Hobbit - Idle{id}.png",
+            "first": 1,
+            "last": 4,
+            "desc": "is idle"
+        },
+        {
+            "path": "pngs/Hobbit - jumpt{id}.png",
+            "first": 1,
+            "last": 10,
+            "desc": "jumps"
+        },
+        {
+            "path": "pngs/Hobbit - stop{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is slowing down after run"
+        }
+    ]
+}

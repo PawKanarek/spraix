@@ -1,0 +1,69 @@
+{
+    "w": 48,
+    "h": 32,
+    "side": "W",
+    "url": "https://admurin.itch.io/mega-admurins-freebies?download",
+    "license": "You can use this asset in any game project, personal or commercial DO NOT resell or redistribute AS A GAME ASSET, it has to be part of a project Credit is not required but it is appreciated Modify to suit your needs You are NOT allowed to turn any of my assets to an NFT.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "treasure chest",
+    "seq": [
+        {
+            "frames": 5,
+            "row": 0,
+            "path": "Chests.png",
+            "character": "brown treasure chest",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "row": 1,
+            "path": "Chests.png",
+            "character": "brown treasure chest",
+            "desc": "is opening"
+        },
+        {
+            "frames": 5,
+            "row": 2,
+            "path": "Chests.png",
+            "character": "black treasure chest",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "row": 3,
+            "path": "Chests.png",
+            "character": "black treasure chest",
+            "desc": "is opening"
+        },
+        {
+            "frames": 5,
+            "row": 4,
+            "path": "Chests.png",
+            "character": "red treasure chest",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "row": 5,
+            "path": "Chests.png",
+            "character": "red treasure chest",
+            "desc": "is opening"
+        },
+        {
+            "frames": 5,
+            "row": 6,
+            "path": "Chests.png",
+            "character": "white treasure chest",
+            "desc": "is idle"
+        },
+        {
+            "frames": 5,
+            "row": 7,
+            "path": "Chests.png",
+            "character": "white treasure chest",
+            "desc": "is opening"
+        }
+    ]
+}

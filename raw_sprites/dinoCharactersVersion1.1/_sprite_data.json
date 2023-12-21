@@ -1,0 +1,124 @@
+{
+    "w": 24,
+    "h": 24,
+    "url": "https://arks.itch.io/dino-characters",
+    "license": "You can use these for what ever you'd like, but be sure to tag my twitter @ScissorMarks and credit me properly.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "sheets/DinoSprites - doux.png",
+            "startIndex": 0,
+            "frames": 4,
+            "character": "tiny baby blue dino with big head",
+            "desc": "is idle"
+        },
+        {
+            "path": "sheets/DinoSprites - doux.png",
+            "startIndex": 4,
+            "frames": 10,
+            "character": "tiny baby blue dino with big head",
+            "desc": "is walking"
+        },
+        {
+            "path": "sheets/DinoSprites - doux.png",
+            "startIndex": 14,
+            "frames": 3,
+            "character": "tiny baby blue dino with big head",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "sheets/DinoSprites - doux.png",
+            "startIndex": 17,
+            "frames": 7,
+            "character": "tiny baby blue dino with big head",
+            "desc": "is running"
+        },
+        {
+            "path": "sheets/DinoSprites - mort.png",
+            "startIndex": 0,
+            "frames": 4,
+            "character": "tiny baby red dino with big head",
+            "desc": "is idle"
+        },
+        {
+            "path": "sheets/DinoSprites - mort.png",
+            "startIndex": 4,
+            "frames": 10,
+            "character": "tiny baby red dino with big head",
+            "desc": "is walking"
+        },
+        {
+            "path": "sheets/DinoSprites - mort.png",
+            "startIndex": 14,
+            "frames": 3,
+            "character": "tiny baby red dino with big head",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "sheets/DinoSprites - mort.png",
+            "startIndex": 17,
+            "frames": 7,
+            "character": "tiny baby red dino with big head",
+            "desc": "is running"
+        },
+        {
+            "path": "sheets/DinoSprites - tard.png",
+            "startIndex": 0,
+            "frames": 4,
+            "character": "tiny baby yellow dino with big head",
+            "desc": "is idle"
+        },
+        {
+            "path": "sheets/DinoSprites - tard.png",
+            "startIndex": 4,
+            "frames": 10,
+            "character": "tiny baby yellow dino with big head",
+            "desc": "is walking"
+        },
+        {
+            "path": "sheets/DinoSprites - tard.png",
+            "startIndex": 14,
+            "frames": 3,
+            "character": "tiny baby yellow dino with big head",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "sheets/DinoSprites - tard.png",
+            "startIndex": 17,
+            "frames": 7,
+            "character": "tiny baby yellow dino with big head",
+            "desc": "is running"
+        },
+        {
+            "path": "sheets/DinoSprites - vita.png",
+            "startIndex": 0,
+            "frames": 4,
+            "character": "tiny baby green dino with big head",
+            "desc": "is idle"
+        },
+        {
+            "path": "sheets/DinoSprites - vita.png",
+            "startIndex": 4,
+            "frames": 10,
+            "character": "tiny baby green dino with big head",
+            "desc": "is walking"
+        },
+        {
+            "path": "sheets/DinoSprites - vita.png",
+            "startIndex": 14,
+            "frames": 3,
+            "character": "tiny baby green dino with big head",
+            "desc": "is getting struck"
+        },
+        {
+            "path": "sheets/DinoSprites - vita.png",
+            "startIndex": 17,
+            "frames": 7,
+            "character": "tiny baby green dino with big head",
+            "desc": "is running"
+        }
+    ]
+}

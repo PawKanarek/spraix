@@ -1,0 +1,120 @@
+{
+    "url": "https://admurin.itch.io/pixel-character-horse-rider",
+    "w": 64,
+    "h": 64,
+    "license": "You can use this asset in any game project, personal or commercial DO NOT resell or redistribute AS A GAME ASSET, it has to be part of a project Credit is not required but it is appreciated Modify to suit your needs You are NOT allowed to turn any of my assets to an NFT.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "seq": [
+        {
+            "path": "Horse I/Horse Black/64x64_Atlas_Horse_Idle.png",
+            "frames": 5,
+            "character": "a black horse with brown armor",
+            "desc": "is idle"
+        },
+        {
+            "path": "Horse I/Horse Black/64x64_Atlas_Horse_MountOff.png",
+            "frames": 6,
+            "character": "a black horse with brown armor",
+            "desc": "stays still"
+        },
+        {
+            "path": "Horse I/Horse Black/64x64_Atlas_Horse_MountOn.png",
+            "frames": 6,
+            "character": "a black horse with brown armor",
+            "desc": "waits"
+        },
+        {
+            "path": "Horse I/Horse Black//64x64_Atlas_Horse_Raise.png",
+            "frames": 10,
+            "character": "a black horse with brown armor",
+            "desc": "is rearing"
+        },
+        {
+            "path": "Horse I/Horse Black//64x64_Atlas_Horse_Run.png",
+            "frames": 6,
+            "character": "a black horse with brown armor",
+            "desc": "runs"
+        },
+        {
+            "path": "Horse I/Horse Black//64x64_Atlas_Horse_Stop.png",
+            "frames": 6,
+            "character": "a black horse with brown armor",
+            "desc": "stops"
+        },
+        {
+            "path": "Rider/Rider Complete/64x64_Atlas_HorseRider_MountIdle.png",
+            "frames": 5,
+            "character": "horse rider",
+            "desc": "is idle"
+        },
+        {
+            "path": "Rider/Rider Complete/64x64_Atlas_HorseRider_MountOff.png",
+            "frames": 6,
+            "character": "horse rider",
+            "desc": "mounts off"
+        },
+        {
+            "path": "Leash/64x64_Atlas_Horse_Leash_Idle.png",
+            "frames": 5,
+            "character": "horse leash",
+            "desc": "is idle"
+        },
+        {
+            "path": "Rider/Rider Complete/64x64_Atlas_HorseRider_MountOn.png",
+            "frames": 6,
+            "character": "horse rider",
+            "desc": "mounts on"
+        },
+        {
+            "path": "Rider/Rider Complete/64x64_Atlas_HorseRider_MountRaise.png",
+            "frames": 10,
+            "character": "horse rider",
+            "desc": "holds on"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 6,
+            "startIndex": 0,
+            "character": "a rider on black horse with brown armor",
+            "desc": "Mounts on horse"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 5,
+            "startIndex": 6,
+            "character": "a rider on black horse with brown armor",
+            "desc": "is idle"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 6,
+            "startIndex": 11,
+            "character": "a rider on black horse with brown armor",
+            "desc": "runs"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 6,
+            "startIndex": 17,
+            "character": "a rider on black horse with brown armor",
+            "desc": "stops"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 10,
+            "startIndex": 23,
+            "character": "a rider on black horse with brown armor",
+            "desc": "is rearing"
+        },
+        {
+            "path": "64x64_Atlas_HorseRider_II_Complete.png",
+            "frames": 6,
+            "startIndex": 33,
+            "character": "a rider on black horse with brown armor",
+            "desc": "mounts off"
+        }
+    ]
+}

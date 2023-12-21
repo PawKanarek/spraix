@@ -1,0 +1,46 @@
+{
+    "w": 39,
+    "h": 53,
+    "url": "https://ansimuz.itch.io/dancing-girl-sprites",
+    "license": "You may use these assets in personal or commercial projects. You may modify these assets to suit your needs. Credit is not required but appreciated it.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "W",
+    "type": "sprite animation",
+    "character": "woman in green dress with red hair",
+    "seq": [
+        {
+            "path": "sprites/Balancing/balancing{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is balancing on her feet to the dance rhythm"
+        },
+        {
+            "path": "sprites/hips/hips{id}.png",
+            "first": 1,
+            "last": 8,
+            "side": "S",
+            "desc": "is moving her hips in a dance rhythm"
+        },
+        {
+            "path": "sprites/Skip/skip{id}.png",
+            "first": 1,
+            "last": 8,
+            "desc": "is jumping in a dance rhythm"
+        },
+        {
+            "path": "sprites/slide/slide{id}.png",
+            "first": 1,
+            "last": 8,
+            "side": "S",
+            "desc": "is dancing from left to right"
+        },
+        {
+            "path": "sprites/snap/snap{id}.png",
+            "first": 1,
+            "last": 8,
+            "side": "S",
+            "desc": "is dancing in place"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    "w": 200,
+    "h": 200,
+    "url": "https://rili-xl.itch.io/cultist-priest-pack",
+    "license": "Free to use in any commercial projects. Please do not redistribute this asset pack.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "side": "E",
+    "type": "sprite animation",
+    "character": "cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets",
+    "seq": [
+        {
+            "path": "cultist_priest_attack_{id}.png",
+            "first": 1,
+            "last": 5,
+            "desc": "swings his both gauntlets over head to make an attack"
+        },
+        {
+            "path": "cultist_priest_die_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "falls on the ground and dies"
+        },
+        {
+            "path": "cultist_priest_idle_{id}.png",
+            "first": 1,
+            "last": 5,
+            "desc": "is idle"
+        },
+        {
+            "path": "cultist_priest_takehit_{id}.png",
+            "first": 1,
+            "last": 4,
+            "desc": "is getting struck"
+        },
+        {
+            "path": "cultist_priest_walk_{id}.png",
+            "first": 1,
+            "last": 6,
+            "desc": "is walking"
+        }
+    ]
+}

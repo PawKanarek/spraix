@@ -1,0 +1,90 @@
+{
+    "w": 128,
+    "h": 64,
+    "url": "https://szadiart.itch.io/2d-soulslike-character",
+    "license": ">>> License for Everyone. You can use the Licensed Asset to create Public domain and free to use, personal or commercial.",
+    "side": "E",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "knight in silver armor with red pants",
+    "seq": [
+        {
+            "frames": 7,
+            "path": "attack_from_air.png",
+            "desc": "is making jumping sword attack"
+        },
+        {
+            "frames": 19,
+            "startIndex": 0,
+            "path": "Attacks.png",
+            "desc": "is attacking with sword"
+        },
+        {
+            "frames": 6,
+            "path": "Climb.png",
+            "side": "N",
+            "desc": "climbs"
+        },
+        {
+            "frames": 7,
+            "path": "crouch_attacks.png",
+            "desc": "is attacking with sword while crouching"
+        },
+        {
+            "frames": 8,
+            "path": "crouch_idle.png",
+            "desc": "is idle while crouching"
+        },
+        {
+            "frames": 4,
+            "path": "Death.png",
+            "desc": "faints"
+        },
+        {
+            "frames": 8,
+            "path": "Hanging.png",
+            "desc": "is hanging with single hand in air"
+        },
+        {
+            "frames": 8,
+            "path": "Health.png",
+            "desc": "is restoring a health using red crystal"
+        },
+        {
+            "frames": 3,
+            "path": "Health.png",
+            "desc": "is getting struck"
+        },
+        {
+            "frames": 8,
+            "path": "Idle.png",
+            "desc": "is idle"
+        },
+        {
+            "frames": 8,
+            "path": "Jump.png",
+            "desc": "jumps"
+        },
+        {
+            "frames": 12,
+            "path": "Pray.png",
+            "desc": "is falling to his knees and begins to pray and then gets up"
+        },
+        {
+            "frames": 4,
+            "path": "Run.png",
+            "desc": "is rolling"
+        },
+        {
+            "frames": 8,
+            "path": "Run.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 10,
+            "path": "Slide.png",
+            "desc": "is sliding"
+        }
+    ]
+}

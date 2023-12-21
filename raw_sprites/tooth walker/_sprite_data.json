@@ -1,0 +1,42 @@
+{
+    "w": 64,
+    "h": 64,
+    "style": "pixel art style",
+    "background": "transparent",
+    "url": "https://penusbmic.itch.io/monster-pack-i?download",
+    "license": "credit would be nice",
+    "character": "tooth walker monster without hands with big tongue",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "tooth walker sprite-Sheet.png",
+            "frames": 6,
+            "startIndex": 0,
+            "desc": "walks"
+        },
+        {
+            "path": "tooth walker sprite-Sheet.png",
+            "frames": 4,
+            "startIndex": 6,
+            "desc": "is idle"
+        },
+        {
+            "path": "tooth walker sprite-Sheet.png",
+            "frames": 4,
+            "startIndex": 9,
+            "desc": "is getting struct"
+        },
+        {
+            "path": "tooth walker sprite-Sheet.png",
+            "frames": 7,
+            "startIndex": 12,
+            "desc": "explodes with blood"
+        },
+        {
+            "path": "tooth walker sprite-Sheet.png",
+            "frames": 6,
+            "startIndex": 20,
+            "desc": "bites with splashing effect"
+        }
+    ]
+}

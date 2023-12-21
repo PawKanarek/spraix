@@ -1,0 +1,67 @@
+{
+    "w": 100,
+    "h": 100,
+    "url": "https://darkpixel-kronovi.itch.io/undead-executioner",
+    "license": "The pack contains dozen of keyframe which you can edit to have more animations. This character will also fit with a puppet master if you like. You are free to edit the sprite once you downloaded it and you can use it for commercial and non-commercial use, credits are not required but always deeply appreciated. redistributing and reselling the sprite are restricted.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "black ghost looking like death with a scythe",
+    "seq": [
+        {
+            "path": "png/attacking.png",
+            "frames": 13,
+            "desc": "swings a scythe to perform an attack"
+        },
+        {
+            "path": "png/death.png",
+            "frames": 18,
+            "desc": "destroys his weapon and transforms into ball"
+        },
+        {
+            "path": "png/idle.png",
+            "frames": 4,
+            "desc": "is idle"
+        },
+        {
+            "path": "png/idle2.png",
+            "frames": 8,
+            "desc": "waits"
+        },
+        {
+            "path": "png/skill1.png",
+            "frames": 12,
+            "desc": "transforms his body to look like a music wave"
+        },
+        {
+            "path": "png/summon.png",
+            "frames": 5,
+            "desc": "swings his scythe"
+        },
+        {
+            "path": "png/summonAppear.png",
+            "frames": 6,
+            "w": 50,
+            "h": 50,
+            "character": "small black ghost",
+            "desc": "appears"
+        },
+        {
+            "path": "png/summonDeath.png",
+            "frames": 5,
+            "w": 50,
+            "h": 50,
+            "character": "small black ghost",
+            "desc": "disappears"
+        },
+        {
+            "path": "png/summonIdle.png",
+            "frames": 4,
+            "w": 50,
+            "h": 50,
+            "character": "small black ghost",
+            "desc": "is idle"
+        }
+    ]
+}

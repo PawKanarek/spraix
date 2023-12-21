@@ -1,0 +1,53 @@
+{
+    "w": 231,
+    "h": 190,
+    "url": "https://luizmelo.itch.io/wizard-pack",
+    "license": "CC0",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "side": "E",
+    "character": "wizard with white beard and crystal staff in pink robe ",
+    "seq": [
+        {
+            "path": "Attack1.png",
+            "frames": 8,
+            "desc": "cast a spell that creates magic orb"
+        },
+        {
+            "path": "Attack2.png",
+            "frames": 8,
+            "desc": "makes arcane spell from his staff"
+        },
+        {
+            "path": "Death.png",
+            "frames": 7,
+            "desc": "falls on knees and his staff breaks"
+        },
+        {
+            "path": "Fall.png",
+            "frames": 2,
+            "desc": "falls down"
+        },
+        {
+            "path": "Idle.png",
+            "frames": 6,
+            "desc": "is idle"
+        },
+        {
+            "path": "Jump.png",
+            "frames": 2,
+            "desc": "jumps up"
+        },
+        {
+            "path": "Run.png",
+            "frames": 8,
+            "desc": "runs"
+        },
+        {
+            "path": "Hit.png",
+            "frames": 4,
+            "desc": "is getting struck"
+        }
+    ]
+}

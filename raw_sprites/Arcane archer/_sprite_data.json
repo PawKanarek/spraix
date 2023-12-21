@@ -1,0 +1,62 @@
+{
+    "w": 64,
+    "h": 64,
+    "side": "E",
+    "url": "https://astrobob.itch.io/arcane-archer",
+    "license": "You’re free to use this for whatever you want except sell or redistribute it. No credit needed",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "character": "arcane archer in pink hood with a magic bow",
+    "seq": [
+        {
+            "frames": 8,
+            "row": 0,
+            "path": "spritesheet.png",
+            "desc": "is running"
+        },
+        {
+            "frames": 8,
+            "row": 1,
+            "path": "spritesheet.png",
+            "desc": "is fainting"
+        },
+        {
+            "frames": 7,
+            "row": 2,
+            "path": "spritesheet.png",
+            "desc": "is rolling"
+        },
+        {
+            "frames": 7,
+            "row": 3,
+            "path": "spritesheet.png",
+            "desc": "is shooting a bow"
+        },
+        {
+            "frames": 6,
+            "row": 4,
+            "side": "W",
+            "path": "spritesheet.png",
+            "desc": "does wall slide"
+        },
+        {
+            "frames": 4,
+            "row": 5,
+            "path": "spritesheet.png",
+            "desc": "is crouching idle"
+        },
+        {
+            "frames": 4,
+            "row": 6,
+            "path": "spritesheet.png",
+            "desc": "is jumping with a stomp"
+        },
+        {
+            "frames": 2,
+            "row": 7,
+            "path": "spritesheet.png",
+            "desc": "is slowing down after run"
+        }
+    ]
+}

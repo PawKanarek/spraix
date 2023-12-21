@@ -1,0 +1,53 @@
+{
+    "w": 100,
+    "h": 100,
+    "url": "https://xyezawr.itch.io/gif-free-pixel-effects-pack-6-forks-of-flame",
+    "license": "This asset pack can be used in both free and commercial projects. You can modify it to suit your own needs. Credit is not necessary, but appreciated.  You may not redistribute it or resell it.",
+    "style": "pixel art style",
+    "background": "transparent",
+    "type": "sprite animation",
+    "seq": [
+        {
+            "path": "1/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two yellow fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        },
+        {
+            "path": "2/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two blue fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        },
+        {
+            "path": "3/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two green fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        },
+        {
+            "path": "4/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two pink fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        },
+        {
+            "path": "5/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two red fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        },
+        {
+            "path": "6/1_{id}.png",
+            "first": "0",
+            "last": "59",
+            "character": "two white fireballs with tails",
+            "desc": "intersect with each other to create a ribbon-like pattern"
+        }
+    ]
+}

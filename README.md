@@ -16,7 +16,7 @@ To make animated sprites easily with single image of Stable Diffusion.
 - Scripts that can transofrm raw data sprites into dataset that Stable Diffusion models can be trained on
 
 # WIP: 
-- training sdxl with flax framework [train_text_to_image_flax_sdxl](https://github.com/PawKanarek/diffusers/blob/ae945411d83d7103fe7edd453d784218a9464b1a/examples/text_to_image/train_text_to_image_flax_sdxl.py)
+- training sdxl with flax framework [train_text_to_image_flax_sdxl](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py)
 
 # TODO: 
 - Fine tune sdxl with my training

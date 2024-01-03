@@ -3,6 +3,7 @@ import functools
 import logging
 import math
 import os
+import time
 import random
 from pathlib import Path
 from typing import List
@@ -927,14 +928,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
-    # exc = None
-    # with jax.profiler.trace("/mnt/disks/persist/repos/tensor_prf"):
-    #     try:
-    #         main()
-    #     except Exception as e:
-    #         exc = e
-    #         print(e)
+    # main()
+    exc = None
+    start_time = time.time()
+    with jax.profiler.trace("/mnt/disks/persist/repos/tensor_prf"):
+        try:
+            main()
+        except Exception as e:
+            exc = e
+            print(e)
 
-    # if exc is not None:
-    #     raise exc
+    print(f"total time: {time.time() - start_time}")
+    if exc is not None:
+        raise exc

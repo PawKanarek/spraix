@@ -1,7 +1,7 @@
 import os
 import json
 
-FOLDER = "train_data_1024_best"
+FOLDER = "train_data_1024_best_96"
 
 if __name__ == "__main__":
     

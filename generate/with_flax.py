@@ -70,10 +70,10 @@ def run():
     print(f"Compiled in time: {time.time() - startup_time}")
 
     index = 0
-    for i in range(1):
+    for p in [common.PROMPT]:
         step_time = time.time()
-        images = generate_jax(pipeline, p_params)
+        images = generate_jax(pipeline, p_params, p)
         for i in images:
             index += 1
-            i.save(common.getSavePath(index))
+            i.save(common.getSavePath(p, index, "sdxl"))
         print(f"Batch execution time: {time.time() - step_time}")

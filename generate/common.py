@@ -19,7 +19,7 @@ def getSavePath(prompt: str = PROMPT, index: int = 0, sub_dir: str = "") -> str:
 
     name = IMG_NAME or prompt or PROMPT
 
-    name = re.sub(r"[^a-zA-Z0-9\s]", "", name)
+    name = re.sub(r"[^a-zA-Z0-9\s]", "", str(name))
     name = name.replace(" ", "_")
     file_path = os.path.join(dir, name)
     dir, name = os.path.split(file_path)

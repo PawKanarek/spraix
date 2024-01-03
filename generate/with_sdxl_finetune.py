@@ -55,7 +55,7 @@ def run():
     print("loading sdxl finetuned model...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionXLPipeline.from_pretrained(
-        "/mnt/disks/persist/repos/spraix_sdxl_16",
+        "/mnt/disks/persist/repos/spraix_sdxl_16", split_head_dim=True
     )
     scheduler_state = params.pop("scheduler")
     params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)

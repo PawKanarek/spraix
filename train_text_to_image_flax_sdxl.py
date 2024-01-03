@@ -318,7 +318,7 @@ dataset_name_mapping = {
 
 
 def get_params_to_save(params):
-    return jax.device_get(jax.tree_util.tree_map(lambda x: x[0], params))
+    return jax.device_get(jax.tree_util.tree_map(lambda x: x, params))
 
 
 # We need to tokenize input captions and transform the images.
@@ -359,9 +359,11 @@ def encode_prompt(
         return_tensors="np",
     )
     prompt_embeds_1_out = text_encoder_1(
-        text_inputs_1.input_ids, params=text_encoder_1.params, output_hidden_states=True
+        text_inputs_1.input_ids,
+        params=text_encoder_1.params,
+        output_hidden_states=True,
     )
-    prompt_embeds_1 = prompt_embeds_1_out["hidden_states"][-2].astype(dtype)
+    prompt_embeds_1 = prompt_embeds_1_out["hidden_states"][-2]
     print(f"{prompt_embeds_1.shape=}, {prompt_embeds_1.dtype=}")
     text_inputs_2 = tokenizer_2(
         captions,
@@ -370,19 +372,16 @@ def encode_prompt(
         truncation=True,
         return_tensors="np",
     )
-    print(
-        f"ids from tokenizer2  {text_inputs_2.input_ids.shape=}, {text_inputs_2.input_ids.dtype=}"
-    )
+    print(f"ids from tokenizer2  {text_inputs_2.input_ids.shape=}")
     prompt_embeds_2_out = text_encoder_2(
         text_inputs_2.input_ids, params=text_encoder_2.params, output_hidden_states=True
     )
     # We are only ALWAYS interested in the pooled output of the final text encoder
-    prompt_embeds_2 = prompt_embeds_2_out["hidden_states"][-2].astype(dtype)
-    pooled_prompt_embeds = prompt_embeds_2_out["text_embeds"].astype(dtype)
+    prompt_embeds_2 = prompt_embeds_2_out["hidden_states"][-2]
+
+    pooled_prompt_embeds = prompt_embeds_2_out["text_embeds"]
     prompt_embeds = jnp.concatenate([prompt_embeds_1, prompt_embeds_2], axis=-1)
-    print(
-        f"{prompt_embeds.shape=}, {prompt_embeds.dtype=} {pooled_prompt_embeds.shape=}, {pooled_prompt_embeds.dtype=}"
-    )
+    print(f"{prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}")
     return {
         "prompt_embeds": prompt_embeds,
         "pooled_prompt_embeds": pooled_prompt_embeds,
@@ -404,7 +403,6 @@ def compute_vae_encodings(batch, vae: FlaxAutoencoderKL, vae_params, dtype, seed
     # They do dis in train_controlnet_flax (NHWC) -> (NCHW)
     latents = jnp.transpose(latents, (0, 3, 1, 2))
     model_input = latents * vae.config.scaling_factor
-
     return {"model_input": model_input}
 
 
@@ -521,14 +519,14 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="text_encoder",
-        dtype=weight_dtype,
+        # dtype=weight_dtype,
     )
     text_encoder_2 = FlaxCLIPTextModelWithProjection.from_pretrained(
         args.pretrained_model_name_or_path,
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="text_encoder_2",
-        dtype=weight_dtype,
+        # dtype=weight_dtype,
     )
 
     vae, vae_params = FlaxAutoencoderKL.from_pretrained(
@@ -536,7 +534,7 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="vae",
-        dtype=weight_dtype,
+        # dtype=weight_dtype,
         # sharding=mesh_sharding(PartitionSpec("all")),
     )
 
@@ -545,18 +543,18 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="unet",
-        dtype=weight_dtype,
+        # dtype=weight_dtype,
         # sharding=mesh_sharding(PartitionSpec("all")),
     )
 
-    if weight_dtype == jnp.float16:
-        print("converting weights to fp16")
-        unet_params = unet.to_fp16(unet_params)
-        vae_params = vae.to_fp16(vae_params)
-    elif weight_dtype == jnp.bfloat16:
-        print("converting weights to bf16")
-        unet_params = unet.bf_16(unet_params)
-        vae_params = vae.bf_16(vae_params)
+    # if weight_dtype == jnp.float16:
+    #     print("converting weights to fp16")
+    #     unet_params = unet.to_fp16(unet_params)
+    #     vae_params = vae.to_fp16(vae_params)
+    # elif weight_dtype == jnp.bfloat16:
+    #     print("converting weights to bf16")
+    #     unet_params = unet.bf_16(unet_params)
+    #     vae_params = vae.bf_16(vae_params)
 
     # Preprocessing the datasets.
     train_resize = transforms.Resize(
@@ -693,6 +691,14 @@ def main():
         drop_last=True,
     )
 
+    if weight_dtype == jnp.float16:
+        unet_params = unet.to_fp16(unet_params)
+        vae_params = vae.to_fp16(vae_params)
+    elif weight_dtype == jnp.bfloat16:
+        print("converting weights to bf16")
+        unet_params = unet.to_bf16(unet_params)
+        vae_params = vae.to_bf16(vae_params)
+
     # Optimization
     if args.scale_lr:
         args.learning_rate = args.learning_rate * total_train_batch_size
@@ -773,12 +779,15 @@ def main():
                     for s, c in zip(batch["original_sizes"], batch["crop_top_lefts"])
                 ]
             )
-            print(f"my: {add_time_ids.shape=}")
             # Predict the noise residual
             unet_added_conditions = {"time_ids": add_time_ids}
             prompt_embeds = batch["prompt_embeds"]
             pooled_prompt_embeds = batch["pooled_prompt_embeds"]
             unet_added_conditions.update({"text_embeds": pooled_prompt_embeds})
+            print(
+                f"my: {add_time_ids.shape=}, {prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}"
+            )
+
             model_pred = unet.apply(
                 {"params": params},
                 noisy_model_input,
@@ -896,7 +905,6 @@ def main():
             tokenizer=tokenizer_1,
             tokenizer_2=tokenizer_2,
             scheduler=scheduler,
-            weight_dtype=weight_dtype,
         )
 
         pipeline.save_pretrained(

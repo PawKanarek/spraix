@@ -928,16 +928,6 @@ def main():
 
 
 if __name__ == "__main__":
-    # main()
-    exc = None
     start_time = time.time()
-    with jax.profiler.trace("/mnt/disks/persist/repos/tensor_prf"):
-        try:
-            main()
-        except Exception as e:
-            exc = e
-            print(e)
-
+    main()
     print(f"total time: {time.time() - start_time}")
-    if exc is not None:
-        raise exc

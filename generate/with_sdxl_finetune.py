@@ -8,6 +8,8 @@ from flax.jax_utils import replicate
 
 from generate import common
 
+MODEL = "spraix_sdxl_best_96_1"
+
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):
     prompt_ids = pipeline.prepare_inputs(prompt)
@@ -55,7 +57,7 @@ def run():
     print("loading sdxl finetuned model...")
     startup_time = time.time()
     pipeline, params = FlaxStableDiffusionXLPipeline.from_pretrained(
-        "/mnt/disks/persist/repos/spraix_sdxl_16", split_head_dim=True
+        f"/mnt/disks/persist/repos/{MODEL}", split_head_dim=True
     )
     scheduler_state = params.pop("scheduler")
     params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
@@ -82,5 +84,5 @@ def run():
         images = generate_jax(pipeline, p_params, prompt)
         for i in images:
             index += 1
-            i.save(common.getSavePath(prompt, index, "spraix_sdxl_16"))
+            i.save(common.getSavePath(prompt, index, MODEL))
         print(f"Batch execution time: {time.time() - step_time}")

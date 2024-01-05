@@ -8,7 +8,7 @@ from flax.jax_utils import replicate
 
 from generate import common
 
-MODEL = "spraix_sdxl_best_96_1"
+MODEL = "spraix_sdxl_best_96_8"
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):

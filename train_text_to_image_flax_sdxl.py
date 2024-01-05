@@ -43,7 +43,6 @@ from diffusers import (
 )
 from diffusers.utils import check_min_version
 
-
 # Will error if the minimal version of diffusers is not installed. Remove at your own risks.
 check_min_version("0.24.0.dev0")
 
@@ -57,16 +56,6 @@ logger = logging.getLogger(__name__)
 #     "--xla_gpu_enable_latency_hiding_scheduler=true "
 #     "--xla_gpu_enable_highest_priority_async_stream=true "
 # )
-
-
-device_mesh = mesh_utils.create_device_mesh((1, 2, 4))
-print(device_mesh)
-mesh = Mesh(devices=device_mesh, axis_names=("all", "split1", "split2"))
-print(mesh)
-
-
-def mesh_sharding(pspec: PartitionSpec) -> NamedSharding:
-    return NamedSharding(mesh, pspec)
 
 
 def parse_args():
@@ -334,7 +323,7 @@ def encode_prompt(
     dtype,
     is_train=True,
 ):
-    print("encode prompt")
+    logger.info("encode prompt")
     prompt_batch = batch[caption_column]
     captions = []
     for caption in prompt_batch:
@@ -351,7 +340,7 @@ def encode_prompt(
             )
 
     # from pipeline_flax_stable_diffusion_xl.py
-    print("compute text imputs from tokenizer 1")
+    logger.info("compute text imputs from tokenizer 1")
     text_inputs_1 = tokenizer_1(
         captions,
         padding="max_length",
@@ -365,7 +354,7 @@ def encode_prompt(
         output_hidden_states=True,
     )
     prompt_embeds_1 = prompt_embeds_1_out["hidden_states"][-2]
-    print(f"{prompt_embeds_1.shape=}, {prompt_embeds_1.dtype=}")
+    logger.info(f"{prompt_embeds_1.shape=}, {prompt_embeds_1.dtype=}")
     text_inputs_2 = tokenizer_2(
         captions,
         padding="max_length",
@@ -373,7 +362,7 @@ def encode_prompt(
         truncation=True,
         return_tensors="np",
     )
-    print(f"ids from tokenizer2  {text_inputs_2.input_ids.shape=}")
+    logger.info(f"ids from tokenizer2  {text_inputs_2.input_ids.shape=}")
     prompt_embeds_2_out = text_encoder_2(
         text_inputs_2.input_ids, params=text_encoder_2.params, output_hidden_states=True
     )
@@ -382,7 +371,7 @@ def encode_prompt(
 
     pooled_prompt_embeds = prompt_embeds_2_out["text_embeds"]
     prompt_embeds = jnp.concatenate([prompt_embeds_1, prompt_embeds_2], axis=-1)
-    print(f"{prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}")
+    logger.info(f"{prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}")
     return {
         "prompt_embeds": prompt_embeds,
         "pooled_prompt_embeds": pooled_prompt_embeds,
@@ -390,7 +379,7 @@ def encode_prompt(
 
 
 def compute_vae_encodings(batch, vae: FlaxAutoencoderKL, vae_params, dtype, seed):
-    print("encode vae encodings")
+    logger.info("encode vae encodings")
     images = batch.pop("pixel_values")
     pixel_values = jnp.stack([jnp.array(image) for image in images])
     pixel_values = pixel_values.astype(dtype)
@@ -549,11 +538,11 @@ def main():
     )
 
     # if weight_dtype == jnp.float16:
-    #     print("converting weights to fp16")
+    #     logger.info("converting weights to fp16")
     #     unet_params = unet.to_fp16(unet_params)
     #     vae_params = vae.to_fp16(vae_params)
     # elif weight_dtype == jnp.bfloat16:
-    #     print("converting weights to bf16")
+    #     logger.info("converting weights to bf16")
     #     unet_params = unet.bf_16(unet_params)
     #     vae_params = vae.bf_16(vae_params)
 
@@ -605,7 +594,7 @@ def main():
         examples["original_sizes"] = original_sizes
         examples["crop_top_lefts"] = crop_top_lefts
         examples["pixel_values"] = all_images
-        print("finish preproces")
+        logger.info("finish preproces")
         return examples
 
     if args.max_train_samples is not None:
@@ -640,18 +629,18 @@ def main():
     if jax.process_index() == 0:
         from datasets.fingerprint import Hasher
 
-        print("compute all embedings")
+        logger.info("compute all embedings")
 
         # fingerprint used by the cache for the other processes to load the result
         # details: https://github.com/huggingface/diffusers/pull/4038#discussion_r1266078401
         new_fingerprint = Hasher.hash(args)
         new_fingerprint_for_vae = Hasher.hash("vae")
-        print("compute all embedings 1")
+        logger.info("compute all embedings 1")
 
         train_dataset = train_dataset.map(
             compute_embeddings_fn, batched=True, new_fingerprint=new_fingerprint
         )
-        print("compute all embedings 2")
+        logger.info("compute all embedings 2")
         train_dataset = train_dataset.map(
             compute_vae_encodings_fn,
             batched=True,
@@ -696,7 +685,7 @@ def main():
         unet_params = unet.to_fp16(unet_params)
         vae_params = vae.to_fp16(vae_params)
     elif weight_dtype == jnp.bfloat16:
-        print("converting weights to bf16")
+        logger.info("converting weights to bf16")
         unet_params = unet.to_bf16(unet_params)
         vae_params = vae.to_bf16(vae_params)
 
@@ -767,11 +756,11 @@ def main():
                 add_time_ids = jnp.concatenate(
                     [original_size, crops_coords_top_left, target_size]
                 )
-                print(
+                logger.info(
                     f"{add_time_ids.shape=}=cat({original_size.shape=},{crops_coords_top_left.shape=},{target_size.shape=})"
                 )
                 add_time_ids = jnp.array([add_time_ids], dtype=weight_dtype)
-                print(f"this should be 1,6 {add_time_ids.shape=}")
+                logger.info(f"this should be 1,6 {add_time_ids.shape=}")
                 return add_time_ids
 
             add_time_ids = jnp.concatenate(
@@ -785,7 +774,7 @@ def main():
             prompt_embeds = batch["prompt_embeds"]
             pooled_prompt_embeds = batch["pooled_prompt_embeds"]
             unet_added_conditions.update({"text_embeds": pooled_prompt_embeds})
-            print(
+            logger.info(
                 f"my: {add_time_ids.shape=}, {prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}"
             )
 
@@ -826,17 +815,17 @@ def main():
         return new_state, metrics, new_train_rng
 
     # Create parallel version of the train step
-    print("replicating trainstep ...")
+    logger.info("replicating trainstep ...")
     # p_train_step = jax.pmap(train_step, "batch", donate_argnums=(0,), devices=jax_devices[1:2])
 
     # Replicate the train state on each device
-    # print("replicating state ...")
+    # logger.info("replicating state ...")
     # state = jax_utils.replicate(state, devices=jax_devices[2:3])
-    # print("replicating text_encoder_1_params ...")
+    # logger.info("replicating text_encoder_1_params ...")
     # text_encoder_1_params = jax_utils.replicate(text_encoder_1.params, devices=jax_devices[3:4])
-    # print("replicating text_encoder_2_params ...")
+    # logger.info("replicating text_encoder_2_params ...")
     # text_encoder_2_params = jax_utils.replicate(text_encoder_2.params, devices=jax_devices[4:5])
-    # print("replicating vae_params ...")
+    # logger.info("replicating vae_params ...")
     # vae_params = jax_utils.replicate(vae_params, devices=jax_devices[5:6])
 
     # Train!
@@ -889,33 +878,31 @@ def main():
         epochs.write(
             f"Epoch... ({epoch + 1}/{args.num_train_epochs} | Loss: {train_metric['loss']})"
         )
+        if jax.process_index() == 0:
+            save_params(
+                tokenizer_1,
+                tokenizer_2,
+                text_encoder_1,
+                text_encoder_2,
+                vae,
+                vae_params,
+                unet,
+                state,
+                f"{args.output_dir}_epoch_{epoch+1}",
+            )
 
     # Create the pipeline using using the trained modules and save it.
     if jax.process_index() == 0:
-        scheduler = FlaxPNDMScheduler(
-            beta_start=0.00085,
-            beta_end=0.012,
-            beta_schedule="scaled_linear",
-            skip_prk_steps=True,
-        )
-        pipeline = FlaxStableDiffusionXLPipeline(
-            text_encoder=text_encoder_1,
-            text_encoder_2=text_encoder_2,
-            vae=vae,
-            unet=unet,
-            tokenizer=tokenizer_1,
-            tokenizer_2=tokenizer_2,
-            scheduler=scheduler,
-        )
-
-        pipeline.save_pretrained(
+        save_params(
+            tokenizer_1,
+            tokenizer_2,
+            text_encoder_1,
+            text_encoder_2,
+            vae,
+            vae_params,
+            unet,
+            state,
             args.output_dir,
-            params={
-                "text_encoder": get_params_to_save(text_encoder_1.params),
-                "text_encoder_2": get_params_to_save(text_encoder_2.params),
-                "vae": get_params_to_save(vae_params),
-                "unet": get_params_to_save(state.params),
-            },
         )
 
         if args.push_to_hub:
@@ -927,7 +914,47 @@ def main():
             )
 
 
+def save_params(
+    tokenizer_1,
+    tokenizer_2,
+    text_encoder_1,
+    text_encoder_2,
+    vae,
+    vae_params,
+    unet,
+    state,
+    dir_name,
+):
+    logger.info(f"saving params to {dir_name}")
+    scheduler = FlaxPNDMScheduler(
+        beta_start=0.00085,
+        beta_end=0.012,
+        beta_schedule="scaled_linear",
+        skip_prk_steps=True,
+    )
+    pipeline = FlaxStableDiffusionXLPipeline(
+        text_encoder=text_encoder_1,
+        text_encoder_2=text_encoder_2,
+        vae=vae,
+        unet=unet,
+        tokenizer=tokenizer_1,
+        tokenizer_2=tokenizer_2,
+        scheduler=scheduler,
+    )
+    os.makedirs(dir_name, exist_ok=True)
+
+    pipeline.save_pretrained(
+        dir_name,
+        params={
+            "text_encoder": get_params_to_save(text_encoder_1.params),
+            "text_encoder_2": get_params_to_save(text_encoder_2.params),
+            "vae": get_params_to_save(vae_params),
+            "unet": get_params_to_save(state.params),
+        },
+    )
+
+
 if __name__ == "__main__":
     start_time = time.time()
     main()
-    print(f"total time: {time.time() - start_time}")
+    logger.info(f"total time: {time.time() - start_time}")

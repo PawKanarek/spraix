@@ -9,7 +9,7 @@
 {"file_name": "images/24.png", "text": "5-frame sprite animation of: black treasure chest, that: is idle, facing: West"}
 {"file_name": "images/30.png", "text": "8-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is running, facing: East"}
 {"file_name": "images/31.png", "text": "8-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is fainting, facing: East"}
-{"file_name": "images/33.png", "text": "7-frame sprite animation of: arcane archer in pink hood with a magic bow, that: is shooting a bow, facing: East"}
+{"file_name": "images/33.png", "text": "7-frame sprite animation of: arcane archer in pink hood with a magic bow, that: shoots an arrow from a bow, facing: East"}
 {"file_name": "images/44.png", "text": "11-frame sprite animation of: dark tower of red crystal moon, that: is idle with moon levitating up and down, facing: South"}
 {"file_name": "images/45.png", "text": "10-frame sprite animation of: a cyclop with red eye in pink savage armor with a curved boline, that: swings his weapon to attack, facing: West"}
 {"file_name": "images/56.png", "text": "6-frame sprite animation of: a black canine, that: is running, facing: West"}
@@ -22,19 +22,19 @@
 {"file_name": "images/92.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: casting a magic beam from right hand, facing: East"}
 {"file_name": "images/94.png", "text": "4-frame sprite animation of: blue haired muscular fighter, that: is holding hands in air, facing: East"}
 {"file_name": "images/97.png", "text": "4-frame sprite animation of: energy shield, that: is idle, facing: East"}
-{"file_name": "images/98.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is balancing on her feet to the dance rhythm, facing: West"}
+{"file_name": "images/98.png", "text": "8-frame sprite animation of: woman in green dress with red hair, that: is dancing, facing: West"}
 {"file_name": "images/104.png", "text": "15-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: shots magic arrow, facing: East"}
 {"file_name": "images/107.png", "text": "19-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: falls to his knees and faints on the floor, facing: East"}
 {"file_name": "images/108.png", "text": "19-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: defends himself by transforming his bow into shield made of roots, facing: East"}
 {"file_name": "images/114.png", "text": "8-frame sprite animation of: magic arrow, that: releases poison from the tip, facing: East"}
 {"file_name": "images/118.png", "text": "8-frame sprite animation of: diagonal arrow, that: hits the target and sprouts thorns, facing: East"}
 {"file_name": "images/120.png", "text": "8-frame sprite animation of: long-haired elf archer wearing a green cloak with a white wooden bow, that: rolls, facing: East"}
-{"file_name": "images/127.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: is idle, facing: East"}
-{"file_name": "images/128.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: is running, facing: East"}
-{"file_name": "images/129.png", "text": "20-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: jumps up then falls down, facing: East"}
-{"file_name": "images/134.png", "text": "19-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword overhead then spins around to make combo attack, facing: East"}
-{"file_name": "images/135.png", "text": "28-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: swings his sword overhead then spins around and shoots a fire ball from edge of his sword, facing: East"}
-{"file_name": "images/136.png", "text": "18-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor and a large two-handed sword, that: ignites his magic sword to make flame attack, facing: East"}
+{"file_name": "images/127.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: is idle, facing: East"}
+{"file_name": "images/128.png", "text": "8-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: is running, facing: East"}
+{"file_name": "images/129.png", "text": "20-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: jumps up then falls down, facing: East"}
+{"file_name": "images/134.png", "text": "19-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: swings his sword overhead then spins around to make combo attack, facing: East"}
+{"file_name": "images/135.png", "text": "28-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: swings his sword overhead then spins around and shoots a fire ball from edge of his sword, facing: East"}
+{"file_name": "images/136.png", "text": "18-frame sprite animation of: a fire knight with short spiky hair wearing red and yellow armor wielding a large two-handed sword, that: ignites his magic sword to make flame attack, facing: East"}
 {"file_name": "images/142.png", "text": "8-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is idle, facing: East"}
 {"file_name": "images/154.png", "text": "7-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: getting struck, facing: East"}
 {"file_name": "images/156.png", "text": "8-frame sprite animation of: a water priestess with crystal long sword in a long blue robe, that: is thrusting her sword in air, facing: East"}
@@ -77,8 +77,8 @@
 {"file_name": "images/311.png", "text": "4-frame sprite animation of: small black ghost, that: is idle, facing: East"}
 {"file_name": "images/313.png", "text": "8-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: makes arcane spell from his staff, facing: East"}
 {"file_name": "images/319.png", "text": "4-frame sprite animation of: wizard with white beard and crystal staff in pink robe , that: is getting struck, facing: East"}
-{"file_name": "images/322.png", "text": "15-frame sprite animation of: a horned fire demon with large bloody cleaver, that: swings his cleaver to attack"}
-{"file_name": "images/323.png", "text": "5-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is taking damage after hit"}
+{"file_name": "images/322.png", "text": "15-frame sprite animation of: a horned fire demon with large bloody cleaver, that: swings his cleaver to attack, facing: West"}
+{"file_name": "images/323.png", "text": "5-frame sprite animation of: a horned fire demon with large bloody cleaver, that: is taking damage after hit, facing: West"}
 {"file_name": "images/353.png", "text": "24-frame sprite animation of: a stag, that: is idle, facing: North-East"}
 {"file_name": "images/357.png", "text": "10-frame sprite animation of: a stag, that: runs, facing: North-West"}
 {"file_name": "images/361.png", "text": "11-frame sprite animation of: a stag, that: walks, facing: South-East"}
@@ -87,7 +87,7 @@
 {"file_name": "images/385.png", "text": "5-frame sprite animation of: cultist priest in green hooded cloak with big gold cross on his neck, skulls on his shoulders and massive golden gauntlets, that: swings his both gauntlets over head to make an attack, facing: East"}
 {"file_name": "images/407.png", "text": "8-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: runs, facing: East"}
 {"file_name": "images/413.png", "text": "18-frame sprite animation of: a wind hashashin with a swords in white shalvar pants and scarf, that: is fast swinging his swords in combo attack, facing: East"}
-{"file_name": "images/425.png", "text": "4-frame sprite animation of: tooth walker monster without hands with big tongue, that: is idle"}
+{"file_name": "images/425.png", "text": "4-frame sprite animation of: tooth walker monster without hands with big tongue, that: is idle, facing: East"}
 {"file_name": "images/429.png", "text": "8-frame sprite animation of: shuriken, that: rolls"}
 {"file_name": "images/431.png", "text": "8-frame sprite animation of: rock, that: is shattered and falls down"}
 {"file_name": "images/437.png", "text": "9-frame sprite animation of: a man with short green hair in leather pants with short pinkish-red hair, that: walks, facing: West"}

@@ -8,25 +8,35 @@ Powered by Google TPU Research Cloud.
 </div>
 
 # Goal 
-To make animated sprites easily with single image of Stable Diffusion.
+To make animated sprites easily with a power of Stable Diffusion.
 
-# Done:
+# Done
 - Gather data
 - Label data
-- Scripts that can transofrm raw data sprites into dataset that Stable Diffusion models can be trained on
+- Make training dataset
+- Scripts that can transform raw data sprites into dataset that Stable Diffusion models can be trained on
+- training SDXL with FLAX framework [train_text_to_image_flax_sdxl.py](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py)
+- Fine tune SDXL with my training
+- Fix bugs in training data
+- Make comparison of each epoch
 
-# WIP: 
-- training sdxl with flax framework [train_text_to_image_flax_sdxl](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py)
+# WIP 
+- Share your failures with world
 
-# TODO: 
-- Fine tune sdxl with my training
-- Fix bugs in trainig data
-- Write the scipt to transform single image into sprite animation
-- Share with world
+# TODO
+- Different approach: Don't try to make sprite animations from single image, make video whole image! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
+- LoRA training with FLAX
+- Write the script to transform single image into sprite animation
 
-# Interference
-
-Run interference with `text_to_image.py`
+# Setup
+- install python depenencies with `pip install -r requirements.txt`
+- You can run interference with [text_to_image.py](https://github.com/PawKanarek/spraix/blob/main/text_to_image.py)
+- You can run finetuning with [train_text_to_image_flax_sdxl.py](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py) with params:
+```bash 
+--pretrained_model_name_or_path='stabilityai/stable-diffusion-xl-base-1.0' --train_data_dir='train_data_1024_best_96/' --resolution=1024 --center_crop --train_batch_size=4 --mixed_precision='bf16' --num_train_epochs=16 --learning_rate=1e-05 --max_grad_norm=1 --output_dir='spraix_sdxl_best_96_16'
+```
+- This repository is fat because I attached interference images from each training step
+- You can make a train dataset with [make_train_data.py](https://github.com/PawKanarek/spraix/blob/main/make_train_data.py) but you would have to manually download all the assets mentioned in `Training Data` section.
 
 # Training Data
 Special thanks to the skilled sprite animation creators, contributing to the training dataset for this project.

@@ -24,7 +24,7 @@ To make animated sprites easily with a power of Stable Diffusion.
 - Share your failures with world
 
 # TODO
-- Different approach: Don't try to make sprite animations from single image, make video whole image! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
+- Different approach: Don't try to make sprite animations from single image, make video from image - that sounds like animation! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
 - LoRA training with FLAX
 - Write the script to transform single image into sprite animation
 

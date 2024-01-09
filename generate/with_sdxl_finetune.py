@@ -9,8 +9,8 @@ from flax.jax_utils import replicate
 
 from generate import common
 
-MODEL = "spraix_sdxl_best_96_8"
-EPOCHS = 8  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
+MODEL = "spraix_sdxl_best_96_16"
+EPOCHS = 16  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):

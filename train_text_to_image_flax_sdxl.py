@@ -6,7 +6,6 @@ import os
 import time
 import random
 from pathlib import Path
-from typing import List
 
 import jax
 import jax.numpy as jnp
@@ -16,18 +15,12 @@ import torch
 import torch.utils.checkpoint
 import transformers
 from datasets import load_dataset
-from flax import jax_utils
 from flax.training import train_state
-from flax.training.common_utils import shard
 from huggingface_hub import create_repo, upload_folder
-from jax.experimental import mesh_utils
-from jax.sharding import Mesh, NamedSharding, PartitionSpec
 from torchvision import transforms
 from torchvision.transforms.functional import crop
 from tqdm.auto import tqdm
 from transformers import (
-    AutoTokenizer,
-    CLIPImageProcessor,
     CLIPTokenizer,
     FlaxCLIPTextModel,
     FlaxCLIPTextModelWithProjection,
@@ -45,17 +38,7 @@ from diffusers.utils import check_min_version
 
 # Will error if the minimal version of diffusers is not installed. Remove at your own risks.
 check_min_version("0.24.0.dev0")
-
 logger = logging.getLogger(__name__)
-
-# os.environ["XLA_PYTHON_CLIENT_PREALLOCATE"] = "false"
-# os.environ["XLA_FLAGS"] = (
-#     "--xla_gpu_enable_triton_softmax_fusion=true "
-#     "--xla_gpu_triton_gemm_any=True "
-#     "--xla_gpu_enable_async_collectives=true "
-#     "--xla_gpu_enable_latency_hiding_scheduler=true "
-#     "--xla_gpu_enable_highest_priority_async_stream=true "
-# )
 
 
 def parse_args():
@@ -477,11 +460,7 @@ def main():
             raise ValueError(
                 f"--caption_column' value '{args.caption_column}' needs to be one of: {', '.join(column_names)}"
             )
-    # jax_devices = jax.local_devices()
-    # jax_devices = jax_devices[1:]
-    # n_devices = len(jax_devices)
-    # n_devices = 1
-    # I commented out n_devices to fix parallelis problems (but i dont know if this is good idea)
+
     total_train_batch_size = args.train_batch_size  # * n_devices
     weight_dtype = jnp.float32
     if args.mixed_precision == "fp16":
@@ -509,14 +488,12 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="text_encoder",
-        # dtype=weight_dtype,
     )
     text_encoder_2 = FlaxCLIPTextModelWithProjection.from_pretrained(
         args.pretrained_model_name_or_path,
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="text_encoder_2",
-        # dtype=weight_dtype,
     )
 
     vae, vae_params = FlaxAutoencoderKL.from_pretrained(
@@ -524,8 +501,6 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="vae",
-        # dtype=weight_dtype,
-        # sharding=mesh_sharding(PartitionSpec("all")),
     )
 
     unet, unet_params = FlaxUNet2DConditionModel.from_pretrained(
@@ -533,18 +508,7 @@ def main():
         from_pt=args.from_pt,
         revision=args.revision,
         subfolder="unet",
-        # dtype=weight_dtype,
-        # sharding=mesh_sharding(PartitionSpec("all")),
     )
-
-    # if weight_dtype == jnp.float16:
-    #     logger.info("converting weights to fp16")
-    #     unet_params = unet.to_fp16(unet_params)
-    #     vae_params = vae.to_fp16(vae_params)
-    # elif weight_dtype == jnp.bfloat16:
-    #     logger.info("converting weights to bf16")
-    #     unet_params = unet.bf_16(unet_params)
-    #     vae_params = vae.bf_16(vae_params)
 
     # Preprocessing the datasets.
     train_resize = transforms.Resize(
@@ -594,7 +558,6 @@ def main():
         examples["original_sizes"] = original_sizes
         examples["crop_top_lefts"] = crop_top_lefts
         examples["pixel_values"] = all_images
-        logger.info("finish preproces")
         return examples
 
     if args.max_train_samples is not None:
@@ -722,7 +685,6 @@ def main():
 
     # Initialize our training
     rng = jax.random.PRNGKey(args.seed)
-    # train_rngs = jax.random.split(rng, n_devices)
     train_rngs = rng
 
     def train_step(state, batch, train_rng):
@@ -750,17 +712,11 @@ def main():
 
             # time ids
             def compute_time_ids(original_size, crops_coords_top_left):
-                # original_size = jnp.squeeze(original_size)
-                # crops_coords_top_left = jnp.squeeze(crops_coords_top_left)
                 target_size = jnp.asarray((args.resolution, args.resolution))
                 add_time_ids = jnp.concatenate(
                     [original_size, crops_coords_top_left, target_size]
                 )
-                logger.info(
-                    f"{add_time_ids.shape=}=cat({original_size.shape=},{crops_coords_top_left.shape=},{target_size.shape=})"
-                )
                 add_time_ids = jnp.array([add_time_ids], dtype=weight_dtype)
-                logger.info(f"this should be 1,6 {add_time_ids.shape=}")
                 return add_time_ids
 
             add_time_ids = jnp.concatenate(
@@ -774,9 +730,6 @@ def main():
             prompt_embeds = batch["prompt_embeds"]
             pooled_prompt_embeds = batch["pooled_prompt_embeds"]
             unet_added_conditions.update({"text_embeds": pooled_prompt_embeds})
-            logger.info(
-                f"my: {add_time_ids.shape=}, {prompt_embeds.shape=}, {pooled_prompt_embeds.shape=}"
-            )
 
             model_pred = unet.apply(
                 {"params": params},
@@ -805,28 +758,10 @@ def main():
 
         grad_fn = jax.value_and_grad(compute_loss)
         loss, grad = grad_fn(state.params)
-        # grad = jax.lax.pmean(grad, "batch")
-
         new_state = state.apply_gradients(grads=grad)
 
         metrics = {"loss": loss}
-        # metrics = jax.lax.pmean(metrics, axis_name="batch")
-
         return new_state, metrics, new_train_rng
-
-    # Create parallel version of the train step
-    logger.info("replicating trainstep ...")
-    # p_train_step = jax.pmap(train_step, "batch", donate_argnums=(0,), devices=jax_devices[1:2])
-
-    # Replicate the train state on each device
-    # logger.info("replicating state ...")
-    # state = jax_utils.replicate(state, devices=jax_devices[2:3])
-    # logger.info("replicating text_encoder_1_params ...")
-    # text_encoder_1_params = jax_utils.replicate(text_encoder_1.params, devices=jax_devices[3:4])
-    # logger.info("replicating text_encoder_2_params ...")
-    # text_encoder_2_params = jax_utils.replicate(text_encoder_2.params, devices=jax_devices[4:5])
-    # logger.info("replicating vae_params ...")
-    # vae_params = jax_utils.replicate(vae_params, devices=jax_devices[5:6])
 
     # Train!
     num_update_steps_per_epoch = math.ceil(len(train_dataloader))
@@ -859,10 +794,6 @@ def main():
         )
         # train
         for batch in train_dataloader:
-            # batch = shard(batch)
-            # batch = jax.tree_util.tree_map(lambda x: x.reshape((total_train_batch_size, -1) + x.shape[1:]), batch)
-
-            # state, train_metric, train_rngs = p_train_step(state, batch, train_rngs)
             state, train_metric, train_rngs = train_step(state, batch, train_rngs)
             train_metrics.append(train_metric)
 
@@ -871,8 +802,6 @@ def main():
             global_step += 1
             if global_step >= args.max_train_steps:
                 break
-
-        # train_metric = jax_utils.unreplicate(train_metric)
 
         train_step_progress_bar.close()
         epochs.write(

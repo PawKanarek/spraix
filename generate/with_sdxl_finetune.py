@@ -9,7 +9,7 @@ from flax.jax_utils import replicate
 
 from generate import common
 
-MODEL = "spraix_sdxl_best_96_16"
+MODEL = "spraix_sdxl_best_96_32"
 EPOCHS = 16  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
 
 
@@ -57,6 +57,9 @@ def generate_jax(
 def run():
     for i in range(EPOCHS + 1):
         model = MODEL
+        if i == 0:
+            continue  # for 32 epochs i didn't create main model; so skip it
+
         if i > 0:
             model = os.path.join(model, f"_epoch_{i}")
 

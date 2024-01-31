@@ -8,7 +8,11 @@ Powered by Google TPU Research Cloud.
 </div>
 
 # Goal 
-To make animated sprites easily with a power of Stable Diffusion.
+To make animated sprites easily with the power of Stable Diffusion.
+
+# Notes
+Currently this model is far from perfect, It generates very, **very** ugly images. You can see them [here](https://github.com/PawKanarek/spraix/blob/48d8c209a359622e6db56e6d555667ac466dc952/output/sdxl-base-flax/sdxl_best_96_32.png) (Be patient, this is 90 MB image!)
+
 
 # Done
 - Gather data
@@ -24,14 +28,14 @@ To make animated sprites easily with a power of Stable Diffusion.
 - Share your failures with world
 
 # TODO
-- Different approach: Don't try to make sprite animations from single image, make video from image - that sounds like animation! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
+- Different approach: Don't try to make sprite animations from a single image, make a video from image - that sounds like animation! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
 - LoRA training with FLAX
 - Write the script to transform single image into sprite animation
 
 # Setup
-- install python depenencies with `pip install -r requirements.txt`
+- install python dependencies with `pip install -r requirements.txt`
 - You can run interference with [text_to_image.py](https://github.com/PawKanarek/spraix/blob/main/text_to_image.py)
-- You can run finetuning with [train_text_to_image_flax_sdxl.py](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py) with params:
+- You can run fine tuning with [train_text_to_image_flax_sdxl.py](https://github.com/PawKanarek/spraix/blob/main/train_text_to_image_flax_sdxl.py) with params:
 ```bash 
 --pretrained_model_name_or_path='stabilityai/stable-diffusion-xl-base-1.0' --train_data_dir='train_data_1024_best_96/' --resolution=1024 --center_crop --train_batch_size=4 --mixed_precision='bf16' --num_train_epochs=16 --learning_rate=1e-05 --max_grad_norm=1 --output_dir='spraix_sdxl_best_96_16'
 ```
@@ -84,3 +88,6 @@ Special thanks to the skilled sprite animation creators, contributing to the tra
 - Train images [424.png](train_data_1024/images/424.png) - [428.png](train_data_1024/images/428.png) thanks to https://penusbmic.itch.io/monster-pack-i 
 - Train images [429.png](train_data_1024/images/429.png) - [431.png](train_data_1024/images/431.png) thanks to https://bdragon1727.itch.io/free-trap-platformer 
 - Train images [432.png](train_data_1024/images/432.png) - [559.png](train_data_1024/images/559.png) thanks to https://github.com/YingzhenLi/Sprites 
+
+
+

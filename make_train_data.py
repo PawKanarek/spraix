@@ -11,7 +11,7 @@ import numpy as np
 from dataclass_wizard import JSONWizard
 from PIL import Image
 
-# to work with this script u need to download manually sprites mentioned in 'credits.md', Authors don't allow raw redistribution of sprites, so i cannot put them into this reposisotry. 
+# to work with this script u need to download manually sprites mentioned in 'credits.md', Authors don't allow raw redistribution of sprites, so i cannot put them into this reposisotry.
 
 
 @dataclass
@@ -78,7 +78,10 @@ credits_content = []
 img_index: int = 0
 
 SIZE = 1024
-DATA_DIR = f"train_data_{SIZE}"
+FRAMES_LIMIT = 9  # set -1 to add everything
+MAKE_SQUARE = True
+F_DESC = f"_f_{FRAMES_LIMIT}" if FRAMES_LIMIT > 0 else ""
+DATA_DIR = f"train_data_{SIZE}{F_DESC}"
 RAW_DIR = "raw_sprites"
 COMPOSITE_DIR = "raw_composite"
 SPRITE_DATA_FILE = "_sprite_data.json"
@@ -282,7 +285,9 @@ def get_preset_charters() -> List[Dict[Attr, Dict[str, object]]]:
     for body, bottomwear, hair, topwear in preset:
         char = {}
         char[Attr.body] = {body: COMPOSITE_ATTR[Attr.body][body]}
-        char[Attr.bottomwear] = {bottomwear: COMPOSITE_ATTR[Attr.bottomwear][bottomwear]}
+        char[Attr.bottomwear] = {
+            bottomwear: COMPOSITE_ATTR[Attr.bottomwear][bottomwear]
+        }
         char[Attr.hair] = {hair: COMPOSITE_ATTR[Attr.hair][hair]}
         char[Attr.topwear] = {topwear: COMPOSITE_ATTR[Attr.hair][topwear]}
 
@@ -308,6 +313,19 @@ def cleanup_dirs():
 
 
 def get_resize(w: int, h: int, frames_n: int) -> ResizeData:
+    print(frames_n)
+
+    if FRAMES_LIMIT > 0:
+        if frames_n < FRAMES_LIMIT:
+            return
+        frames_n = FRAMES_LIMIT if frames_n > FRAMES_LIMIT else frames_n
+
+    if MAKE_SQUARE:
+        if w > h:
+            h = w
+        if h > w:
+            w = h
+
     total_area = frames_n * w * h
     max_area = SIZE * SIZE
     scaling_factor = (max_area / total_area) ** 0.5
@@ -347,20 +365,26 @@ def add_frame_to_sequence(
     sequence_img.alpha_composite(resized, (x, y))
 
 
-def process_individual_frames(seq: SequenceData, sprite: SpriteData, root_dir: str) -> Image.Image:
+def process_individual_frames(
+    seq: SequenceData, sprite: SpriteData, root_dir: str
+) -> Image.Image:
     sequence_img = Image.new("RGBA", (SIZE, SIZE), "gray")
 
     frames = list(range(seq.first, seq.last + 1))
     w = seq.w or sprite.w
     h = seq.h or sprite.h
     resize = get_resize(w, h, len(frames))
+    if not resize:
+        return
     frame_i = frames[0]
     # print(f"individual {name=}, {sequence_def=}")
     for row_i in range(resize.rows):
         for column_i in range(resize.columns):
             if frame_i > frames[-1]:
                 continue
-            frame_name = os.path.join(root_dir, seq.path.replace(ID_ESCAPE_CHAR, str(frame_i)))
+            frame_name = os.path.join(
+                root_dir, seq.path.replace(ID_ESCAPE_CHAR, str(frame_i))
+            )
             frame_i += 1
             frame = Image.open(frame_name).convert("RGBA")
             add_frame_to_sequence(sequence_img, resize, row_i, column_i, frame)
@@ -388,6 +412,9 @@ def process_sequence_frames(
     w = seq.w or sprite.w
     h = seq.h or sprite.h
     resize = get_resize(w, h, len(frames_def))
+    if not resize:
+        return
+
     if not img:
         img_path = os.path.join(root_dir, seq.path)
         img = Image.open(img_path).convert("RGBA")
@@ -434,8 +461,13 @@ def append_metadata(img_name: str, seq: SequenceData, sprite: SpriteData):
 
     # for now ignore size: size_desc = of size ({resize.w}x{resize.h})
     # desc = f"Sprite animation of {char} that {seq.desc}. Made of {frames} frames{side}, {sprite.style}, gray background"
-    desc = f"{frames}-frame sprite animation of: {char}, that: {seq.desc}{side}"
-    metadata_content.append({"file_name": os.path.join(IMAGES_DIR, img_name), "text": desc})
+    if FRAMES_LIMIT > 0:
+        desc = f"Pixel-art animation of {char}, that: {seq.desc}{side}"
+    else:
+        desc = f"{frames}-frame sprite animation of: {char}, that: {seq.desc}{side}"
+    metadata_content.append(
+        {"file_name": os.path.join(IMAGES_DIR, img_name), "text": desc}
+    )
 
 
 def name_of(dict) -> str:
@@ -468,7 +500,9 @@ def generate_composite() -> List[Dict[Attr, Dict[str, object]]]:
 
     for i_char, character in enumerate(unique_characters):  # or random_characters
         body_img = cached_imgs[Attr.body][name_of(character[Attr.body])]
-        bottomwear_img = cached_imgs[Attr.bottomwear][name_of(character[Attr.bottomwear])]
+        bottomwear_img = cached_imgs[Attr.bottomwear][
+            name_of(character[Attr.bottomwear])
+        ]
         hair_img = cached_imgs[Attr.hair][name_of(character[Attr.hair])]
         topwear_img = cached_imgs[Attr.topwear][name_of(character[Attr.topwear])]
         imgs = [body_img, bottomwear_img, hair_img, topwear_img]
@@ -492,7 +526,9 @@ def generate_composite() -> List[Dict[Attr, Dict[str, object]]]:
         bg_color = "transparent"
         frame_size = 64
         max_frames_per_row = 13
-        sequence_img = Image.new("RGBA", (frame_size * len(row_frames), frame_size), (255, 0, 0, 0))
+        sequence_img = Image.new(
+            "RGBA", (frame_size * len(row_frames), frame_size), (255, 0, 0, 0)
+        )
 
         frame_row = int(row_frames[0] / max_frames_per_row)
         for i, frame_i in enumerate(row_frames):
@@ -544,7 +580,7 @@ def save_credits():
     with open("credits.md", "w") as md_file:
         md_file.write(
             """# Training Data
-Special thanks to the skilled sprite animation creators for providing their work for free, contributing to the training dataset for this project.\n
+Special thanks to the skilled sprite animation creators for providing their work, contributing to the training dataset for this project.\n
 """
         )
         for item in credits_content:
@@ -583,7 +619,8 @@ def generate_dataset():
                 else:
                     img = process_sequence_frames(seq, sprite, root_dir)
 
-                save_img(sprite, seq, img)
+                if img:
+                    save_img(sprite, seq, img)
 
 
 if __name__ == "__main__":

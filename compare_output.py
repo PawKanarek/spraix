@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from mpl_toolkits.axes_grid1 import ImageGrid
 
-OUTPUT_DIR = "output/sdxl-base-flax/spraix_sdxl_best_96_32"
+MODEL = "spraix_sdxl_9frames"
+BASE_DIR = "output/sdxl-base-flax/"
+OUTPUT_DIR = f"{BASE_DIR}/{MODEL}"
 LAST_NUMBER = re.compile(r"(\d+)(?=\D*$)")
 
 
@@ -16,7 +18,7 @@ def sort_by_number(a):
 if __name__ == "__main__":
     dirs = [d for d in os.listdir(OUTPUT_DIR) if "_epoch_" in d]
     scale = 64
-    fig = plt.figure(figsize=(2 * scale, 1 * scale))
+    fig = plt.figure(figsize=(2 * scale, 0.5 * scale))
     grid = ImageGrid(fig, 111, nrows_ncols=(len(dirs), 8 * 4), axes_pad=0.1)
 
     for row, dir in enumerate(sort_by_number(dirs)):
@@ -36,7 +38,7 @@ if __name__ == "__main__":
 
             if j == 0:
                 print(f"set label:{dir} to row:{row}, column:{j}")
-                n = int(dir.split("_epoch_")[1]) + 16
+                n = int(dir.split("_epoch_")[1])
                 label = f"_epoch_{n}"
                 ax.set_ylabel(label)
                 ax.get_yaxis().set_visible(True)
@@ -45,5 +47,5 @@ if __name__ == "__main__":
     fig.subplots_adjust(
         left=0.005, top=0.995, right=0.995, bottom=0.005, wspace=0.005, hspace=0.005
     )
-    fig.savefig("cmp2.png")
+    fig.savefig(os.path.join(BASE_DIR, f"{MODEL}.png"))
     print("done")

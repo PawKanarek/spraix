@@ -9,8 +9,8 @@ SEED = 420
 GUIDANCE_SCALE = 5.0
 REFINER_KICK_IN = 0.8
 IMG_NAME = ""  # leave empty to auto generate
-BASE_ID = "/mnt/disks/persist/repos/stable-diffusion-xl-base-1.0"
-OUTPUT_DIR = "/mnt/disks/persist/repos/spraix/output/sdxl-base-flax"
+BASE_ID = "stabilityai/stable-diffusion-xl-base-1.0"
+OUTPUT_DIR = "output/sdxl-base-flax"
 RUN_ID = str(uuid.uuid4())
 
 

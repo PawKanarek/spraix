@@ -9,8 +9,8 @@ from flax.jax_utils import replicate
 
 from generate import common
 
-MODEL = "spraix_sdxl_best_96_32"
-EPOCHS = 16  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
+MODEL = "spraix_sdxl_9frames"
+EPOCHS = 6  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):
@@ -61,12 +61,12 @@ def run():
             continue  # for 32 epochs i didn't create main model; so skip it
 
         if i > 0:
-            model = os.path.join(model, f"_epoch_{i}")
+            model = f"{model}_epoch_{i}"
 
         print(f"loading {model}")
         startup_time = time.time()
         pipeline, params = FlaxStableDiffusionXLPipeline.from_pretrained(
-            f"/mnt/disks/persist/repos/{model}", split_head_dim=True
+            f"/home/raix/w/spraix/{model}", split_head_dim=True
         )
         scheduler_state = params.pop("scheduler")
         params = jax.tree_util.tree_map(lambda x: x.astype(jnp.bfloat16), params)
@@ -82,16 +82,17 @@ def run():
         print(f"Compiled in time: {time.time() - startup_time}")
 
         prompts = [
-            "12-frame sprite animation of: dinosaur with backpack, that: is running, facing: East",
-            "4-frame sprite animation of: girl with big sword, that: is idle, facing: West",
-            "8-frame sprite animation of: a devil, that: swings his sword, facing: West",
-            "6-frame sprite animation of: a wizzard, that: is casting a fireball, facing: East",
+            "Pixel-art animation of a blue water droplet with legs, that: is swiniging axe, facing: East",
+            "Pixel-art animation of a Tree, that: is Idle, facing: South",
+            "Pixel-art animation of a Dinosaur with a backpack, that: is jumping, facing: North",
+            "Pixel-art animation of a Fire demon with axe, that: is running, facing West",
         ]
         index = 0
-        for i, prompt in enumerate(prompts):
+        for prompt in prompts:
             step_time = time.time()
             images = generate_jax(pipeline, p_params, prompt)
-            for i in images:
+            for img in images:
                 index += 1
-                i.save(common.getSavePath(prompt, index, model))
+                pth = os.path.join(MODEL, f"_epoch_{i}")
+                img.save(common.getSavePath(prompt, index, pth))
             print(f"Batch execution time: {time.time() - step_time}")

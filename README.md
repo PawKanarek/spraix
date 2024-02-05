@@ -11,7 +11,8 @@ Powered by Google TPU Research Cloud.
 To make animated sprites easily with the power of Stable Diffusion.
 
 # Notes
-Currently this model is far from perfect, It generates very, **very** ugly images. You can see them [here](https://github.com/PawKanarek/spraix/blob/48d8c209a359622e6db56e6d555667ac466dc952/output/sdxl-base-flax/sdxl_best_96_32.png) (Be patient, this is 90 MB image!)
+- This repository if __fat__ because I pushed training dataset and evaluation ouptut, so keep in mind that cloning might take a while. I know it's bad, but this is my hobby project and sometimes I used the shortcuts. 
+- This fine tuned model is far from perfect, It generates very, **very** ugly images. You can see them [here](https://github.com/PawKanarek/spraix/blob/48d8c209a359622e6db56e6d555667ac466dc952/output/sdxl-base-flax/sdxl_best_96_32.png) (Be patient, this is 90 MB image!)
 
 
 # Done

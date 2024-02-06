@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from mpl_toolkits.axes_grid1 import ImageGrid
 
-MODEL = "spraix_sdxl_9frames_start_6epoch"
+MODEL = "spraix_sdxl_9frames_start_13epoch"
 BASE_DIR = "output/sdxl-base-flax/"
 OUTPUT_DIR = f"{BASE_DIR}/{MODEL}"
 LAST_NUMBER = re.compile(r"(\d+)(?=\D*$)")
@@ -38,7 +38,7 @@ if __name__ == "__main__":
 
             if j == 0:
                 print(f"set label:{dir} to row:{row}, column:{j}")
-                n = int(dir.split("_epoch_")[1]) + 6
+                n = int(dir.split("_epoch_")[1]) + 13
                 label = f"_epoch_{n}"
                 ax.set_ylabel(label)
                 ax.get_yaxis().set_visible(True)

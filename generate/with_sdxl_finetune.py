@@ -9,9 +9,10 @@ from flax.jax_utils import replicate
 
 from generate import common
 
-MODEL = "spraix_sdxl_9frames_start_6epoch"
-END = 7  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
-START = 5
+MODEL = "spraix_sdxl_9frames_start_13epoch"
+END = 12  # Set 0 to generate only final model, otherwise set number of epochs to check every checkpoint
+START = 2
+STEP = 2
 
 
 def tokenize_prompt(pipeline, prompt, neg_prompt):
@@ -56,7 +57,7 @@ def generate_jax(
 
 
 def run():
-    for i in range(START, END + 1):
+    for i in range(START, END + 1, STEP):
         model = MODEL
         if i == 0:
             continue  # for 32 epochs i didn't create main model; so skip it

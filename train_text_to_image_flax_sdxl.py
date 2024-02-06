@@ -807,7 +807,7 @@ def main():
         epochs.write(
             f"Epoch... ({epoch + 1}/{args.num_train_epochs} | Loss: {train_metric['loss']})"
         )
-        if jax.process_index() == 0:
+        if jax.process_index() == 0 and global_step % 2 == 0:
             save_params(
                 tokenizer_1,
                 tokenizer_2,

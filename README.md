@@ -10,6 +10,13 @@ Powered by Google TPU Research Cloud.
 # Goal 
 To make animated sprites easily with the power of Stable Diffusion.
 
+# Current status 
+I'm done for a while with this project. 
+The latest model trained for 25 epochs with dataset containing only 9 frames of sprite animation is avaiable to download on hugging face [spraix_sdxl_9frames_25epochs](https://huggingface.co/pawkanarek/spraix_sdxl_9frames_25epochs)
+
+Next idea would inclue creating better dataset which don't have so much blank space. Maybe we could use the video frames, and simpli we would split the frames to fit into single image? 
+
+
 # Notes
 - This repository if __fat__ because I pushed training dataset and evaluation ouptut, so keep in mind that cloning might take a while. I know it's bad, but this is my hobby project and sometimes I used the shortcuts. 
 - This fine tuned model is far from perfect, It generates very, **very** ugly images. You can see them [here](https://github.com/PawKanarek/spraix/blob/48d8c209a359622e6db56e6d555667ac466dc952/output/sdxl-base-flax/sdxl_best_96_32.png) (Be patient, this is 90 MB image!)

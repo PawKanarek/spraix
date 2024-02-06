@@ -1,5 +1,4 @@
 import torch
-import torch_xla.core.xla_model as xm
 from diffusers import (
     AutoencoderKL,
     DPMSolverMultistepScheduler,
@@ -11,16 +10,16 @@ from diffusers import (
 from generate import common
 
 print(f"torch version: {torch.__version__}")
-device = xm.xla_device()
+device = "mps"
 print(f"{device=}")
 
 
 def getRefinerPipeline(base) -> StableDiffusionXLPipeline:
     refiner = StableDiffusionXLImg2ImgPipeline.from_pretrained(
-        "stabilityai/stable-diffusion-xl-refiner-1.0",
-        text_encoder_2=base.text_encoder_2,
+        "/Users/raix/git/stable-diffusion-xl-refiner-1.0",
         use_safetensors=True,
-        torch_dtype=torch.bfloat16,
+        torch_dtype=torch.float16,
+        variant="fp16",
     )
     refiner.to(device)
     refiner.scheduler = DPMSolverMultistepScheduler.from_config(base.scheduler.config)
@@ -29,9 +28,10 @@ def getRefinerPipeline(base) -> StableDiffusionXLPipeline:
 
 def getBasePipeline() -> StableDiffusionXLPipeline:
     base = StableDiffusionXLPipeline.from_pretrained(
-        "stabilityai/stable-diffusion-xl-base-1.0",
+        "/Users/raix/git/stable-diffusion-xl-base-1.0",
         use_safetensors=True,
-        torch_dtype=torch.bfloat16,
+        torch_dtype=torch.float16,
+        variant="fp16",
     )
     base.to(device)
     base.scheduler = DPMSolverMultistepScheduler.from_config(base.scheduler.config)

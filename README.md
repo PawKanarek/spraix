@@ -11,14 +11,13 @@ Powered by Google TPU Research Cloud.
 To make animated sprites easily with the power of Stable Diffusion.
 
 # Current status 
-I'm done for a while with this project. 
-The latest model trained for 25 epochs with dataset containing only 9 frames of sprite animation is avaiable to download on hugging face [spraix_sdxl_9frames_25epochs](https://huggingface.co/pawkanarek/spraix_sdxl_9frames_25epochs)
+Currently I’m focused on other projects. The latest model was trained for ~48 hours on Google TPU v3-8 with this [dataset](https://huggingface.co/datasets/pawkanarek/spraix_1024_9frames) variation containing only 9 frames of sprite animation. Model is available on the Hugging Face [spraix_sdxl_9frames_25epochs](https://huggingface.co/pawkanarek/spraix_sdxl_9frames_25epochs)
 
-Next idea would inclue creating better dataset which don't have so much blank space. Maybe we could use the video frames, and simpli we would split the frames to fit into single image? 
 
+The next idea would include creating a better dataset which doesn't contain so much blank space. My dataset contains mostly gray background and I think this is a very big problem. When i'm back to this project i would like to experiment with different approaches.
 
 # Notes
-- This repository if __fat__ because I pushed training dataset and evaluation ouptut, so keep in mind that cloning might take a while. I know it's bad, but this is my hobby project and sometimes I used the shortcuts. 
+- This repository is __fat__ because I pushed the training dataset and evaluation output, so keep in mind that cloning might take a while. I know it's bad, but this is my hobby project and sometimes I use the shortcuts. 
 - This fine tuned model is far from perfect, It generates very, **very** ugly images. You can see them [here](https://github.com/PawKanarek/spraix/blob/48d8c209a359622e6db56e6d555667ac466dc952/output/sdxl-base-flax/sdxl_best_96_32.png) (Be patient, this is 90 MB image!)
 
 
@@ -31,9 +30,11 @@ Next idea would inclue creating better dataset which don't have so much blank sp
 - Fine tune SDXL with my training
 - Fix bugs in training data
 - Make comparison of each epoch
+- Share your failures with world - I started the blog https://pawkanarek.github.io/post/2024/01/26/intro.html
+
 
 # WIP 
-- Share your failures with world
+Other projects :) 
 
 # TODO
 - Different approach: Don't try to make sprite animations from a single image, make a video from image - that sounds like animation! https://huggingface.co/stabilityai/stable-video-diffusion-img2vid-xt 
@@ -49,6 +50,7 @@ Next idea would inclue creating better dataset which don't have so much blank sp
 ```
 - This repository is fat because I attached interference images from each training step
 - You can make a train dataset with [make_train_data.py](https://github.com/PawKanarek/spraix/blob/main/make_train_data.py) but you would have to manually download all the assets mentioned in `Training Data` section.
+
 
 # Training Data
 Special thanks to the skilled sprite animation creators, contributing to the training dataset for this project.
